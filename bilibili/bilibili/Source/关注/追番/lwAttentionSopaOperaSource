@@ -1,0 +1,142 @@
+{
+	"code": 0,
+	"count": "2",
+	"message": "success",
+	"pages": "1",
+	"result": [{
+		"actor": [],
+		"allow_bp": "0",
+		"allow_download": "0",
+		"area": "日本",
+		"bangumi_id": "2068",
+		"bangumi_title": "火影忍者 疾风传",
+		"brief": "【应官方要求，本片字幕全网统一为优土译制版本。】火影忍者 自来也忍法帐",
+		"copyright": "bilibili",
+		"cover": "http://i0.hdslb.com/bfs/bangumi/212345f11472cd39d6209652ca926f2249fdff36.jpg",
+		"danmaku_count": "1006715",
+		"episodes": [],
+		"evaluate": "",
+		"favorites": "473626",
+		"is_finish": "0",
+		"last_time": "2016-09-01 19:30:10.0",
+		"limitGroupId": 328,
+		"new_cover": "http://i2.hdslb.com/bfs/archive/dc203cac886eaca0e36e332615227e4a1d64ed83.jpg",
+		"new_ep": {
+			"av_id": "6115075",
+			"cover": "http://i2.hdslb.com/bfs/archive/dc203cac886eaca0e36e332615227e4a1d64ed83.jpg",
+			"danmaku": "9928525",
+			"episode_id": "90167",
+			"index": "694",
+			"index_title": "祝贺",
+			"page": "1",
+			"up": {},
+			"update_time": "2016-09-01 19:30:10.0"
+		},
+		"newest_ep_id": "90167",
+		"newest_ep_index": "694",
+		"play_count": "22698198",
+		"pub_time": "2016-01-14 19:30:00",
+		"related_seasons": [],
+		"season_id": "3287",
+		"season_title": "自来也忍法帐",
+		"seasons": [],
+		"share_url": "http://bangumi.bilibili.com/anime/3287/",
+		"spid": "0",
+		"squareCover": "http://x-img.hdslb.net/group1/M00/98/55/oYYBAFaVy1SAebT8AADECTTfflU002.jpg",
+		"staff": "",
+		"tag2s": [],
+		"tags": [{
+			"cover": "http://i1.hdslb.com/u_user/672da872a12b51fd77afd3e31fa2b029.png",
+			"tag_id": "20",
+			"tag_name": "燃"
+		}, {
+			"cover": "http://i2.hdslb.com/u_user/fb8b347ecdc9b6a3e3b8abe8b75e0f46.jpg",
+			"tag_id": "95",
+			"tag_name": "战斗"
+		}, {
+			"cover": "http://i0.hdslb.com/bfs/bangumi/25438eba103249ddeddbde65fa2d0e630f983f20.jpg",
+			"tag_id": "135",
+			"tag_name": "漫改"
+		}],
+		"title": "火影忍者 疾风传",
+		"total_count": "50",
+		"user_season": {
+			"attention": "1",
+			"last_ep_id": "90167",
+			"last_ep_index": "694",
+			"last_time": ""
+		},
+		"watchingCount": "0",
+		"weekday": "4"
+	}, {
+		"actor": [],
+		"alias": "",
+		"allow_bp": "0",
+		"allow_download": "1",
+		"area": "其他",
+		"bangumi_id": "1964",
+		"bangumi_title": "游☆戏☆王 Duel Monsters",
+		"brief": "《游☆戏☆王 Duel Monsters》改编自高桥和希所作的漫画《游戏王》，于2000-2004年...",
+		"copyright": "ugc",
+		"cover": "http://i0.hdslb.com/bfs/bangumi/ce3b743cd661ad3edfa7f580d0ea388caf8e8987.jpg",
+		"danmaku_count": "254197",
+		"episodes": [],
+		"evaluate": "",
+		"favorites": "36791",
+		"is_finish": "1",
+		"last_time": "2015-11-25 07:06:51.0",
+		"limitGroupId": 316,
+		"new_cover": "http://i1.hdslb.com/bfs/archive/81a0b60ebbb36073f8dbeccf5b6523e8b4517e4a.jpg",
+		"new_ep": {
+			"av_id": "3277237",
+			"cover": "http://i1.hdslb.com/bfs/archive/81a0b60ebbb36073f8dbeccf5b6523e8b4517e4a.jpg",
+			"danmaku": "6439745",
+			"episode_id": "79686",
+			"index": "224",
+			"index_title": "在光中完结的物语",
+			"page": "224",
+			"up": {},
+			"update_time": "2015-11-25 07:06:51.0"
+		},
+		"newest_ep_id": "79686",
+		"newest_ep_index": "224",
+		"play_count": "1684758",
+		"pub_time": "2000-04-18 00:00:00",
+		"related_seasons": [],
+		"season_id": "3054",
+		"season_title": "TV",
+		"seasons": [],
+		"share_url": "http://bangumi.bilibili.com/anime/3054/",
+		"spid": "0",
+		"squareCover": "http://i0.hdslb.com/bfs/bangumi/3861e3de3b27b6f4cc450f4ea52d075be8b35015.jpg",
+		"staff": "",
+		"tag2s": [],
+		"tags": [{
+			"cover": "http://i1.hdslb.com/u_user/672da872a12b51fd77afd3e31fa2b029.png",
+			"tag_id": "20",
+			"tag_name": "燃"
+		}, {
+			"cover": "http://i1.hdslb.com/u_user/9fc0e61cdba27a26ea969bac28d39606.png",
+			"tag_id": "57",
+			"tag_name": "奇幻"
+		}, {
+			"cover": "http://i2.hdslb.com/u_user/fb8b347ecdc9b6a3e3b8abe8b75e0f46.jpg",
+			"tag_id": "95",
+			"tag_name": "战斗"
+		}, {
+			"cover": "http://i0.hdslb.com/u_user/6ddcf10d8b9bdfd0fbcbadc1d8b63b75.png",
+			"tag_id": "99",
+			"tag_name": "神OP"
+		}],
+		"title": "游☆戏☆王 Duel Monsters",
+		"total_count": "224",
+		"user_season": {
+			"attention": "1",
+			"last_ep_id": "",
+			"last_ep_index": "",
+			"last_time": "0"
+		},
+		"watchingCount": "0",
+		"weekday": "2"
+	}]
+}

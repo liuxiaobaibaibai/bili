@@ -1,0 +1,93 @@
+{
+	"code": 0,
+	"message": "ok",
+	"data": [{
+		"id": 11,
+		"name": "\u624b\u673a\u76f4\u64ad",
+		"entrance_icon": {
+			"src": "http:\/\/static.hdslb.com\/live-static\/live-app\/areaicon\/ios\/phone\/2\/11.png?2016090601",
+			"height": 80,
+			"width": 80
+		}
+	}, {
+		"id": 12,
+		"name": "\u624b\u6e38\u76f4\u64ad",
+		"entrance_icon": {
+			"src": "http:\/\/static.hdslb.com\/live-static\/live-app\/areaicon\/ios\/phone\/2\/12.png?2016090601",
+			"height": 80,
+			"width": 80
+		}
+	}, {
+		"id": 8,
+		"name": "\u840c\u5b85\u63a8\u8350",
+		"entrance_icon": {
+			"src": "http:\/\/static.hdslb.com\/live-static\/live-app\/areaicon\/ios\/phone\/2\/8.png?2016090601",
+			"height": 80,
+			"width": 80
+		}
+	}, {
+		"id": 9,
+		"name": "\u7ed8\u753b\u4e13\u533a",
+		"entrance_icon": {
+			"src": "http:\/\/static.hdslb.com\/live-static\/live-app\/areaicon\/ios\/phone\/2\/9.png?2016090601",
+			"height": 80,
+			"width": 80
+		}
+	}, {
+		"id": 3,
+		"name": "\u7f51\u7edc\u6e38\u620f",
+		"entrance_icon": {
+			"src": "http:\/\/static.hdslb.com\/live-static\/live-app\/areaicon\/ios\/phone\/2\/3.png?2016090601",
+			"height": 80,
+			"width": 80
+		}
+	}, {
+		"id": 1,
+		"name": "\u5355\u673a\u8054\u673a",
+		"entrance_icon": {
+			"src": "http:\/\/static.hdslb.com\/live-static\/live-app\/areaicon\/ios\/phone\/2\/1.png?2016090601",
+			"height": 80,
+			"width": 80
+		}
+	}, {
+		"id": 4,
+		"name": "\u7535\u5b50\u7ade\u6280",
+		"entrance_icon": {
+			"src": "http:\/\/static.hdslb.com\/live-static\/live-app\/areaicon\/ios\/phone\/2\/4.png?2016090601",
+			"height": 80,
+			"width": 80
+		}
+	}, {
+		"id": 10,
+		"name": "\u5531\u89c1\u821e\u89c1",
+		"entrance_icon": {
+			"src": "http:\/\/static.hdslb.com\/live-static\/live-app\/areaicon\/ios\/phone\/2\/10.png?2016090601",
+			"height": 80,
+			"width": 80
+		}
+	}, {
+		"id": 6,
+		"name": "\u751f\u6d3b\u5a31\u4e50",
+		"entrance_icon": {
+			"src": "http:\/\/static.hdslb.com\/live-static\/live-app\/areaicon\/ios\/phone\/2\/6.png?2016090601",
+			"height": 80,
+			"width": 80
+		}
+	}, {
+		"id": 2,
+		"name": "\u5fa1\u5b85\u6587\u5316",
+		"entrance_icon": {
+			"src": "http:\/\/static.hdslb.com\/live-static\/live-app\/areaicon\/ios\/phone\/2\/2.png?2016090601",
+			"height": 80,
+			"width": 80
+		}
+	}, {
+		"id": 7,
+		"name": "\u653e\u6620\u5385",
+		"entrance_icon": {
+			"src": "http:\/\/static.hdslb.com\/live-static\/live-app\/areaicon\/ios\/phone\/2\/7.png?2016090601",
+			"height": 80,
+			"width": 80
+		}
+	}]
+}

@@ -1,0 +1,2740 @@
+{
+    "code": 0,
+    "message": "ok",
+    "data": {
+        "banner": [{
+            "title": "\u5228\u51b0\u6d3b\u52a8\u6700\u540e\u7684\u5927\u5956\u51b2\u523a\uff01",
+            "img": "http:\/\/i0.hdslb.com\/bfs\/live\/4169f145aac2eb605b9669dba1c8759ef450a322.jpg",
+            "remark": "\u5228\u51b0\u5c4b",
+            "link": "http:\/\/live.bilibili.com\/AppBanner\/index?id=246"
+        }, {
+            "title": "\u65b0\u751f\u5531\u821e\u89c1\u8fce\u5f00\u5b66",
+            "img": "http:\/\/i0.hdslb.com\/bfs\/live\/a697b73588fcd74ea9a849568f86cea0abb4e987.jpg",
+            "remark": "\u65b0\u751f\u5531\u821e\u89c1\u8fce\u5f00\u5b66",
+            "link": "http:\/\/live.bilibili.com\/AppBanner\/index?id=243"
+        }],
+        "entranceIcons": [{
+            "id": 11,
+            "name": "\u624b\u673a\u76f4\u64ad",
+            "entrance_icon": {
+                "src": "http:\/\/static.hdslb.com\/live-static\/images\/mobile\/ios\/phone\/11_big_2x.png?2016082902",
+                "height": "100",
+                "width": "100"
+            }
+        }, {
+            "id": 9,
+            "name": "\u7ed8\u753b\u4e13\u533a",
+            "entrance_icon": {
+                "src": "http:\/\/static.hdslb.com\/live-static\/images\/mobile\/ios\/phone\/9_big_2x.png?2016082902",
+                "height": "80",
+                "width": "80"
+            }
+        }, {
+            "id": 8,
+            "name": "\u840c\u5b85\u63a8\u8350",
+            "entrance_icon": {
+                "src": "http:\/\/static.hdslb.com\/live-static\/images\/mobile\/ios\/phone\/8_big_2x.png?2016082902",
+                "height": "80",
+                "width": "80"
+            }
+        }, {
+            "id": 3,
+            "name": "\u7f51\u7edc\u6e38\u620f",
+            "entrance_icon": {
+                "src": "http:\/\/static.hdslb.com\/live-static\/images\/mobile\/ios\/phone\/3_big_2x.png?2016082902",
+                "height": "80",
+                "width": "80"
+            }
+        }, {
+            "id": 1,
+            "name": "\u5355\u673a\u8054\u673a",
+            "entrance_icon": {
+                "src": "http:\/\/static.hdslb.com\/live-static\/images\/mobile\/ios\/phone\/1_big_2x.png?2016082902",
+                "height": "80",
+                "width": "80"
+            }
+        }, {
+            "id": 4,
+            "name": "\u7535\u5b50\u7ade\u6280",
+            "entrance_icon": {
+                "src": "http:\/\/static.hdslb.com\/live-static\/images\/mobile\/ios\/phone\/4_big_2x.png?2016082902",
+                "height": "80",
+                "width": "80"
+            }
+        }],
+        "partitions": [{
+            "partition": {
+                "id": 9,
+                "name": "\u7ed8\u753b\u4e13\u533a",
+                "area": "draw",
+                "sub_icon": {
+                    "src": "http:\/\/static.hdslb.com\/live-static\/images\/mobile\/ios\/phone\/9_s_2x.png?2016082902",
+                    "height": "40",
+                    "width": "40"
+                },
+                "count": 165
+            },
+            "lives": [{
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/ffe9a147f71b8bcacbd76b3f6bf09cc4268bdca3.jpg",
+                    "mid": 919754,
+                    "name": "\u54b8\u9c7c\u76ee\u5bb3"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/ecf2d34bfc04de0d3a02bd9a356489c51ef65b91.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u54b8\u9c7cFM",
+                "room_id": 499410,
+                "check_version": 0,
+                "online": 14,
+                "area": "\u7ed8\u753b\u4e13\u533a",
+                "area_id": 9,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/843\/live_919754_7206230.flv?wsSecret=14b9cc020e6c0094f60f1916b63e18d9&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/c9d5ad4e00a7103845c273688fbe0f27adf93b8e.jpg",
+                    "mid": 21884074,
+                    "name": "\u9752\u7b71\u55b5\u55b5"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/6fbb2e1ea71bdbb35272784a6b8ab6287c8bbd1f.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u542f\u52a8\uff1a\u6d2a\u8352\u4e4b\u529b",
+                "room_id": 143593,
+                "check_version": 0,
+                "online": 14,
+                "area": "\u7ed8\u753b\u4e13\u533a",
+                "area_id": 9,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/903\/live_21884074_5805330.flv?wsSecret=fac21d7e1c8cfd6fd1490ce9cc40f310&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/f55ac6402c3b6f94dda2d5373447433fd1515bed.jpg",
+                    "mid": 5093036,
+                    "name": "\u53f0\u98ce\u541b\u5df2\u5f03\u6cbb"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/631b76491475cceeaf748188f53f6b830af4eaad.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u4eba\u4f53\u5e9f\u6839\u672c\u4e0d\u4f1a\u5f00\u8f66\u600e\u4e48\u529e",
+                "room_id": 373422,
+                "check_version": 0,
+                "online": 1680,
+                "area": "\u7ed8\u753b\u4e13\u533a",
+                "area_id": 9,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/235\/live_5093036_4861143.flv?wsSecret=b21ed0864ab5abe2f0ff0aa55d65e2bf&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/878ea0c8ddfdc8840992d2f825ae7211df0d3a3c.jpg",
+                    "mid": 3090403,
+                    "name": "\u65e9\u6728\u65cb\u5b50"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/393f93af74ae811de51f2c8378d319496ef00524.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "bgm\u662fup\u6700\u65b0\u7ffb\u5531\u6295\u7a3f\uff0c\u6c42\u786c\u5e01\u548c\u6536\u85cf~\u9774\u9774~",
+                "room_id": 290891,
+                "check_version": 0,
+                "online": 54,
+                "area": "\u7ed8\u753b\u4e13\u533a",
+                "area_id": 9,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/476\/live_3090403_4177881.flv?wsSecret=48995fc9eae2cb3a3a43360b8b382799&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/58b5facd4970813560dd9d391452df9a21505c9b.jpg",
+                    "mid": 2575079,
+                    "name": "\u5ff5\u8426\u58a8\u8475"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/9faae786b737fd88d80373af6387f08e8924b7e2.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u8d76\u7a3f\u8d76\u7a3f",
+                "room_id": 109176,
+                "check_version": 0,
+                "online": 1226,
+                "area": "\u7ed8\u753b\u4e13\u533a",
+                "area_id": 9,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/367\/live_2575079_3872656.flv?wsSecret=aabe16d9162d33c96d1a0dd5a3655f9b&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/4b090a8a9a35004265da8b7002bdefaa92fb4123.jpg",
+                    "mid": 503712,
+                    "name": "\u5c0f\u5c0f\u4f5c\u6587"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/096471a22c5ca1a8eef3c6c6052c6bca984ae2d0.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u4f5c\u6587\u7684\u7a7f\u8d8a\u897f\u51433000\u540e\uff08\u6ca1\u7761\u597d\u534a\u6b7b\u4e0d\u6d3b\u4e2d\uff09",
+                "room_id": 209462,
+                "check_version": 0,
+                "online": 2589,
+                "area": "\u7ed8\u753b\u4e13\u533a",
+                "area_id": 9,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/270\/live_503712_2556310.flv?wsSecret=d9f87088f1fe13c6b9aa841141023874&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/254cb17903f30a004b068d55e7a2cc3f914d028d.jpg",
+                    "mid": 12501568,
+                    "name": "\u732b\u541b\u5927\u767d"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/07a28e6da81bbb9a7c992296adecb97763b5bfee.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u732b\u541b\u5927\u767d\u7684\u76f4\u64ad\u95f4",
+                "room_id": 332871,
+                "check_version": 0,
+                "online": 1469,
+                "area": "\u7ed8\u753b\u4e13\u533a",
+                "area_id": 9,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/366\/live_12501568_4860609.flv?wsSecret=7bdb5c85c7c565db268381240ca0153c&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/a1939a17881a0ab7446530794eba0b0cb562afa2.jpg",
+                    "mid": 332808,
+                    "name": "AKI\u00b77"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/cc2f2e159dba4dea3003222c02a82f696e28bdc3.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u8840\u65cf\u7981\u57df\u7ebf\u7a3f\u7ed8\u5236",
+                "room_id": 1085873,
+                "check_version": 0,
+                "online": 3549,
+                "area": "\u7ed8\u753b\u4e13\u533a",
+                "area_id": 9,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/932\/live_332808_1439965.flv?wsSecret=6777efd38199a6a4d3c178c4317f77a6&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/f5442aa5c067248a05660bc011eb47a2bdce9397.jpg",
+                    "mid": 8166898,
+                    "name": "\u6e3a\u513fME"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/6e748b6847924e90846eceae83c08a4987e9bc48.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u6e3a\u513fME\u7684\u76f4\u64ad\u95f4",
+                "room_id": 1107192,
+                "check_version": 0,
+                "online": 6,
+                "area": "\u7ed8\u753b\u4e13\u533a",
+                "area_id": 9,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/614\/live_8166898_9444524.flv?wsSecret=8cfec511862ca9e5d3be4fdb697dea39&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/ac6b1cd58bcbc314b4a656baf43daae9bf95fd0b.jpg",
+                    "mid": 3607325,
+                    "name": "\u9065\u9065cuteyao"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/fbafbac5f20d3c874715028b1e5e28e0ccd11d3d.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u6e38\u620f\u539f\u753b\u6e23\u7684\u7ec3\u4e60\u4e4b\u8def",
+                "room_id": 516712,
+                "check_version": 0,
+                "online": 25,
+                "area": "\u7ed8\u753b\u4e13\u533a",
+                "area_id": 9,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/160\/live_3607325_3562011.flv?wsSecret=2dd8cbbdbdc8439c55c90d33175c1312&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/2336ef86703f0ad3229326138f98e19550fa10ca.jpg",
+                    "mid": 12062698,
+                    "name": "\u4f1e\u59ec"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/085306d1120b2c44f821504f818ba99e52e1892e.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u5f00\u5b66\u8d3a\u56fe\uff08\u7b11\uff09",
+                "room_id": 484136,
+                "check_version": 0,
+                "online": 15,
+                "area": "\u7ed8\u753b\u4e13\u533a",
+                "area_id": 9,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/794\/live_12062698_1209260.flv?wsSecret=df14ebd6b0f5c658fb086c8df27cedb9&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/e3cfcf3cd19581681747def958b2f24c7c9b0652.jpg",
+                    "mid": 6188477,
+                    "name": "\u52c7\u59b9"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/d6b4514a217cc5a3abd2cc4f62f9027d4c74ff06.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u4e34\u6479\u7ec3\u4e60",
+                "room_id": 36600,
+                "check_version": 0,
+                "online": 1446,
+                "area": "\u7ed8\u753b\u4e13\u533a",
+                "area_id": 9,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/486\/live_6188477_1561069.flv?wsSecret=c5837635caaa1ba00cd5614c37590c9e&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }]
+        }, {
+            "partition": {
+                "id": 11,
+                "name": "\u624b\u673a\u76f4\u64ad",
+                "area": "mobile",
+                "sub_icon": {
+                    "src": "http:\/\/static.hdslb.com\/live-static\/images\/mobile\/ios\/phone\/11_s_2x.png?2016082902",
+                    "height": "40",
+                    "width": "40"
+                },
+                "count": 333
+            },
+            "lives": [{
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/d1b24eed128eccfba469ff30bbc7b53baaea256c.jpg",
+                    "mid": 9670593,
+                    "name": "\u4e0d\u5403\u85af\u6761"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/c7e5797de242dc44d792ae2f51c3e04f63861b29.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u3010B\u7ad9\u7b2c\u4e00\u624b\u63a7\u3011\u5b66\u957f\u5e26\u4f60\u901b\u6821\u56ed",
+                "room_id": 972579,
+                "check_version": 0,
+                "online": 271,
+                "area": "\u624b\u673a\u76f4\u64ad",
+                "area_id": 11,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/439\/live_9670593_7110028.flv?wsSecret=44a55e6a6485c589e74e6b7ea0a55b7e&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/ec465c17e95ed5b7770f779a0a6c35cdc849585f.jpg",
+                    "mid": 18371369,
+                    "name": "\u53ee\u5f53\u7231\u66f2\u5947"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/029d5234bb2b4c745969360528a6e3a9d99e8f38.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u521d\u6b21\u5c1d\u8bd5\u505a\u6708\u997c\uff0c\u840c\u65b0\u6c42\u5173\u6ce8",
+                "room_id": 174331,
+                "check_version": 0,
+                "online": 290,
+                "area": "\u624b\u673a\u76f4\u64ad",
+                "area_id": 11,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/213\/live_18371369_6015690.flv?wsSecret=0a00f124db9961efc88a87b9fe5545e6&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/4cc5f636ab39106ea482b963472e1d30467a647d.jpg",
+                    "mid": 11616116,
+                    "name": "\u6795\u8fb9\u7537\u5993"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/7f8f955e77401d34cc554982f8e2b9e7f48dc2d6.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u542c\u8bf4\u4f60\u4eec\u90fd\u5f00\u5b66\u4e86\uff0c\u5bc2\u5bde\u662f\u591a\u4e48\u65e0\u654c",
+                "room_id": 192106,
+                "check_version": 0,
+                "online": 19,
+                "area": "\u624b\u673a\u76f4\u64ad",
+                "area_id": 11,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/863\/live_11616116_3845719.flv?wsSecret=6dbda26e188d3bc3f71471013bac4735&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 1,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/1eb98e362e4991cb4866683afa7ca22416d9fcfa.jpg",
+                    "mid": 25713376,
+                    "name": "\u5c0f\u7cbd\u7cbd\u5b50."
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/2cf121f2dd2b6f27ad0bd570d075eaf2c4b7c058.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u6211\u6ca1\u6709\u7fd8\u54df",
+                "room_id": 365292,
+                "check_version": 0,
+                "online": 93,
+                "area": "\u624b\u673a\u76f4\u64ad",
+                "area_id": 11,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/948\/live_25713376_9457290.flv?wsSecret=3ba4249a91547b8d63deced9bcf76082&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 1,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/317768e87e1e3ed9f3b7ae5ba5590152c4947d20.jpg",
+                    "mid": 29842829,
+                    "name": "\u5361\u841d\u54ce\u54ce"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/4961bf5d4e39468c104c449b93554361b7996363.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u6765\u804a\u5929\u5417(=^\u25bd^=)",
+                "room_id": 471112,
+                "check_version": 0,
+                "online": 213,
+                "area": "\u624b\u673a\u76f4\u64ad",
+                "area_id": 11,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/256\/live_29842829_4563001.flv?wsSecret=cdb1f3fe4bc3c69480fb3695c54bc8bc&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 1,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/af265cb5c45421807d3804f9908ab2c2fb00e773.jpg",
+                    "mid": 36412331,
+                    "name": "\u5c0f\u963f\u96e8\u5440"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/bef0f5067f3db3f8d5221ba7d707a2e0a33190bb.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u60a8\u7684\u5c0f\u5973\u53cb\u5df2\u4e0a\u7ebf\uff0c\u53ef\u6295\u5582",
+                "room_id": 1114370,
+                "check_version": 0,
+                "online": 186,
+                "area": "\u624b\u673a\u76f4\u64ad",
+                "area_id": 11,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/955\/live_36412331_8846193.flv?wsSecret=8fb5ce065d2dd24090f54a180822cd88&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 1,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/02610093661fad690e7ffe127bd9498d80a363c7.jpg",
+                    "mid": 6881091,
+                    "name": "\u6c5d\u53d4"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/ce35e87d831f018fe0118a7e059ca1d6c4250445.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u5148\u5b9a\u4e00\u4e2a\u5c0f\u76ee\u6807\uff0c\u6bd4\u65b9\u8bf4\u5173\u6ce8\u4e94\u5341\u4e07:)",
+                "room_id": 530841,
+                "check_version": 0,
+                "online": 176,
+                "area": "\u624b\u673a\u76f4\u64ad",
+                "area_id": 11,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/664\/live_6881091_3290684.flv?wsSecret=7ed917394f1237dfb1aa697059be88a8&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 1,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/b1c1cefb302c704a6e9c936bcb43086ae92b6d9f.jpg",
+                    "mid": 26541399,
+                    "name": "lz\u9e7f\u5b50"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/3d3735d8b2ea59b351119d2f8a3778768dbd195e.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u3010\u58f0\u63a7\u798f\u5229\uff1f\u3011\u636e\u8bf4\u7c89\u4e1d\u7834\u4e09\u5343\u4f1a\u9732\u8138\u54e6\u8c41",
+                "room_id": 360169,
+                "check_version": 0,
+                "online": 332,
+                "area": "\u624b\u673a\u76f4\u64ad",
+                "area_id": 11,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/586\/live_26541399_9681153.flv?wsSecret=d6b8ffb261eef4e36c7c44a098ea2baf&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/90715e8a974b7d8699fa29cb2132efe03f6f9eb4.gif",
+                    "mid": 3590414,
+                    "name": "\u62bd\u98ce\u7684\u5c0f\u5a73\u59b9\u7eb8"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/d08501584aafc463e0f35063230cc2fa95beac25.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u51fa\u53bb\u800d\uff01\u966a\u5c0f\u5a73\u804a\u4f1a\u5929\u5427qwq",
+                "room_id": 64540,
+                "check_version": 0,
+                "online": 678,
+                "area": "\u624b\u673a\u76f4\u64ad",
+                "area_id": 11,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/484\/live_3590414_6948317.flv?wsSecret=955e739ff7f64a8638a2800ed7c3c54e&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 1,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/4db5da478d0fe06a9445b036112adc0677d3a797.jpg",
+                    "mid": 2221985,
+                    "name": "warm\u5973\u4ec6\u5496\u5561\u5385"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/83d97967e24f516fc9c3db9b6dc69d622f9eafbc.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u96fe\u90fdwarm\u5973\u4ec6\u5e97\u5c0f\u67d2\u65e5\u5e38",
+                "room_id": 474148,
+                "check_version": 0,
+                "online": 21,
+                "area": "\u624b\u673a\u76f4\u64ad",
+                "area_id": 11,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/291\/live_2221985_3125865.flv?wsSecret=90cea9a36345e1712c72950b58f4a1b7&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 1,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/9268bd9a9494216655a3ae38d59f10fb5755fe91.jpg",
+                    "mid": 31864795,
+                    "name": "\u6a31\u96ea\u5b63\u8282"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/210a15a806891fda87299ee89c7c603305a95382.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u804a\u5929\uff0c\u5199\u4f5c\u4e1a",
+                "room_id": 1051764,
+                "check_version": 0,
+                "online": 15,
+                "area": "\u624b\u673a\u76f4\u64ad",
+                "area_id": 11,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/371\/live_31864795_9788268.flv?wsSecret=36363acd4b3d94e7a04d71f5f9280bd1&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/3d3c3ed32097bf15a11f8a291ceaa8907a932cb2.jpg",
+                    "mid": 13763303,
+                    "name": "\u6708\u89c1\u5154"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/5b2753eba8b4bc47e2adda264461126fdfe871ef.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u65e5\u672c\u732b\u5496\u5561 \u56e2\u6247\u7ed9\u8c46\u5b50",
+                "room_id": 286893,
+                "check_version": 0,
+                "online": 198,
+                "area": "\u624b\u673a\u76f4\u64ad",
+                "area_id": 11,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/828\/live_13763303_3863644.flv?wsSecret=ba2c28376d3c779b467b60abdc8e4ca2&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }]
+        }, {
+            "partition": {
+                "id": 10,
+                "name": "\u5531\u89c1\u821e\u89c1",
+                "area": "sing-dance",
+                "sub_icon": {
+                    "src": "http:\/\/static.hdslb.com\/live-static\/images\/mobile\/ios\/phone\/10_s_2x.png?2016082902",
+                    "height": "40",
+                    "width": "40"
+                },
+                "count": 56
+            },
+            "lives": [{
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/bbcfcc80033faa8a13538b56048522c564e4ec4d.gif",
+                    "mid": 4363605,
+                    "name": "Geimu\u82b8\u82b8"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/6fe9b405a515e4a7ff6f9318b5b192636caac5e7.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u5c31\u5f53\u6211\u662f\u4e1c\u6761\u5e0c~\u5531\u6b4c\u70b9\u6b4c\u4f9d\u65e7",
+                "room_id": 291671,
+                "check_version": 0,
+                "online": 245,
+                "area": "\u5531\u89c1\u821e\u89c1",
+                "area_id": 10,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/348\/live_4363605_5547047.flv?wsSecret=b6a2c81786e93c7c3c8d09fe9eac7870&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/f64f130ef36d57d3843bbb1194afcd193588df83.jpg",
+                    "mid": 13786333,
+                    "name": "wuli\u6d45\u6d45"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/9e790e5a62b05f9d06b4b77b442f395cc67423c2.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u56de\u6765\u4e86\u00b7\u00b7\u00b7\u00b7\u00b7\u00b7",
+                "room_id": 67336,
+                "check_version": 0,
+                "online": 2672,
+                "area": "\u5531\u89c1\u821e\u89c1",
+                "area_id": 10,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/464\/live_13786333_1381092.flv?wsSecret=a0f2fc20aeb6205de91831f29c56af7e&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/8a0b278c4fe7335e00b1afa0e6763b0b25d70c3a.jpg",
+                    "mid": 5040954,
+                    "name": "\u6843\u4e03\u4e36"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/127d4d83a9d1a3ec635825f2f0853e2e7b021e86.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u3010\u6e29\u67d4\u653b\u3011233\u6765\u5531\u6b4c\u5427",
+                "room_id": 1023113,
+                "check_version": 0,
+                "online": 43,
+                "area": "\u5531\u89c1\u821e\u89c1",
+                "area_id": 10,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/220\/live_5040954_7276660.flv?wsSecret=ceef1334998c1db53cbe40065b4e8099&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/7ff8deda897c7cea9d5f3f3bcab0af025467513f.jpg",
+                    "mid": 160169,
+                    "name": "\u6df1\u84dd\u7d3a\u8272"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/4d2a689dc0fe24827c14246bf5d7c1580177fa23.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u6df1\u84dd\u97f3\u4e50\u70b9\u64ad\u95f4_(:\u0437\u309d\u2220)_",
+                "room_id": 127103,
+                "check_version": 0,
+                "online": 9,
+                "area": "\u5531\u89c1\u821e\u89c1",
+                "area_id": 10,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/601\/live_160169_7237977.flv?wsSecret=42cfb2249db6da2408304902ff34084d&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/872d343190208bb005d95aabe0c0e9e322e56295.jpg",
+                    "mid": 22245135,
+                    "name": "\u91d1\u6208\u836f\u5546\u767d\u6b62"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/e04d3cde4df1c12a92a29f6e8e87d3cf51569fa1.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u767d\u6b62",
+                "room_id": 382110,
+                "check_version": 0,
+                "online": 4464,
+                "area": "\u5531\u89c1\u821e\u89c1",
+                "area_id": 10,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/900\/live_22245135_6055130.flv?wsSecret=91d28fa31e129dcca254e57bf748290b&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/adf18a45bdf8112fe268b69a33b53ab4ea36df2c.jpg",
+                    "mid": 10404286,
+                    "name": "\u7ea2\u53d1\u6770\u514b\u4e36"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/a8e1430bf92fea2dc7961902956900029614ed14.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "31\u53f7\u4f11\u606f~",
+                "room_id": 34180,
+                "check_version": 0,
+                "online": 1615,
+                "area": "\u5531\u89c1\u821e\u89c1",
+                "area_id": 10,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/554\/live_10404286_9705271.flv?wsSecret=5b80e7c8bddc75f5c75474f55c7ff511&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/0befb367b8271def91082956be8e356c4bbcff10.jpg",
+                    "mid": 179628,
+                    "name": "\u5929\u97f3\u304b\u308a\u3093"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/288a259957cc41a389d9ed0fee2b4cb9cbf7c2fb.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "Nico Nico D@nce M@ster 4",
+                "room_id": 866044,
+                "check_version": 0,
+                "online": 26,
+                "area": "\u5531\u89c1\u821e\u89c1",
+                "area_id": 10,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/849\/live_179628_6440698.flv?wsSecret=99919b414dc5eceed1dd437c302d6aec&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/d5c227c760bb6a9f431f3b64e4bd9a9d6a582421.gif",
+                    "mid": 13671354,
+                    "name": "\u9ec4\u8bd7\u6674"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/bec339cea2cf91a37f7876a8d3ae350af49e6119.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u9ec4\u8bd7\u6674\u7684\u6295\u7a3f\u89c6\u9891",
+                "room_id": 96447,
+                "check_version": 0,
+                "online": 138,
+                "area": "\u5531\u89c1\u821e\u89c1",
+                "area_id": 10,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/744\/live_13671354_2893614.flv?wsSecret=ab034659c8166a94586517fbcb48b20b&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/12156a3a2f014475c8bdd12d3778570f54587563.jpg",
+                    "mid": 1740850,
+                    "name": "\u6ee1\u6c49\u5168\u5e2d\u97f3\u4e50\u56e2\u961f"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/954a1fa0fabe3d8c4662a4f0a9db36eda0a2f611.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u6bcf\u5929\u56de\u5bb6\u90fd\u770b\u5230\u6c49\u5b50\u4eec\u5728\u4e92\u64a9",
+                "room_id": 55041,
+                "check_version": 0,
+                "online": 7998,
+                "area": "\u5531\u89c1\u821e\u89c1",
+                "area_id": 10,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/458\/live_1740850_5024503.flv?wsSecret=6bba1144a7b5b30e63d979ce9e69380e&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/b2af06f2b7e19ec0bd6ba07596f090903dbc7994.jpg",
+                    "mid": 37903222,
+                    "name": "\u6b27\u5c3cBaobao"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/1f36e261ce46d4d29d8e7daa733d6d7f0540320b.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u8c01\u6709\u5b9d\u5b9d\u7684\u5934\u53d1\u957f\uff1f\u563f\u563f",
+                "room_id": 1063206,
+                "check_version": 0,
+                "online": 27,
+                "area": "\u5531\u89c1\u821e\u89c1",
+                "area_id": 10,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/973\/live_37903222_1581424.flv?wsSecret=2567597545950b16c57653e31c21297b&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/b3dc26cb27ef4bc208f96592e134514c3f00501e.jpg",
+                    "mid": 1354769,
+                    "name": "\u4e16\u754c\u7b2c\u4e00\u5996\u5b9d\u6bbf\u4e0b"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/6a6938f0e3e85f40f747d84ca8c4c7faf4a4e604.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u821e\u65f6\u5df2\u5230~",
+                "room_id": 47264,
+                "check_version": 0,
+                "online": 140,
+                "area": "\u5531\u89c1\u821e\u89c1",
+                "area_id": 10,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/220\/live_1354769_1139031.flv?wsSecret=c841cf4260853d87469401abe886d72f&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/05f96c84556314c7529d4aec29bb19844d706e50.jpg",
+                    "mid": 22677245,
+                    "name": "\u68a6\u9192\u5c9a\u7eef"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/89ad29af3f71e042d67bb009fa770ce5b16b1947.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u68a6\u9192\u5c9a\u7eef\u7684\u76f4\u64ad\u95f4",
+                "room_id": 1178753,
+                "check_version": 0,
+                "online": 20,
+                "area": "\u5531\u89c1\u821e\u89c1",
+                "area_id": 10,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/715\/live_22677245_4805857.flv?wsSecret=276d24eac967a5902a9de744b902904d&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }]
+        }, {
+            "partition": {
+                "id": 12,
+                "name": "\u624b\u6e38\u76f4\u64ad",
+                "area": "mobile-game",
+                "sub_icon": {
+                    "src": "http:\/\/static.hdslb.com\/live-static\/images\/mobile\/ios\/phone\/12_s_2x.png?2016082902",
+                    "height": "40",
+                    "width": "40"
+                },
+                "count": 302
+            },
+            "lives": [{
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/da00aac749ad6240587ea0f83197a7cba7123f25.jpg",
+                    "mid": 12522541,
+                    "name": "\u5e76\u6ca1\u6709\u4ec0\u4e48\u7279\u957f"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/75ea6f1a48df9acb800bc733c05718b1b16b52e2.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u7279\u957f\u83cc\u7684\u738b\u8005\u8363\u8000",
+                "room_id": 379239,
+                "check_version": 0,
+                "online": 7598,
+                "area": "\u624b\u6e38\u76f4\u64ad",
+                "area_id": 12,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/244\/live_12522541_1775565.flv?wsSecret=94e288600285688fa41247934dbea626&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 1,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/4d9fb4949da0c23a8f9da03c10bbcd4f8a42bb36.jpg",
+                    "mid": 13131682,
+                    "name": "ChiU\u5c3a\u9f2c"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/d132c1cf1ae76ff2ec28a0698704b4f7c0c39b31.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u5973up\u4e2d\u7684\u4e00\u80a1\u6e05\uff08nishi\uff09\u6d41",
+                "room_id": 109444,
+                "check_version": 0,
+                "online": 35,
+                "area": "\u624b\u6e38\u76f4\u64ad",
+                "area_id": 12,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/476\/live_13131682_5224784.flv?wsSecret=8ebff01e8739f1781917fa9af8e27b5d&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 1,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/01ece7a8a20b0dd9698ffa60c36a36a763e87e4c.jpg",
+                    "mid": 13397819,
+                    "name": "\u56de\u61b6shura"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/b9b52190bb18f9ca0c52a03d8ccb49d6f4cf053b.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u807d\u6b4c\u5c31\u597d\uff0c\u5589\u56a8\u75db",
+                "room_id": 1187808,
+                "check_version": 0,
+                "online": 8,
+                "area": "\u624b\u6e38\u76f4\u64ad",
+                "area_id": 12,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/648\/live_13397819_9045384.flv?wsSecret=1bafa41ec0f71870d27dcd4a3202ce1a&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/220c03d6e69b0d119284cb87434385f42938afe7.gif",
+                    "mid": 18242209,
+                    "name": "\u601d\u8fdc\u5594"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/3471cbcceffe146a2b8bc20f088c4c5eaf1b1c30.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u672c\u4eba\u7537\u58f0\u63a7\u798f\u5229\uff0c\u4e0d\u662f\u5f20\u827a\u5174\u3002",
+                "room_id": 288167,
+                "check_version": 0,
+                "online": 1094,
+                "area": "\u624b\u6e38\u76f4\u64ad",
+                "area_id": 12,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/748\/live_18242209_8059003.flv?wsSecret=c270c091a5f620f05c7fb8f980568947&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/30b16bd68390ec7efca1dd5e50d72b7a2358c5cc.jpg",
+                    "mid": 13557341,
+                    "name": "\u9ed1\u7075\u5fc3\u6001\u597d"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/99112d283f84ca2f88b4886389cf66e2d5557585.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u58f0\u63a7\u798f\u5229:\u5982\u679c\u6211\u662f\u97e9\u4fe1\u4f60\u4f1a\u7231\u6211\u54a9\uff1f",
+                "room_id": 209929,
+                "check_version": 0,
+                "online": 711,
+                "area": "\u624b\u6e38\u76f4\u64ad",
+                "area_id": 12,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/525\/live_13557341_9215495.flv?wsSecret=649201bff0c488b58b3acfae41dbe232&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/7a9c951a0cdbfd53fed2b6ad7a23b79c59dc48c5.jpg",
+                    "mid": 14314709,
+                    "name": "\u4e3f\u8fa3\u706c\u9e21\u4e28\u55b5\u55b5"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/8a96700f3a3533fcc690c443cd9b0a590090881c.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "B\u7ad9\u6700\u5f3a\u5766\u514b\u2014\u6295\u98df\u514d\u8d39\u4ee3\u7ec3",
+                "room_id": 80254,
+                "check_version": 0,
+                "online": 21,
+                "area": "\u624b\u6e38\u76f4\u64ad",
+                "area_id": 12,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/442\/live_14314709_3826439.flv?wsSecret=fd7411df2c6ae1bd0d5d8ff76a1eca63&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/ad0bd7f6422f1f438191edcc2da9c83778370398.jpg",
+                    "mid": 6500080,
+                    "name": "\u6211\u7231\u5e7c\u9f84\u5c0f\u841d\u8389\u2728"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/b1e0c7413a7e9a9e28a1671d43f6aa201047e7be.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u3010\u738b\u8005\u8363\u8000\u3011B\u7ad9\u7b2c\u4e00\u9a9a\uff0c\u6bc1\u4e86\u6e38\u620f\u8fd8\u6bc1\u4e86\u6b4c",
+                "room_id": 281620,
+                "check_version": 0,
+                "online": 18,
+                "area": "\u624b\u6e38\u76f4\u64ad",
+                "area_id": 12,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/234\/live_6500080_6030077.flv?wsSecret=5efc8d5e4d500f2f6605b398bc5dbfd9&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/7410c0c26598afabbdb942362fcb3c1a77e89f1c.jpg",
+                    "mid": 16746792,
+                    "name": "\u6211\u5c31\u662f\u8fa3\u4e2a\u59b9\u63a7"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/541d1608ec75df9547bb19cf09e038c676a58283.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u5e2e\u5fd9\u7c89\u4e1d\u4e0a\u738b\u8005\u4e00\u5929\u4e00\u4e2a",
+                "room_id": 207156,
+                "check_version": 0,
+                "online": 219,
+                "area": "\u624b\u6e38\u76f4\u64ad",
+                "area_id": 12,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/854\/live_16746792_5424653.flv?wsSecret=5717dcec19bc755009986e84e6a039b6&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/34db84da2bb1aa3a0baa67ff53f35f4edcecdbdf.jpg",
+                    "mid": 37055239,
+                    "name": "A\u811a\u75db"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/102c891212c58d2eea27c18d3bacc87e30b74182.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u738b\u8005\u8363\u8000\u626f\u6de1\u76f4\u64ad",
+                "room_id": 990947,
+                "check_version": 0,
+                "online": 13,
+                "area": "\u624b\u6e38\u76f4\u64ad",
+                "area_id": 12,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/544\/live_37055239_9195462.flv?wsSecret=b9ba948f44a582e3f2c28112125c7109&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/c6690b9f255a28d832e1f9f69389ea37c9212dfe.jpg",
+                    "mid": 15155196,
+                    "name": "\u6b63\u7ecf\u7684\u59b9\u5b50"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/64fd02bdc9d871125789b011949abd6ae878b413.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u58f0\u63a7\u798f\u5229\u55b5   \u9965\u8352",
+                "room_id": 272105,
+                "check_version": 0,
+                "online": 31,
+                "area": "\u624b\u6e38\u76f4\u64ad",
+                "area_id": 12,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/987\/live_15155196_5687966.flv?wsSecret=fb7b1e5a3df700ff6ff4ee840f4c0bde&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/d7af5f51e501ad755026f3bd0264f72395a94cbe.jpg",
+                    "mid": 27684000,
+                    "name": "\u96f7\u5b50."
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/400ba6dd983568dd50c19ce8e29138d9f472c60b.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u672c\u4eba\u5355\u8eab\u4e00\u822c\u4e0d\u5751",
+                "room_id": 1070524,
+                "check_version": 0,
+                "online": 85,
+                "area": "\u624b\u6e38\u76f4\u64ad",
+                "area_id": 12,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/802\/live_27684000_7127917.flv?wsSecret=39fc2189d36d13b55e549909fc50383b&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/fb80fda17dbc607905b78f60c2b22de1acbf5db1.jpg",
+                    "mid": 2743119,
+                    "name": "\u7d2b\u5609\u513f"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/59d41e156ec30d03677d3b3d602eb2570e2d9b3c.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u3010\u7403\u7403\u5927\u4f5c\u6218\u3011\u5403\u4e86\u4f60\u53c8\u600e\u4e48\u6837\uff01",
+                "room_id": 101609,
+                "check_version": 0,
+                "online": 2346,
+                "area": "\u624b\u6e38\u76f4\u64ad",
+                "area_id": 12,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/689\/live_2743119_4596960.flv?wsSecret=9c78ddc25a29e2847cfecaa3654c60e9&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }]
+        }, {
+            "partition": {
+                "id": 1,
+                "name": "\u5355\u673a\u8054\u673a",
+                "area": "single",
+                "sub_icon": {
+                    "src": "http:\/\/static.hdslb.com\/live-static\/images\/mobile\/ios\/phone\/1_s_2x.png?2016082902",
+                    "height": "40",
+                    "width": "40"
+                },
+                "count": 727
+            },
+            "lives": [{
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/7b55d7cb329c9e23905d6ffbf0edf6d7736fe878.jpg",
+                    "mid": 4772701,
+                    "name": "TChats\u5c0f\u8336"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/699b118281049af5c061ffd2f2907c16d3aa14de.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u8def\u75f4+\u667a\u969c\uff1f\u5200\u5251\u795e\u57df\u865a\u7a7a\u65ad\u7ae0\u4e8c\u5468\u76ee",
+                "room_id": 242975,
+                "check_version": 0,
+                "online": 43,
+                "area": "\u5355\u673a\u8054\u673a",
+                "area_id": 1,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/943\/live_4772701_2898099.flv?wsSecret=5f55aecd3e2a01daae05f63b43bd5888&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/ed1a5a01671dc6688dcd8587547df27413ae363b.jpg",
+                    "mid": 525596,
+                    "name": "\u4e00\u53ea\u732bneko"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/b0be5211f63fc929723bb6791e81a559f90e8630.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u3010\u4e00\u53ea\u732b\u3011\u9965\u8352\u8054\u673a\u4e00\u4e2a\u4eba\u73a9\uff01",
+                "room_id": 11924,
+                "check_version": 0,
+                "online": 7174,
+                "area": "\u5355\u673a\u8054\u673a",
+                "area_id": 1,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/467\/live_525596_9200834.flv?wsSecret=abc17967d99c2a84c1ce270cfadb3b9e&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/ba0802f7a3967b250f0f5404c4f2d31c528aaeed.gif",
+                    "mid": 360914,
+                    "name": "\u591c\u82e5\u8bedWisper"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/78105c30f6f9e19e3c20597e1b04777c4c05bded.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u3010Wisper\u3011\u5929\u5929\u901a\u5bb5\u597d\u7d2f\u554a\uff01",
+                "room_id": 162934,
+                "check_version": 0,
+                "online": 19,
+                "area": "\u5355\u673a\u8054\u673a",
+                "area_id": 1,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/276\/live_360914_6903196.flv?wsSecret=5ec81338a9363ce2d2af39fa3208538b&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/d4b69ed9e7e37714f200a2e954a41092c3682f52.jpg",
+                    "mid": 3065120,
+                    "name": "\u5bd2\u672b\u5bfb\u66e6"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/50247633325306f5f3b71a6930e49e2bf7f634a3.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u6050\u6016\u6e38\u620f\u4e4b\u590f \u8c22\u5e55\u65e5",
+                "room_id": 11184,
+                "check_version": 0,
+                "online": 167,
+                "area": "\u5355\u673a\u8054\u673a",
+                "area_id": 1,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/427\/live_3065120_332_c521e483.flv?wsSecret=94dfd611138a06d8e62c14d685197b94&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/bc3fa6557ad3f42766304f784db0bf064eb26f00.jpg",
+                    "mid": 582661,
+                    "name": "\u94c3\u691b"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/0e81fb0cc5c4d75c313fe7154e4aa394733cbe17.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u6740\u732a\u3010\u9ece\u660e\u6740\u673a\u3011",
+                "room_id": 39189,
+                "check_version": 0,
+                "online": 16636,
+                "area": "\u5355\u673a\u8054\u673a",
+                "area_id": 1,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/648\/live_582661_4957174.flv?wsSecret=f28dbedad6a781b9b17d07a523381840&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/aa5221f0254bf2bc03bb5ea36a18c8466a8c7d72.jpg",
+                    "mid": 13521915,
+                    "name": "\u4e00\u4e2a\u6732\u306e\u5e78\u798f"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/211c659f8b683f45ffffe8f3dbf3d7e70c164560.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u8fdb\u51fb\u7684\u5de8\u4ebaPC",
+                "room_id": 1083962,
+                "check_version": 0,
+                "online": 15,
+                "area": "\u5355\u673a\u8054\u673a",
+                "area_id": 1,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/536\/live_13521915_7826441.flv?wsSecret=060a24212878783b16c6ed2c5c1c7df9&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/b91f92ad82d478525ed6f0f919c1818186ecdf33.jpg",
+                    "mid": 7435374,
+                    "name": "\u9f99\u9b42LongHun"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/0dfeec928904a672f106dfd60bac2e73545126b4.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "b\u7ad9\u7b2c\u4e00\u6d6a\u4eba",
+                "room_id": 128435,
+                "check_version": 0,
+                "online": 64,
+                "area": "\u5355\u673a\u8054\u673a",
+                "area_id": 1,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/256\/live_7435374_4010555.flv?wsSecret=fef86760fbc21176ed5e73d4ee9d5fb6&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/6bbeb93dd72c60cb7ad2e876b241d0360d7f0d38.gif",
+                    "mid": 164627,
+                    "name": "\u6746\u83cc\u65e0\u654c"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/46f930454422e925591d6d2dc870c347b54cddf8.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u3010\u6746\u83cc\u3011B\u7ad9\u6700\u7a33\u6c42\u751f\u4ee5\u6492\u5730\u7262\u6587\u660e\u7ade\u731c",
+                "room_id": 26057,
+                "check_version": 0,
+                "online": 12954,
+                "area": "\u5355\u673a\u8054\u673a",
+                "area_id": 1,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/885\/live_164627_2722814.flv?wsSecret=56865adaf375c4a1ca4da1602ea0ef87&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/47a917d949c3355adc977908e6cd4ac72d1737d5.jpg",
+                    "mid": 14837663,
+                    "name": "\u5948\u3055\u307e"
+                },
+                "cover": {
+                    "src": "http:\/\/x-img.hdslb.net\/group1\/M00\/09\/FB\/oYYBAFZ83wiAaLTDAAEpmlJAPsQ571.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u6e38\u620f\u540d\uff1a\u9ece\u660e\u6740\u673a\u3002\u4eba\u9b3c\u53cc\u7687\u86cb\u597d\u817b\u5bb3\uff01",
+                "room_id": 39936,
+                "check_version": 0,
+                "online": 7101,
+                "area": "\u5355\u673a\u8054\u673a",
+                "area_id": 1,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/889\/live_14837663_7724658.flv?wsSecret=937f488e70fda9628f520b1063f574a8&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/9b93478d11ae9d02a8c448d37614c4dab01d30a0.jpg",
+                    "mid": 1647216,
+                    "name": "\u5851\u65996\u8001\u5175\u86cb\u9ec4\u9171"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/ce4863a21d026bd1d5814272c0236e3d86812d7f.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u5723\u5b89\u5730\u5217\u65af\u65e0\u79d8\u7c4d\u901a\u5173 \u6211\u6765\u4e86\uff0c\u62c9\u65af\u7ef4\u52a0\u65af",
+                "room_id": 284221,
+                "check_version": 0,
+                "online": 5235,
+                "area": "\u5355\u673a\u8054\u673a",
+                "area_id": 1,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/365\/live_1647216_3430604.flv?wsSecret=6a8bf3acccc264f09ee63a4f7970143d&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/63635212f84bdfff7e5a53741cc217f5b01cc69d.jpg",
+                    "mid": 18859226,
+                    "name": "\u306e\u6811\u4e0b\u82f9\u679c"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/9b520828e78c9b0fec622045df4f7761843b4b3a.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u706b\u5f71\u5fcd\u8005~\u7a76\u6781\u98ce\u66b44\u521d\u4f53\u9a8c~\u624b\u6b8b\u5411",
+                "room_id": 271671,
+                "check_version": 0,
+                "online": 251,
+                "area": "\u5355\u673a\u8054\u673a",
+                "area_id": 1,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/487\/live_18859226_4503082.flv?wsSecret=426343f865b0b32d812903faf41079a2&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/b2053a03b12f84a0f3f1f3003fe8159ae4c1efdc.jpg",
+                    "mid": 4680945,
+                    "name": "\u62c9\u683c\u56e0\u65af\u7279"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/f6b01b93ea4816d93c2b8bce0abac9a70bf95604.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "(\uffe33\uffe3) \u770b\u6765\u662f\u8be5\u5077\u61d22\u5929\u4e86",
+                "room_id": 100878,
+                "check_version": 0,
+                "online": 179,
+                "area": "\u5355\u673a\u8054\u673a",
+                "area_id": 1,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/790\/live_4680945_1800538.flv?wsSecret=664f3560f810c08204b1297a943b43f7&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }]
+        }, {
+            "partition": {
+                "id": 3,
+                "name": "\u7f51\u7edc\u6e38\u620f",
+                "area": "online",
+                "sub_icon": {
+                    "src": "http:\/\/static.hdslb.com\/live-static\/images\/mobile\/ios\/phone\/3_s_2x.png?2016082902",
+                    "height": "40",
+                    "width": "40"
+                },
+                "count": 882
+            },
+            "lives": [{
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/7652b718a13eff0bc7f4ecb347c507263f9dd926.jpg",
+                    "mid": 26424461,
+                    "name": "\u5c0f\u5929\u4e0d\u662f\u53d7QAQ"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/360a4858b85776975702917382527b8d9bd8d6c8.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u2727\u68a6\u5e7b\u897f\u6e38\u624b\u6e38\uff0c\u50b2\u5a07\u5929(\u2256 \u203f \u2256)\u2727",
+                "room_id": 92075,
+                "check_version": 0,
+                "online": 6253,
+                "area": "\u7f51\u7edc\u6e38\u620f",
+                "area_id": 3,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/467\/live_26424461_5746903.flv?wsSecret=b7f52a2ef0dec20ec26a0a251f981eaf&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/e66ce1346196cdaefaa064220017b473eb7503bc.gif",
+                    "mid": 16958038,
+                    "name": "\u5bfc\u6f14\u9017"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/5e626f3f4ccae2f8662c558349c0bca04dc0f1c3.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u3010300\u5bfc\u6f14\u9017\u3011\u8d85\u957f\u76f4\u64ad\u5949\u4e0a\uff0c\u58f0\u7ebf\u5df2\u5d29~~~",
+                "room_id": 78348,
+                "check_version": 0,
+                "online": 65,
+                "area": "\u7f51\u7edc\u6e38\u620f",
+                "area_id": 3,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/958\/live_16958038_5700522.flv?wsSecret=391982e70ad3f7249030cf2b587f99df&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/e7976cd2edcad94d24dbf6323a262913f9949a42.jpg",
+                    "mid": 4946076,
+                    "name": "\u72d7\u5c9b\u541b"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/ff3e2229469146d2c0804319fc2c015300fc1bb1.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u52513 \u5417\u5356\u6279",
+                "room_id": 270367,
+                "check_version": 0,
+                "online": 3794,
+                "area": "\u7f51\u7edc\u6e38\u620f",
+                "area_id": 3,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/874\/live_4946076_9074278.flv?wsSecret=2085f3c9405d772bd04b072dbadddee0&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/b2ba10fbecf32d2dc99a4eb48a501c784eaeb5b8.jpg",
+                    "mid": 392124,
+                    "name": "\u566b\u6c61"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/1d11a13dd484cc9cf1c37218dcf1bf702c95f949.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u65e0\u804a\u4f11\u95f2\u4e0bw(\uff9f\u0414\uff9f)w",
+                "room_id": 16764,
+                "check_version": 0,
+                "online": 799,
+                "area": "\u7f51\u7edc\u6e38\u620f",
+                "area_id": 3,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/299\/live_392124_6414330.flv?wsSecret=7ca2927360205ecba4fc93045b7ff59a&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/d816542e889aa59f5382d2acd95a2ba6c8904af2.jpg",
+                    "mid": 899025,
+                    "name": "\u7edd\u5bf9\u9b54\u738b\u82cf\u970d\u55b5"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/ef1ebb3c23ef41581510c4e471e930017e5d6a6a.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u539f\u7b2c\u4e00\u798f\u7199\u7684\u5212\u6c34\u65e5\u5e38",
+                "room_id": 1099709,
+                "check_version": 0,
+                "online": 12,
+                "area": "\u7f51\u7edc\u6e38\u620f",
+                "area_id": 3,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/319\/live_899025_3948021.flv?wsSecret=eed27d64176602e401890768308155ba&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/7fd61a3c6efbc9141110bcaf63b8baecdd2e9ecd.gif",
+                    "mid": 11667405,
+                    "name": "\u54d4\u54e9\u8001\u653b"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/ef6719d194d37efea4379f799d7e0f5b533172f5.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u6c89\u8ff7\u7537\u8272\u65e0\u6cd5\u81ea\u62d4",
+                "room_id": 31441,
+                "check_version": 0,
+                "online": 804,
+                "area": "\u7f51\u7edc\u6e38\u620f",
+                "area_id": 3,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/562\/live_11667405_332_c521e483.flv?wsSecret=89782678930dc17f8086b6326b6f2091&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/cbf46b6694ac2a3a657643cb5c0d28e8215a0b38.jpg",
+                    "mid": 28624045,
+                    "name": "\u963f\u5e93\u5a05\u516b\u4e91\u7d2b"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/eeb381dc731943658f0d1365fdb5170d7d14f39d.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u6c89\u8ff7\u7d2b\u5abd\u65e0\u6cd5\u81ea\u62d4\uff01_(:\u0437\u300d\u2220)_",
+                "room_id": 109216,
+                "check_version": 0,
+                "online": 7532,
+                "area": "\u7f51\u7edc\u6e38\u620f",
+                "area_id": 3,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/251\/live_28624045_9166802.flv?wsSecret=4c351860f038195e00cc3c0175ce0801&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/2ea09f0559980a41a442513fcbbcac1a8cd92d60.jpg",
+                    "mid": 671811,
+                    "name": "Livy\u79bb\u5f8b"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/e7c13cb58f3c0cc872b046e3c887c042b9f9989f.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "[\u5b88\u671b]\u4e00\u4e2a\u5fa1\u59d0\u97f3\u548c\u5979\u7ec8\u4e8e\u6709\u4e86\u7684\u52cb\u7ae0",
+                "room_id": 60788,
+                "check_version": 0,
+                "online": 27,
+                "area": "\u7f51\u7edc\u6e38\u620f",
+                "area_id": 3,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/515\/live_671811_5563472.flv?wsSecret=5c5d9a853f75504e3fa63535eaee5096&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/bb920c18fe1d9527fcf45330076d7b8b13bfdac3.jpg",
+                    "mid": 15597980,
+                    "name": "\u996d\u95f2"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/d975ea0c540c4f84a77a53c6a600d8d9556377ed.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u9690\u8eab\u6302\u5df2\u7eed\u8d39",
+                "room_id": 41066,
+                "check_version": 0,
+                "online": 16,
+                "area": "\u7f51\u7edc\u6e38\u620f",
+                "area_id": 3,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/224\/live_15597980_3423339.flv?wsSecret=91f2c14d493584b48242cc53b17a290b&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/2a23f2a852861bdafbaeb02dce9a1534997a268c.jpg",
+                    "mid": 5588959,
+                    "name": "\u4f51\u5b50\u5927\u7b28\u86cb"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/46182f34c5cdc5cf061fe3274c865727c53ffb28.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u4eba\u751f\u5c31\u662f\u4e0d\u65ad\u5730\u64a9\u59b9",
+                "room_id": 81621,
+                "check_version": 0,
+                "online": 1366,
+                "area": "\u7f51\u7edc\u6e38\u620f",
+                "area_id": 3,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/362\/live_5588959_7874290.flv?wsSecret=6795982cb1571aceaff8fdd56d9ad0a6&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/d770672bdca4b65e51fb5e6032816e0d7fd455fa.jpg",
+                    "mid": 13493542,
+                    "name": "\u6cfd\u4e5fsa"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/18b2b940f7792482af431017de042366a3998280.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u5c0f\u53d7\u7684\u706b\u5f71\u4e4b\u8def",
+                "room_id": 542368,
+                "check_version": 0,
+                "online": 10,
+                "area": "\u7f51\u7edc\u6e38\u620f",
+                "area_id": 3,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/326\/live_13493542_2168133.flv?wsSecret=f1ebf5cd041294ebe4f5c80373765741&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/603d7b9da109d68da26f10803302b8539e6caf0d.jpg",
+                    "mid": 17287714,
+                    "name": "\u4e16\u754c\u9057\u5f03\u306e\u9eef"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/25e7e5eb92fab3593f0b50323956d42f131409e2.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u6ca1\u6709RPG\u6211\u8981\u6b7b\u4e86",
+                "room_id": 74805,
+                "check_version": 0,
+                "online": 390,
+                "area": "\u7f51\u7edc\u6e38\u620f",
+                "area_id": 3,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/914\/live_17287714_8734744.flv?wsSecret=af8809a1a402a0e3fff1d93c8e050c51&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }]
+        }, {
+            "partition": {
+                "id": 4,
+                "name": "\u7535\u5b50\u7ade\u6280",
+                "area": "e-sports",
+                "sub_icon": {
+                    "src": "http:\/\/static.hdslb.com\/live-static\/images\/mobile\/ios\/phone\/4_s_2x.png?2016082902",
+                    "height": "40",
+                    "width": "40"
+                },
+                "count": 575
+            },
+            "lives": [{
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/5057877d829c44c0f63d9e416b3d3eedb79d9d9d.gif",
+                    "mid": 9397500,
+                    "name": "\u5fc3\u6696\u897f\u74dc\u541b"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/group1\/M00\/5B\/CA\/oYYBAFbUcV6AGzDRAACZOjUnJWg140.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u5fc3\u6696\uff1a\u9001\u56e2\u6247\u548c\u5228\u51b0\u62bd5500\u5143\u4ee5\u5185\u4efb\u610f\u4e70",
+                "room_id": 27532,
+                "check_version": 0,
+                "online": 14627,
+                "area": "\u7535\u5b50\u7ade\u6280",
+                "area_id": 4,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/560\/live_9397500_4743304.flv?wsSecret=7893fa1b601fa1170d3a7df5494aee3a&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/5307ab28488f80e03d426d52d8f15d5013b0ea2f.jpg",
+                    "mid": 7960270,
+                    "name": "\u60b2\u54c0\u7684\u7070\u5c18"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/e60be9f8b03e819551f580d9c1a78a33eee8a7b7.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "B\u7ad9\u7b2c\u4e00\u7434\u5973\uff0c\u6211\u7684\u7434\u5f26\uff0c\u52a8\u4eba\u5fc3\u5f26~\uff01",
+                "room_id": 109558,
+                "check_version": 0,
+                "online": 3547,
+                "area": "\u7535\u5b50\u7ade\u6280",
+                "area_id": 4,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/698\/live_7960270_4382110.flv?wsSecret=27f0f6f03abd49c097d5b718fc8b0da1&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/4e8cad07713ce0ded34dba3f4c56da680f6ba979.jpg",
+                    "mid": 1864366,
+                    "name": "\u9ed1\u54f2\u541b\u4e36"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/7b253562cbf8b88cb1b306e2127fbb48e16fc189.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "(\u2256 \u203f \u2256)\u2727\u4f60\u611f\u53d7\u8fc7\u7edd\u671b\u5417",
+                "room_id": 83264,
+                "check_version": 0,
+                "online": 7552,
+                "area": "\u7535\u5b50\u7ade\u6280",
+                "area_id": 4,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/662\/live_1864366_1171676.flv?wsSecret=28d09fa30497fe6573f7bfd6ecb38206&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/525d1b63786fe992866020d7d56bf3fe633105c5.jpg",
+                    "mid": 10862452,
+                    "name": "\u76ca\u8fbe\u4e36\u98ce\u884c\u8005"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/169f9c2f86a0c383c3c7010ea6d316c904948738.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "6\u70b9\u51c6\u65f6\u9001\u51fa238\u7ad9\u7f51\u70b9",
+                "room_id": 595843,
+                "check_version": 0,
+                "online": 19,
+                "area": "\u7535\u5b50\u7ade\u6280",
+                "area_id": 4,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/861\/live_10862452_3229103.flv?wsSecret=bfc900390400d81c8a0a01e3a8fa2d53&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/5a83cc6de0c936b2cb6bd3a97f46378e15f5a2d3.jpg",
+                    "mid": 103014,
+                    "name": "\u5728\u5267\u6bd2\u4e2d\u5fc3\u547c\u5524\u7231"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/e85074241579a32d65b6d03949fd1ea598002d6f.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u5e97\u957f\u70bc\u91d1 3\u4e07\u628a \u6267\u7740\u7684\u4e50\u8da3",
+                "room_id": 37034,
+                "check_version": 0,
+                "online": 6211,
+                "area": "\u7535\u5b50\u7ade\u6280",
+                "area_id": 4,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/505\/live_103014_6932719.flv?wsSecret=0f239b8d94e44357959c9ce4d4dcd621&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/628709ad06f4f190eabfc6c676c1021ca4ab5566.jpg",
+                    "mid": 11443730,
+                    "name": "\u4f60\u7684\u77e5\u5fc3\u54e5\u54e5\u72fc\u72d7"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/25f2b75f39b6d2701174a54002e16972686194cb.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u6ce1\u9762+\u5047\u9152=\u4e3a\u6240\u6b32\u4e3a\uff01",
+                "room_id": 29381,
+                "check_version": 0,
+                "online": 1058,
+                "area": "\u7535\u5b50\u7ade\u6280",
+                "area_id": 4,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/124\/live_11443730_4000245.flv?wsSecret=44a36a19a9cf463cc1c5608204a56c33&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/084e94f17294bdd47fff5cc9a98483d3b088363a.jpg",
+                    "mid": 32712858,
+                    "name": "Piglet377"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/bb130c8dbb28f00cca766504238238b4c7186510.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u6ee1\u8111\u5b50\u90fd\u662f\u4f7f\u547d\u53ec\u5524\u9a9a\u64cd\u4f5c\u7684\u8272\u60c5\u4e3b\u64ad",
+                "room_id": 283636,
+                "check_version": 0,
+                "online": 12,
+                "area": "\u7535\u5b50\u7ade\u6280",
+                "area_id": 4,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/866\/live_32712858_2197397.flv?wsSecret=c5f6648c51ae0d756149e76645af289d&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 1,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/15eda2266f1a0d2549b8d86b46376fd6658922a8.jpg",
+                    "mid": 17113563,
+                    "name": "\u5b64\u5c9b\u9c7c\u5b50\u9171"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/66be8cb7fb32937f1871bf0b05a65dc1ad51a704.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u83dc\u7684\u62a0\u811a\uff01",
+                "room_id": 140146,
+                "check_version": 0,
+                "online": 10,
+                "area": "\u7535\u5b50\u7ade\u6280",
+                "area_id": 4,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/491\/live_17113563_8829269.flv?wsSecret=d289ee5c098d8dab8d66fd2eafaf5861&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/36f6c927bd7e128e55d85b0a94732b3dfb3d7b96.jpg",
+                    "mid": 25729518,
+                    "name": "\u9752\u8863\u8f7d\u6211"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/f6a2d3566de2a3ea638a14bc965a9dd6bf12b046.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u611f\u8c22\u52a9\u653b\u7684\u5c0f\u4f19\u4f34\u4eec \u90a3\u4e48\u95ee\u9898\u6765\u4e86 \u52cb\u7ae0\u53eb\uff1f",
+                "room_id": 317440,
+                "check_version": 0,
+                "online": 20,
+                "area": "\u7535\u5b50\u7ade\u6280",
+                "area_id": 4,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/959\/live_25729518_9456925.flv?wsSecret=365265e75fc74cc44c7c857c8144eba3&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/a8f3e3b60520ca823163137465ddeda6e23c5377.jpg",
+                    "mid": 34795225,
+                    "name": "\u51c9\u900f\u8584\u8377\u5fc3"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/458937ec05b4a3fb3cfc94999814a68a8eda41d7.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u51c9\u900f\u8584\u8377\u5fc3\u7684\u76f4\u64ad\u95f4",
+                "room_id": 1178957,
+                "check_version": 0,
+                "online": 6,
+                "area": "\u7535\u5b50\u7ade\u6280",
+                "area_id": 4,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/556\/live_34795225_5962833.flv?wsSecret=988e0386df73eb355993fcc576aff2b2&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/9bf910ceae9ea100d1388cf953b3a4945637fa13.jpg",
+                    "mid": 894789,
+                    "name": "\u3010TDA\u541b\u3011"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/e474e4d2e95f353645a1154ab62c83e5be03837a.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u5c0f\u5b66\u751f\u771f\u662f\u592a\u68d2\u4e86",
+                "room_id": 34756,
+                "check_version": 0,
+                "online": 24,
+                "area": "\u7535\u5b50\u7ade\u6280",
+                "area_id": 4,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/642\/live_894789_332_c521e483.flv?wsSecret=8c37d2a9146031526856d00401350df5&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/ffddb83bb1f0e3d8955c6f8f3286a2052fd0e58a.jpg",
+                    "mid": 4055582,
+                    "name": "\u59b9\u5154\u51e0"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/3eb97b5af55bc997ef15395694c320d09c5218b5.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u73a9\u4e00\u4f1a\u513f030",
+                "room_id": 80045,
+                "check_version": 0,
+                "online": 1975,
+                "area": "\u7535\u5b50\u7ade\u6280",
+                "area_id": 4,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/997\/live_4055582_7776230.flv?wsSecret=1431b92d8695a2240a1b254a1183fd5e&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }]
+        }, {
+            "partition": {
+                "id": 2,
+                "name": "\u5fa1\u5b85\u6587\u5316",
+                "area": "otaku",
+                "sub_icon": {
+                    "src": "http:\/\/static.hdslb.com\/live-static\/images\/mobile\/ios\/phone\/2_s_2x.png?2016082902",
+                    "height": "40",
+                    "width": "40"
+                },
+                "count": 91
+            },
+            "lives": [{
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/ed7613a54906cf1ce7607ff5d211c766c9c54d3b.jpg",
+                    "mid": 2266437,
+                    "name": "\u5927-\u592b"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/cc5d5e5afe9932da1827216743bbcd290d1b83c3.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u5927-\u592b\u7684\u76f4\u64ad\u95f4",
+                "room_id": 27209,
+                "check_version": 0,
+                "online": 15,
+                "area": "\u5fa1\u5b85\u6587\u5316",
+                "area_id": 2,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/419\/live_2266437_332_c521e483.flv?wsSecret=35f1a14b5272bc608b61c872e1e5e59c&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/c49959c1948f1a62a19f053c30148f0bbcd928e0.jpg",
+                    "mid": 19549626,
+                    "name": "\u9017\u6bd4\u5a01\u5c14\u83cc"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/44dcbdd719d9192b472bd886d33af0dc6d72f778.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u771f\u00b7\u58f0\u63a7\uff1a\u4f9d\u65e7\u5de5\u53e3\u7684\u76f4\u64ad\u95f4",
+                "room_id": 333048,
+                "check_version": 0,
+                "online": 2359,
+                "area": "\u5fa1\u5b85\u6587\u5316",
+                "area_id": 2,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/947\/live_19549626_1186179.flv?wsSecret=7d5762d20f2889083e923db565623d48&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/ed314f0ab6d9116e9e00de294cbdc2ac18fdb8a1.jpg",
+                    "mid": 22207826,
+                    "name": "\u53ef\u53efsama"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/fb816178bc06771dbe4a8af72db30a7914143171.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u7f51\u763e\u5c11\u5973  (\u3065\uffe3 3\uffe3)\u3065 LOL \u9ed1\u8272\u73ab\u7470",
+                "room_id": 94730,
+                "check_version": 0,
+                "online": 1355,
+                "area": "\u5fa1\u5b85\u6587\u5316",
+                "area_id": 2,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/450\/live_22207826_3066385.flv?wsSecret=c48e80d96e8669c35383cb4c412d9ba2&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/df5c4c6f5510dd3ee36ee47aeb1b2120834af1a0.jpg",
+                    "mid": 9153331,
+                    "name": "\u5c0f\u91ce\u59b9\u5b50w"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/a1861b1dbcb63c75818fa5c796576cc9464e9145.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u5c0f\u91ce\u9171\u65e5\u5e38\u7d20\u989c",
+                "room_id": 521429,
+                "check_version": 0,
+                "online": 126,
+                "area": "\u5fa1\u5b85\u6587\u5316",
+                "area_id": 2,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/632\/live_9153331_5560651.flv?wsSecret=817da57c872258915b4d40b2bbd92a8b&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/2ca647d4fda8bd8a2b8dcad397928c0dde60ebf4.jpg",
+                    "mid": 18254874,
+                    "name": "\u8f66\u795eALFAS"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/13899abf7d6617672141dc0c6fa70d57339de7c1.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u98d9\u8f66\u65f6\u95f4 \u5feb\u4e0a\u8f66",
+                "room_id": 1125742,
+                "check_version": 0,
+                "online": 12,
+                "area": "\u5fa1\u5b85\u6587\u5316",
+                "area_id": 2,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/895\/live_18254874_4035250.flv?wsSecret=734d1460902f521c4ed7d49b7f75d914&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/bdb1c4b64a56888e3fcfca57d630354bc2514c64.jpg",
+                    "mid": 6747117,
+                    "name": "\u72ec\u773c\u5c11\u5973_\u5c0f\u9b3c"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/b8733fd285b45cd2b65aad2a385905a4dfe4e61d.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u5173\u6ce8\u4e00\u4e07\u9001\u5c41\u80a1",
+                "room_id": 83218,
+                "check_version": 0,
+                "online": 2600,
+                "area": "\u5fa1\u5b85\u6587\u5316",
+                "area_id": 2,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/382\/live_6747117_9462594.flv?wsSecret=a312f77e755dfcf719ebb89c3164cebe&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/fa4b71c9ccbc6fa630a29a1d14c907ceac4c5bd3.jpg",
+                    "mid": 1473646,
+                    "name": "\u4e50\u5144"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/e0774863e0ab3334a7ad7cd817dfee8e7486427e.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u58f0\u63a7\u798f\u5229\uff1a\u8272\u60c5\u4e3b\u64ad\u7684\u65e5\u5e38",
+                "room_id": 127197,
+                "check_version": 0,
+                "online": 1789,
+                "area": "\u5fa1\u5b85\u6587\u5316",
+                "area_id": 2,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/125\/live_1473646_6039419.flv?wsSecret=28d145ca7a52fd6606fa83286ad39fd1&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/99ff1c0cd2da3ef79220ac91cd44c5454b27bca5.jpg",
+                    "mid": 27549118,
+                    "name": "\u5f26\u8a00\u543esama"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/bd0891c30e12033f4c5160733cda113f35c4961f.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u5de5\u4f5c\uff0c\u653e\u6b4c\u53ef\u70b9\u6b4c",
+                "room_id": 282674,
+                "check_version": 0,
+                "online": 19,
+                "area": "\u5fa1\u5b85\u6587\u5316",
+                "area_id": 2,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/362\/live_27549118_3790181.flv?wsSecret=8e8027e9a3ee6fbd08676d60964bf4a6&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/a248bce885916370919d35da4f7282a1343e82b5.jpg",
+                    "mid": 23905,
+                    "name": "\u79e6\u96e8\u75302\u7684\u76f4\u64ad\u95f4"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/1f56f66aa958f16ae6b7a3879f6a49b34c431a40.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u76f4\u64ad\u9020\u4eba",
+                "room_id": 14422,
+                "check_version": 0,
+                "online": 209,
+                "area": "\u5fa1\u5b85\u6587\u5316",
+                "area_id": 2,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/340\/live_23905_8950938.flv?wsSecret=9f3f8c7d4355b4e3affc3b61dfc7f3a3&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/f7baee6aceccb1b42ea89ec25da7c2a07c9e56ff.jpg",
+                    "mid": 635258,
+                    "name": "\u7ed9\u7cd6\u679c\u7684\u602a\u8700\u9ecd"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/ff601bfadde7e597991262da5e559923cb4342b3.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u81ea\u5e26\u70b9\u6b4c\u7684\u7cd6\u679c\u966a\u7761\u6c61\u3010\u5c4b\u3011",
+                "room_id": 1015352,
+                "check_version": 0,
+                "online": 19,
+                "area": "\u5fa1\u5b85\u6587\u5316",
+                "area_id": 2,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/888\/live_635258_9517745.flv?wsSecret=34d4e743a63f4bbf2ad8a2dd43859eab&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/c9afc3018127c2927b83aa25ea8b126c02c82053.jpg",
+                    "mid": 4855308,
+                    "name": "\u733f\u91ce\u53d4"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/a3dc3bfbbe86bd9734fcfbe69f43a8842b259763.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u733f\u91ce\u738b\u8005\u8def",
+                "room_id": 45715,
+                "check_version": 0,
+                "online": 27,
+                "area": "\u5fa1\u5b85\u6587\u5316",
+                "area_id": 2,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/550\/live_4855308_8378521.flv?wsSecret=4504b9e5b306c12545859af730c3bd0a&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/e522759b719962cb1b55fd661b5705b5781607cd.jpg",
+                    "mid": 11692350,
+                    "name": "\u7c73\u7c73\u9171\u7684\u7c98\u571f\u4e16\u754c"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/23a56e6558cc089d034d772a362d6e9fa43e0e2c.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u65e5\u5e38\u634f\u571f",
+                "room_id": 66287,
+                "check_version": 0,
+                "online": 524,
+                "area": "\u5fa1\u5b85\u6587\u5316",
+                "area_id": 2,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/549\/live_11692350_8783283.flv?wsSecret=306b28fc1c67362cd0a23e353b9fc11e&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }]
+        }, {
+            "partition": {
+                "id": 7,
+                "name": "\u653e\u6620\u5385",
+                "area": "movie",
+                "sub_icon": {
+                    "src": "http:\/\/static.hdslb.com\/live-static\/images\/mobile\/ios\/phone\/7_s_2x.png?2016082902",
+                    "height": "40",
+                    "width": "40"
+                },
+                "count": 553
+            },
+            "lives": [{
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/43ffa8e948581926f92776626e77b595f04e6434.gif",
+                    "mid": 5750906,
+                    "name": "\u6587\u4e11\uff0c\u4f46\u989c\u826f"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/6ce8fea7900c4969ec99d9a3294e83a7bafdba6d.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u300e\u7535\u5f71\u300f\u8840\u8165-\u52a8\u4f5c-\u8650\u5fc3-\u60ac\u7591-\u559c\u5267",
+                "room_id": 67921,
+                "check_version": 0,
+                "online": 3309,
+                "area": "\u653e\u6620\u5385",
+                "area_id": 7,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/451\/live_5750906_6060334.flv?wsSecret=3cbd70c18c21951596e827be2b9d8da3&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/22d24fa88c50383253f20db568a41c3357336f93.jpg",
+                    "mid": 20205793,
+                    "name": "\u5c10\u723a"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/ce36e5bb5b33d8bece37617ff784f5fae952431a.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u3010RunningMan\u3011\u8d85\u6b22\u4e50\u7efc\u827a\u9ad8\u6e05\u6700\u65b0\u5faa\u73af",
+                "room_id": 57323,
+                "check_version": 0,
+                "online": 4749,
+                "area": "\u653e\u6620\u5385",
+                "area_id": 7,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/690\/live_20205793_5462496.flv?wsSecret=3b5433e2e4c948b73b9ed2c656decfcb&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/a572fc094b5d9ac8a89e075bb40feab83a390897.jpg",
+                    "mid": 16233564,
+                    "name": "WbxACG\u97f3\u4e50\u7535\u53f0"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/4d11c9a76d146c3c780650555fdd1a95aba7b624.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u3010wbx\u301124\u5c0f\u65f6ACG\u97f3\u4e50\u53f0",
+                "room_id": 528980,
+                "check_version": 0,
+                "online": 3071,
+                "area": "\u653e\u6620\u5385",
+                "area_id": 7,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/953\/live_16233564_4156579.flv?wsSecret=2e2abfff2951500bf7490bac8f403a5d&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/050e10080ff7de6e84ac36d5da501bde73077245.jpg",
+                    "mid": 7835831,
+                    "name": "\u5229\u5251\u7279\u79cd\u5c0f\u7ec4"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/63d2f9b9634247e85a9a0887ae3b86824af0215b.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u7231\u60c5\u516c\u5bd3\uff0c1080p\u84dd\u5149\u4e0d\u5361\uff0cD.VA \u7231\u4f60\u54df",
+                "room_id": 1026552,
+                "check_version": 0,
+                "online": 1577,
+                "area": "\u653e\u6620\u5385",
+                "area_id": 7,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/564\/live_7835831_7940127.flv?wsSecret=523d937a8965816439c29af6d20a5684&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/d165f44e1ba270c19bee7252cad15e69cc180a73.jpg",
+                    "mid": 21307630,
+                    "name": "\u72c2\u780d\u4f5c\u4e1a\u7684\u5c0f\u718a\u59b9"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/1ea7bb63a4e7ff702ab10d69460dc842ed74ce02.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u3010\u7231\u60c5\u516c\u5bd31\u30013\u5faa\u73af\u3011\u7cbe\u526a\u00b7\u65e0\u7f1d\u00b7\u65e0\u9ed1\u8fb9",
+                "room_id": 61040,
+                "check_version": 0,
+                "online": 16071,
+                "area": "\u653e\u6620\u5385",
+                "area_id": 7,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/942\/live_21307630_2813977.flv?wsSecret=9e314041c1ebb8ef01eb5d866d8775d7&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/3e252238d8c90cea5026e3cb00b41291b2c0aa87.jpg",
+                    "mid": 1769760,
+                    "name": "\u4eba\u751f\u65e0\u7f6a"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/423ab0538684d6b5e72ec487aac3d7b81069b99e.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "[\u8d1d\u7237]\u8352\u91ce\u6c42\u751f1-7\u5b63 \u5faa\u73af\u64ad\u653e \u6b63\u5f0f\u5f00\u64ad",
+                "room_id": 14952,
+                "check_version": 0,
+                "online": 3341,
+                "area": "\u653e\u6620\u5385",
+                "area_id": 7,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/280\/live_1769760_1642091.flv?wsSecret=4b81932a33efd58bbd56c703a5f2c5fd&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/23f36223fa6d975d114269ea2094aa79c2cc046a.jpg",
+                    "mid": 2949989,
+                    "name": "\u7535\u55b5\u5927\u6218\u76ae\u5361\u4e18"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/c01c98664bfbff4314a43b6b782942364a929c88.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u6bcf\u4e2a\u7231\u6296\u817f\u7684\u4eba,\u5fc3\u91cc\u90fd\u6709\u4e00\u53f0\u7f1d\u7eab\u673a",
+                "room_id": 397138,
+                "check_version": 0,
+                "online": 4284,
+                "area": "\u653e\u6620\u5385",
+                "area_id": 7,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/479\/live_2949989_6518806.flv?wsSecret=8ac98fadd6a977aef4a10c874b125c5b&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/c694d75eea2df45ba937dd12baed62dac2c24c07.jpg",
+                    "mid": 9622797,
+                    "name": "\u543e\u738b_\u5f20\u8d77\u7075"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/a22d97970296ded3055c7e24b2aac8796dbb3a8a.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u3010\u76f4\u6811\u00d7\u6e58\u7434\u3011\u6076\u4f5c\u5267\u4e4b\u543b\u5faa\u73af",
+                "room_id": 30172,
+                "check_version": 0,
+                "online": 497,
+                "area": "\u653e\u6620\u5385",
+                "area_id": 7,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/503\/live_9622797_6034190.flv?wsSecret=d6660d1fe2a8ef902f2f0146d7c180d3&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/1d06af1a829283692c42d7a7d4cb0b4dad9a5a6c.gif",
+                    "mid": 10861498,
+                    "name": "lele1894"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/c07c1c6aed7f5a1055fe8533b6674932a88d0724.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u6700\u5168\u76f8\u58f0\u96c6\u5408",
+                "room_id": 32269,
+                "check_version": 0,
+                "online": 8124,
+                "area": "\u653e\u6620\u5385",
+                "area_id": 7,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/867\/live_10861498_5076905.flv?wsSecret=bac923fed1517358166f63ebf06d9b5e&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/f722d85a9aa13cc7d043a0a7a29a28bd0c47f4bf.jpg",
+                    "mid": 23969297,
+                    "name": "\u7ef4\u5c3c\u718a\u7684\u7eff\u5e3d\u5b50"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/e03d8d1cc91f73d7714691b9a1e0079a9d82e5c1.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u679c\u5b50\u7684\u540e\u5bab\u7fa4 \u7ef4\u5c3c\u7684\u5927\u8349\u539f",
+                "room_id": 96811,
+                "check_version": 0,
+                "online": 7353,
+                "area": "\u653e\u6620\u5385",
+                "area_id": 7,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/141\/live_23969297_4802245.flv?wsSecret=8f218f511e67e678147296a8624ef6e8&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/7e33283fe9e60e1a55620b7ef33e84f085a54892.gif",
+                    "mid": 7980873,
+                    "name": "Dj\u575a\u4ed4"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/e3ace0227dcb2339832778953688f4e09f213678.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u300e\u7231\u60c5\u516c\u5bd3\u300f\u7cfb\u5217",
+                "room_id": 39278,
+                "check_version": 0,
+                "online": 1458,
+                "area": "\u653e\u6620\u5385",
+                "area_id": 7,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/364\/live_7980873_4148921.flv?wsSecret=fead59a8ecedaa8cb42cd72ea0c7abb7&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/b562d79931a74680b40055e13e1a3b98512b32f0.gif",
+                    "mid": 73726,
+                    "name": "\u5de8\u4e73\u7684\u8377\u5305\u86cb"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/8b45353ff357a8da67f89c5f9548111fec8e0d86.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u7231\u60c5\u516c\u5bd31,3--\u65e0\u5220\u51cf.\u53bb\u6b4c\u66f2.\u66f4\u6c61",
+                "room_id": 192153,
+                "check_version": 0,
+                "online": 13307,
+                "area": "\u653e\u6620\u5385",
+                "area_id": 7,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/373\/live_73726_1443918.flv?wsSecret=ad52041a875b4a221c2a60f9fc432a5a&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }]
+        }],
+        "recommend_data": {
+            "lives": [{
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/d0dad8800774a4903547b1326d1fd927df47b4e9.jpg",
+                    "mid": 168598,
+                    "name": "\u900d\u9065\u6563\u4eba"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/6678ce13c9ef17d9f60dc0a89d1935af6d91d192.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u65e5\u5e38\u778e\u73a9",
+                "room_id": 1017,
+                "check_version": 0,
+                "online": 5770,
+                "area": "\u751f\u6d3b\u5a31\u4e50",
+                "area_id": 6,
+                "playurl": "http:\/\/dl.live-play.acgvideo.com\/live-dl\/321370\/live_168598_8439223.flv?wsSecret=444a49c627c5e3e479d61ca1270ab450&wsTime=1472548940",
+                "accept_quality": "2,4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/5057877d829c44c0f63d9e416b3d3eedb79d9d9d.gif",
+                    "mid": 9397500,
+                    "name": "\u5fc3\u6696\u897f\u74dc\u541b"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/group1\/M00\/5B\/CA\/oYYBAFbUcV6AGzDRAACZOjUnJWg140.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u5fc3\u6696\uff1a\u9001\u56e2\u6247\u548c\u5228\u51b0\u62bd5500\u5143\u4ee5\u5185\u4efb\u610f\u4e70",
+                "room_id": 27532,
+                "check_version": 0,
+                "online": 14627,
+                "area": "\u7535\u5b50\u7ade\u6280",
+                "area_id": 4,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/861\/live_9397500_4743304.flv?wsSecret=af11635daa1b74f50d70060c6d076736&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/bbcfcc80033faa8a13538b56048522c564e4ec4d.gif",
+                    "mid": 4363605,
+                    "name": "Geimu\u82b8\u82b8"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/6fe9b405a515e4a7ff6f9318b5b192636caac5e7.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u5c31\u5f53\u6211\u662f\u4e1c\u6761\u5e0c~\u5531\u6b4c\u70b9\u6b4c\u4f9d\u65e7",
+                "room_id": 291671,
+                "check_version": 0,
+                "online": 245,
+                "area": "\u5531\u89c1\u821e\u89c1",
+                "area_id": 10,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/904\/live_4363605_5547047.flv?wsSecret=25143aa604b1c71d2d00c4e13cb592ed&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/1eb98e362e4991cb4866683afa7ca22416d9fcfa.jpg",
+                    "mid": 25713376,
+                    "name": "\u5c0f\u7cbd\u7cbd\u5b50."
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/2cf121f2dd2b6f27ad0bd570d075eaf2c4b7c058.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u6211\u6ca1\u6709\u7fd8\u54df",
+                "room_id": 365292,
+                "check_version": 0,
+                "online": 93,
+                "area": "\u624b\u673a\u76f4\u64ad",
+                "area_id": 11,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/296\/live_25713376_9457290.flv?wsSecret=b865091a47954cc492220c2e3a33ba76&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 1,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/d1b24eed128eccfba469ff30bbc7b53baaea256c.jpg",
+                    "mid": 9670593,
+                    "name": "\u4e0d\u5403\u85af\u6761"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/c7e5797de242dc44d792ae2f51c3e04f63861b29.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u3010B\u7ad9\u7b2c\u4e00\u624b\u63a7\u3011\u5b66\u957f\u5e26\u4f60\u901b\u6821\u56ed",
+                "room_id": 972579,
+                "check_version": 0,
+                "online": 271,
+                "area": "\u624b\u673a\u76f4\u64ad",
+                "area_id": 11,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/439\/live_9670593_7110028.flv?wsSecret=44a55e6a6485c589e74e6b7ea0a55b7e&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/ec465c17e95ed5b7770f779a0a6c35cdc849585f.jpg",
+                    "mid": 18371369,
+                    "name": "\u53ee\u5f53\u7231\u66f2\u5947"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/029d5234bb2b4c745969360528a6e3a9d99e8f38.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u521d\u6b21\u5c1d\u8bd5\u505a\u6708\u997c\uff0c\u840c\u65b0\u6c42\u5173\u6ce8",
+                "room_id": 174331,
+                "check_version": 0,
+                "online": 290,
+                "area": "\u624b\u673a\u76f4\u64ad",
+                "area_id": 11,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/213\/live_18371369_6015690.flv?wsSecret=0a00f124db9961efc88a87b9fe5545e6&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/da00aac749ad6240587ea0f83197a7cba7123f25.jpg",
+                    "mid": 12522541,
+                    "name": "\u5e76\u6ca1\u6709\u4ec0\u4e48\u7279\u957f"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/75ea6f1a48df9acb800bc733c05718b1b16b52e2.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u7279\u957f\u83cc\u7684\u738b\u8005\u8363\u8000",
+                "room_id": 379239,
+                "check_version": 0,
+                "online": 7598,
+                "area": "\u624b\u6e38\u76f4\u64ad",
+                "area_id": 12,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/244\/live_12522541_1775565.flv?wsSecret=94e288600285688fa41247934dbea626&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 1,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/4d9fb4949da0c23a8f9da03c10bbcd4f8a42bb36.jpg",
+                    "mid": 13131682,
+                    "name": "ChiU\u5c3a\u9f2c"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/d132c1cf1ae76ff2ec28a0698704b4f7c0c39b31.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u5973up\u4e2d\u7684\u4e00\u80a1\u6e05\uff08nishi\uff09\u6d41",
+                "room_id": 109444,
+                "check_version": 0,
+                "online": 35,
+                "area": "\u624b\u6e38\u76f4\u64ad",
+                "area_id": 12,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/476\/live_13131682_5224784.flv?wsSecret=8ebff01e8739f1781917fa9af8e27b5d&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 1,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/f55ac6402c3b6f94dda2d5373447433fd1515bed.jpg",
+                    "mid": 5093036,
+                    "name": "\u53f0\u98ce\u541b\u5df2\u5f03\u6cbb"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/631b76491475cceeaf748188f53f6b830af4eaad.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u4eba\u4f53\u5e9f\u6839\u672c\u4e0d\u4f1a\u5f00\u8f66\u600e\u4e48\u529e",
+                "room_id": 373422,
+                "check_version": 0,
+                "online": 1680,
+                "area": "\u7ed8\u753b\u4e13\u533a",
+                "area_id": 9,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/463\/live_5093036_4861143.flv?wsSecret=1b23fdd1a90f15422197c2665fc48245&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/7b55d7cb329c9e23905d6ffbf0edf6d7736fe878.jpg",
+                    "mid": 4772701,
+                    "name": "TChats\u5c0f\u8336"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/699b118281049af5c061ffd2f2907c16d3aa14de.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u8def\u75f4+\u667a\u969c\uff1f\u5200\u5251\u795e\u57df\u865a\u7a7a\u65ad\u7ae0\u4e8c\u5468\u76ee",
+                "room_id": 242975,
+                "check_version": 0,
+                "online": 43,
+                "area": "\u5355\u673a\u8054\u673a",
+                "area_id": 1,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/264\/live_4772701_2898099.flv?wsSecret=8586a1341c5065b1f6e6585468a3a4bb&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i2.hdslb.com\/bfs\/face\/ed1a5a01671dc6688dcd8587547df27413ae363b.jpg",
+                    "mid": 525596,
+                    "name": "\u4e00\u53ea\u732bneko"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/b0be5211f63fc929723bb6791e81a559f90e8630.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u3010\u4e00\u53ea\u732b\u3011\u9965\u8352\u8054\u673a\u4e00\u4e2a\u4eba\u73a9\uff01",
+                "room_id": 11924,
+                "check_version": 0,
+                "online": 7174,
+                "area": "\u5355\u673a\u8054\u673a",
+                "area_id": 1,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/871\/live_525596_9200834.flv?wsSecret=dc0e3a6f45aa4232bdeec19b569c2ca8&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }, {
+                "owner": {
+                    "face": "http:\/\/i0.hdslb.com\/bfs\/face\/5307ab28488f80e03d426d52d8f15d5013b0ea2f.jpg",
+                    "mid": 7960270,
+                    "name": "\u60b2\u54c0\u7684\u7070\u5c18"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/e60be9f8b03e819551f580d9c1a78a33eee8a7b7.jpg",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "B\u7ad9\u7b2c\u4e00\u7434\u5973\uff0c\u6211\u7684\u7434\u5f26\uff0c\u52a8\u4eba\u5fc3\u5f26~\uff01",
+                "room_id": 109558,
+                "check_version": 0,
+                "online": 3547,
+                "area": "\u7535\u5b50\u7ade\u6280",
+                "area_id": 4,
+                "playurl": "http:\/\/live-play.acgvideo.com\/live\/389\/live_7960270_4382110.flv?wsSecret=b7f386d170d59c5a72e26c970a8f4c99&wsTime=579dca54",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }],
+            "partition": {
+                "id": 0,
+                "name": "\u63a8\u8350\u4e3b\u64ad",
+                "area": "hot",
+                "sub_icon": {
+                    "src": "http:\/\/static.hdslb.com\/live-static\/images\/mobile\/ios\/phone\/-1_s_2x.png?2016082902",
+                    "height": "40",
+                    "width": "40"
+                },
+                "count": 4010
+            },
+            "banner_data": [{
+                "owner": {
+                    "face": "http:\/\/i1.hdslb.com\/bfs\/face\/5d35da6e93fbfb1a77ad6d1f1004b08413913f9a.jpg",
+                    "mid": 11153765,
+                    "name": "\u54d4\u54e9\u54d4\u54e9\u97f3\u4e50\u53f0"
+                },
+                "cover": {
+                    "src": "http:\/\/i0.hdslb.com\/bfs\/live\/98c268f907705241a3e3face25ae365e3120406b.png",
+                    "height": 180,
+                    "width": 320
+                },
+                "title": "\u3010\u5b98\u65b9\u3011\u54d4\u54e9\u54d4\u54e9\u5b98\u65b9\u97f3\u4e50\u53f0",
+                "room_id": 23058,
+                "check_version": 0,
+                "online": 13974,
+                "area": "\u653e\u6620\u5385",
+                "area_id": 7,
+                "playurl": "http:\/\/yf.live-play.acgvideo.com\/live-yf\/654346\/live_11153765_9369560.flv?wsSecret=cb74bce6d61840132b1c8283694eca58&wsTime=1472548944",
+                "accept_quality": "4",
+                "broadcast_type": 0,
+                "is_tv": 0
+            }]
+        }
+    }
+}
