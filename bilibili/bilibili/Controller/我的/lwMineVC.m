@@ -304,6 +304,11 @@ UICollectionViewDelegateFlowLayout
         _myCollectionView.dataSource = self;
         _myCollectionView.backgroundColor = RGB(235, 235, 235);
         _myCollectionView.scrollEnabled = YES;
+        _myCollectionView.layer.cornerRadius = 10.0;
+        _myCollectionView.layer.masksToBounds = YES;
+        _myCollectionView.backgroundView.layer.cornerRadius = 6.0;
+        _myCollectionView.backgroundView.layer.masksToBounds = YES;
+        _myCollectionView.alwaysBounceVertical = YES;
         
         [_myCollectionView registerClass:[lwPersonalMenuCell class] forCellWithReuseIdentifier:commonCellID];
         [_myCollectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:commonHeaderID];
