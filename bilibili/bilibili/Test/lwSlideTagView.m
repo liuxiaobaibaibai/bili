@@ -6,7 +6,7 @@
 //  Copyright © 2016年 lw. All rights reserved.
 //
 
-#import "lwLabelView.h"
+#import "lwSlideTagView.h"
 
 #define padding 5
 #define marign 8
@@ -15,7 +15,7 @@
 #define btnSize CGSizeMake(30,30)
 #define MAXHEIGHT 65
 
-@interface lwLabelView ()
+@interface lwSlideTagView ()
 
 @property (copy, nonatomic) NSArray *items;
 
@@ -23,7 +23,7 @@
 
 @end
 
-@implementation lwLabelView
+@implementation lwSlideTagView
 
 #pragma mark - init
 - (id)initWithItems:(NSArray <NSString *> *)items{
@@ -42,14 +42,55 @@
 
 #pragma mark - user action
 - (void)tagButtonClick:(UIButton *)btn{
+    // 以下普通使用肯定是没有问题了
+    // 判断是否在同一行
+    if (btn.y > _line.y) {
+        // 往下面移动
+        [UIView animateWithDuration:0.15 animations:^{
+            // 选移动X轴
+            _line.frame = CGRectMake(self.width - _line.width , _line.y, btn.width, 2);
+        }completion:^(BOOL finished) {
+            if (finished) {
+                // 完成之后 改变X轴 Y轴更换成当前标签所在行 （去掉动画）
+                _line.frame = CGRectMake(0, btn.y + btn.height, _line.width, 2);
+                [UIView animateWithDuration:0.15 animations:^{
+                    // 接着 更新X轴
+                    _line.frame = CGRectMake(btn.x, btn.y + btn.height, btn.width, 2);
+                }];
+            }
+        }];
+    }else if(btn.y + btn.height == _line.y){
+        // 同行移动
+        [UIView animateWithDuration:0.3 animations:^{
+            // 直接改变X轴即可
+            _line.frame = CGRectMake(btn.x, btn.y + btn.height, btn.width, 2);
+        }];
+    }else{
+        // 往上面移动
+        [UIView animateWithDuration:0.15 animations:^{
+            // 同理还是先移动X轴
+            _line.frame = CGRectMake(10 , _line.y, _line.width, 2);
+        }completion:^(BOOL finished) {
+            if (finished) {
+                // 完成之后 改变X轴 Y轴更换成当前标签所在行 （去掉动画）
+                _line.frame = CGRectMake(self.width - _line.width, btn.y + btn.height, _line.width, 2);
+                [UIView animateWithDuration:0.15 animations:^{
+                    // 最后更新X轴
+                    _line.frame = CGRectMake(btn.x, btn.y + btn.height, btn.width, 2);
+                }];
+            }
+        }];
+    }
     
-    [UIView animateWithDuration:0.3 animations:^{
-        _line.frame = CGRectMake(btn.x, btn.height + btn.y, btn.width, 2);
-    }];
+    if ([_delegate respondsToSelector:@selector(slideTagViewButtonClick:)]) {
+        [_delegate slideTagViewButtonClick:btn.tag];
+    }
+    
 }
 
 #pragma mark - loadView
 - (void)loadView{
+    self.backgroundColor = [UIColor biliPinkColor];
     [self addSubview:self.line];
 }
 

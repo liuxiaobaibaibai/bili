@@ -8,7 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface lwLabelView : UIView
+@protocol lwSlideTagViewDelegate <NSObject>
+
+- (void)slideTagViewButtonClick:(NSInteger)index;
+
+@end
+
+@interface lwSlideTagView : UIView
+
+@property (weak, nonatomic) id <lwSlideTagViewDelegate> delegate;
 
 @property (assign, nonatomic, readonly) CGFloat tagViewHeight;
 

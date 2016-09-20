@@ -22,6 +22,15 @@
 #pragma mark - view action
 
 - (void)moreButtonClick:(UIButton *)btn{
+    
+    if (btn.selected) {
+        btn.selected = NO;
+        [btn setImage:[UIImage imageNamed:@"find_openMore"] forState:UIControlStateNormal];
+    }else{
+        btn.selected = YES;
+        [btn setImage:[UIImage imageNamed:@"find_closeMore"] forState:UIControlStateNormal];
+    }
+    
     if ([_delegate respondsToSelector:@selector(headerButtonClick:)]) {
         [_delegate headerButtonClick:btn];
     }
@@ -170,7 +179,9 @@
 - (UIButton *)moreBtn{
     if (_moreBtn == nil) {
         _moreBtn = [[UIButton alloc] init];
-        [_moreBtn setTitle:@"查看更多" forState:UIControlStateNormal];
+        [_moreBtn setTitle:@"  查看更多" forState:UIControlStateNormal];
+        [_moreBtn setImage:[UIImage imageNamed:@"find_openMore"] forState:UIControlStateNormal];
+        [_moreBtn setSelected:NO];
         [_moreBtn addTarget:self action:@selector(moreButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _moreBtn;

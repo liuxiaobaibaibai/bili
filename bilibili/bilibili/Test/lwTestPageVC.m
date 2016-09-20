@@ -8,11 +8,14 @@
 
 #import "lwTestPageVC.h"
 
-#import "lwLabelView.h"
+#import "lwSlideTagView.h"
 
 @interface lwTestPageVC ()
+<
+lwSlideTagViewDelegate
+>
 {
-    lwLabelView *tagView;
+    lwSlideTagView *tagView;
 }
 
 @end
@@ -21,9 +24,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    tagView = [[lwLabelView alloc] initWithItems:@[@"标asd签1",@"as阿斯顿标签3",@"标签1",@"标签1",@"标签1",@"标签1",@"标签1",@"标签1",@"标签3",@"标签1",@"标签1",@"标签1",@"标签1",@"标签1as阿斯顿"]];
-    tagView.backgroundColor = [UIColor biliPinkColor];
+    tagView = [[lwSlideTagView alloc] initWithItems:@[@"是的",@"是的阿阿斯顿标签",@"是的",@"是的阿",@"标签",@"标",@"标签",@"标签啊",@"标签是的"]];
+    tagView.delegate = self;
     [self.view addSubview:tagView];
     
     WS(ws);
@@ -31,10 +33,15 @@
     CGFloat h = tagView.tagViewHeight;
     
     [tagView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(lNavH);
         make.left.right.mas_equalTo(ws.view);
         make.height.mas_equalTo(h);
-        make.center.equalTo(ws.view);
     }];
+}
+
+#pragma mark - lwSlideTagViewDelegate
+- (void)slideTagViewButtonClick:(NSInteger)index{
+    // 做翻页控制
 }
 
 

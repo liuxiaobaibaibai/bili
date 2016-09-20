@@ -72,7 +72,7 @@
 }
 
 + (UIColor *)biliPinkColor{
-    return RGB(240, 111, 151);
+    return RGB(240, 104, 147);
 }
 
 

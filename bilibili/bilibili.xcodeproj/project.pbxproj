@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0B92825FD94A6588BB584A8B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F31263CAD1E1062239DCE2F /* libPods.a */; };
 		C955D4851D8289BA00D4C9B5 /* lwTestPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C955D4841D8289BA00D4C9B5 /* lwTestPageVC.m */; };
-		C955D4881D828AEA00D4C9B5 /* lwLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = C955D4871D828AEA00D4C9B5 /* lwLabelView.m */; };
+		C955D4881D828AEA00D4C9B5 /* lwSlideTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = C955D4871D828AEA00D4C9B5 /* lwSlideTagView.m */; };
 		C95F04201D6EE62A00168F5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C95F041F1D6EE62A00168F5A /* main.m */; };
 		C95F04291D6EE62A00168F5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95F04271D6EE62A00168F5A /* Main.storyboard */; };
 		C95F042C1D6EE62A00168F5A /* bilibili.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C95F042A1D6EE62A00168F5A /* bilibili.xcdatamodeld */; };
@@ -107,8 +107,8 @@
 		9D19F653A25CC233BDE16ED5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C955D4831D8289BA00D4C9B5 /* lwTestPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwTestPageVC.h; sourceTree = "<group>"; };
 		C955D4841D8289BA00D4C9B5 /* lwTestPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwTestPageVC.m; sourceTree = "<group>"; };
-		C955D4861D828AEA00D4C9B5 /* lwLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwLabelView.h; sourceTree = "<group>"; };
-		C955D4871D828AEA00D4C9B5 /* lwLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwLabelView.m; sourceTree = "<group>"; };
+		C955D4861D828AEA00D4C9B5 /* lwSlideTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwSlideTagView.h; sourceTree = "<group>"; };
+		C955D4871D828AEA00D4C9B5 /* lwSlideTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwSlideTagView.m; sourceTree = "<group>"; };
 		C95F041B1D6EE62A00168F5A /* bilibili.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bilibili.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95F041F1D6EE62A00168F5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C95F04281D6EE62A00168F5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -574,8 +574,8 @@
 			children = (
 				C955D4831D8289BA00D4C9B5 /* lwTestPageVC.h */,
 				C955D4841D8289BA00D4C9B5 /* lwTestPageVC.m */,
-				C955D4861D828AEA00D4C9B5 /* lwLabelView.h */,
-				C955D4871D828AEA00D4C9B5 /* lwLabelView.m */,
+				C955D4861D828AEA00D4C9B5 /* lwSlideTagView.h */,
+				C955D4871D828AEA00D4C9B5 /* lwSlideTagView.m */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -1063,7 +1063,7 @@
 				C95F04201D6EE62A00168F5A /* main.m in Sources */,
 				C997C8731D740B30005468D8 /* lwRecommendVC.m in Sources */,
 				C997C8881D7435EE005468D8 /* lwChaseSopaOperaCell.m in Sources */,
-				C955D4881D828AEA00D4C9B5 /* lwLabelView.m in Sources */,
+				C955D4881D828AEA00D4C9B5 /* lwSlideTagView.m in Sources */,
 				C984EF841D7582380050F805 /* lwBaseModel.m in Sources */,
 				C9810B4B1D6FE2BA006A858E /* UITableView+lwTableView.m in Sources */,
 				C97E1B051D7EB01200DF88FF /* lwAllCategoryVC.m in Sources */,
