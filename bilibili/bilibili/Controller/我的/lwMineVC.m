@@ -63,6 +63,11 @@ UICollectionViewDelegateFlowLayout
     [self loadDataSource];
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self.view setBackgroundColor:[UIColor biliPinkColor]];
+}
+
 - (UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;
 }
@@ -119,7 +124,18 @@ UICollectionViewDelegateFlowLayout
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     
     [self.view addSubview:self.headerView];
-    [self.view addSubview:self.myCollectionView];
+    
+    UIScrollView *myScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 140, lW, lH - lTabbarH - 140)];
+    myScrollView.backgroundColor = [UIColor biliPinkColor];
+    [myScrollView setContentSize:CGSizeMake(lW, lH - 140)];
+    myScrollView.scrollEnabled = YES;
+    myScrollView.layer.cornerRadius = 5.0;
+    myScrollView.layer.masksToBounds = YES;
+    myScrollView.showsVerticalScrollIndicator = NO;
+    [self.view addSubview:myScrollView];
+
+    self.myCollectionView.frame = CGRectMake(0, 0, lW, lH * 2);
+    [myScrollView addSubview:self.myCollectionView];
     
     WS(ws);
     
@@ -127,13 +143,6 @@ UICollectionViewDelegateFlowLayout
         make.left.top.right.equalTo(ws.view);
         make.height.mas_equalTo(140);
     }];
-    
-    [_myCollectionView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.equalTo(ws.view);
-        make.bottom.mas_equalTo(-lTabbarH);
-        make.top.equalTo(ws.headerView.mas_bottom);
-    }];
-    
 }
 
 #pragma mark - getter
@@ -306,7 +315,7 @@ UICollectionViewDelegateFlowLayout
         _myCollectionView.scrollEnabled = YES;
         _myCollectionView.layer.cornerRadius = 10.0;
         _myCollectionView.layer.masksToBounds = YES;
-        _myCollectionView.backgroundView.layer.cornerRadius = 6.0;
+        _myCollectionView.backgroundView.layer.cornerRadius = 10.0;
         _myCollectionView.backgroundView.layer.masksToBounds = YES;
         _myCollectionView.alwaysBounceVertical = YES;
         

@@ -25,6 +25,7 @@
     UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corner cornerRadii:CGSizeMake(10, 10)];
     CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
     maskLayer.frame = self.bounds;
+    maskLayer.backgroundColor = [UIColor clearColor].CGColor;
     maskLayer.path = maskPath.CGPath;
     self.layer.mask = maskLayer;
 }
