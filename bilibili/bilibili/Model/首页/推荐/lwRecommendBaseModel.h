@@ -50,6 +50,7 @@
 @property (assign, nonatomic) int play;
 @property (assign, nonatomic) int danmaku;
 
+@property (copy, nonatomic) NSString *mtime;
 @property (copy, nonatomic) NSString *index;
 
 @end
@@ -77,4 +78,7 @@
 
 + (NSMutableArray <lwRecommendBaseModel *> *)recommendSource;
 
++ ( __kindof UICollectionViewCell *)collectionView:(UICollectionView *)collection IndexPath:(NSIndexPath *)indexPath Model:(lwRecommendBaseModel *)model;
+
 @end
+

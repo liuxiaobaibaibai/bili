@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class lwRecommendBaseModel;
+
 @interface lwHomeRecommedActityCell : UICollectionViewCell
+
+@property (strong, nonatomic, readonly) lwRecommendBaseModel *model;
+
+- (void)actityModel:(lwRecommendBaseModel *)model Completion:(void(^)(id object))completion;
 
 @end

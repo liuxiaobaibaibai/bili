@@ -8,6 +8,12 @@
 
 #import "lwRecommendBaseModel.h"
 
+///////////
+#import "lwHomeRecommendCell.h"
+#import "lwHomeRecommendOperaCell.h"
+#import "lwHomeRecommedActityCell.h"
+///////////
+
 @implementation lwRecommendHeaderModel
 
 - (id)initWithDict:(NSDictionary *)dict{
@@ -77,6 +83,7 @@
         self.face = dict[@"face"];
         self.online = [dict[@"online"] intValue];
         self.index = dict[@"index"];
+        self.mtime = dict[@"mtime"];
     }
     return self;
 }

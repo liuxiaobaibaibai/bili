@@ -53,8 +53,8 @@
 - (void)recommendModel:(lwRecommendBodyModel *)model Last:(BOOL)last Completion:(void (^)(id))completion{
     _body = model;
     [_iconView sd_setImageWithURL:[NSURL URLWithString:model.cover] placeholderImage:[UIImage imageNamed:@"default_img"]];
-    [_titleLabel setText:model.title];
-    [_decriptionLabel setText:model.name];
+    [_decriptionLabel setText:model.title];
+    [_titleLabel setText:[NSString stringWithFormat:@"%@ 第%@话",model.mtime,model.index]];
 }
 
 #pragma mark - loadView
@@ -127,7 +127,7 @@
     if (_titleLabel == nil) {
         _titleLabel = [[UILabel alloc] init];
         _titleLabel.textColor = [UIColor whiteColor];
-        _titleLabel.font = [UIFont systemFontOfSize:14.0];
+        _titleLabel.font = [UIFont systemFontOfSize:11.0];
     }
     return _titleLabel;
 }

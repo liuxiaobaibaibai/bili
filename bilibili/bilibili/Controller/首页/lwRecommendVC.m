@@ -10,9 +10,17 @@
 #import "lwRecommendVC.h"
 
 #import "lwRecommendBaseModel.h"
+
 #import "lwHomeRecommendCell.h"
+#import "lwHomeRecommendOperaCell.h"
+#import "lwHomeRecommedActityCell.h"
+#import "lwHomeLiveVideoCustomCell.h"
 
 static NSString *lwRecommendCellID = @"cee";
+static NSString *lwRecommendActityCellID = @"edd";
+static NSString *lwRecommendOperaCellID = @"oll";
+static NSString *lwRecommendLiveCellID  = @"live";
+
 @interface lwRecommendVC ()
 <
 UICollectionViewDelegate,
@@ -34,11 +42,61 @@ UICollectionViewDelegateFlowLayout
 }
 
 - (void)loadDataSource{
-    
     self.dataSource = [NSMutableArray arrayWithArray:[lwRecommendBaseModel recommendSource]];
-    
     [self.myCollectionView reloadData];
 }
+
+
+#pragma mark - 其实我觉得下面两段可以整合一下
+
+- (void)registCell:(UICollectionView *)collectionView{
+    [collectionView registerClass:[lwHomeRecommendCell class] forCellWithReuseIdentifier:lwRecommendCellID];
+    [collectionView registerClass:[lwHomeRecommedActityCell class] forCellWithReuseIdentifier:lwRecommendActityCellID];
+    [collectionView registerClass:[lwHomeRecommendOperaCell class] forCellWithReuseIdentifier:lwRecommendOperaCellID];
+    [collectionView registerClass:[lwHomeLiveVideoCustomCell class] forCellWithReuseIdentifier:lwRecommendLiveCellID];
+}
+
+- (CGSize)collectionItemSize:(lwRecommendBaseModel *)model{
+    if ([model.type isEqualToString:@"bangumi"]) {
+        return CGSizeMake(lW / 2, 150);
+    }else if ([model.type isEqualToString:@"live"]){
+        return CGSizeMake(lW / 2, 150);
+    }else if ([model.type isEqualToString:@"activity"]){
+        return CGSizeMake(lW, 150);
+    }else{
+        return CGSizeMake(lW / 2, 150);
+    }
+}
+
+- ( __kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView IndexPath:(NSIndexPath *)indexPath Model:(lwRecommendBaseModel *)model{
+    
+    lwHomeRecommendCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:lwRecommendCellID forIndexPath:indexPath];
+    lwHomeRecommedActityCell *actityCell = [collectionView dequeueReusableCellWithReuseIdentifier:lwRecommendActityCellID forIndexPath:indexPath];
+    lwHomeRecommendOperaCell *operaCell = [collectionView dequeueReusableCellWithReuseIdentifier:lwRecommendOperaCellID forIndexPath:indexPath];
+    lwHomeLiveVideoCustomCell *liveCell = [collectionView dequeueReusableCellWithReuseIdentifier:lwRecommendLiveCellID forIndexPath:indexPath];
+    
+    BOOL last = indexPath.row == model.body.count - 1 ? YES : NO;
+    
+    if ([model.type isEqualToString:@"bangumi"]) {
+        [operaCell recommendModel:model.body[indexPath.row] Last:last Completion:^(id object) {
+            NSLog(@"nsl");
+        }];
+        return operaCell;
+    }else if ([model.type isEqualToString:@"live"]){
+        return liveCell;
+    }else if ([model.type isEqualToString:@"activity"]){
+        [actityCell actityModel:model Completion:^(id object) {
+            
+        }];
+        return actityCell;
+    }else{
+        [cell recommendModel:model.body[indexPath.row] Last:last Completion:^(id object) {
+            
+        }];
+        return cell;
+    }
+}
+
 - (void)refreshPartDataSource:(UIButton *)btn{
 //    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
 //    dispatch_group_t group = dispatch_group_create();
@@ -110,28 +168,35 @@ UICollectionViewDelegateFlowLayout
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     lwRecommendBaseModel *baseModel = (lwRecommendBaseModel *)self.dataSource[section];
-    return baseModel.body.count;
+    if ([baseModel.type isEqualToString:@"activity"]) {
+        return 1;
+    }else{
+        return baseModel.body.count;
+    }
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    lwHomeRecommendCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:lwRecommendCellID forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor whiteColor];
-    
-    lwRecommendBaseModel *baseModel = (lwRecommendBaseModel *)self.dataSource[indexPath.section];
-    
-    WS(ws);
-    
-    [cell recommendModel:baseModel.body[indexPath.row] Last:(indexPath.row == baseModel.body.count - 1) Completion:^(id object) {
-        [(UIButton *)object addTarget:ws action:@selector(refreshPartDataSource:) forControlEvents:UIControlEventTouchUpInside];
-    }];
-    return cell;
+//    lwHomeRecommendCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:lwRecommendCellID forIndexPath:indexPath];
+//    cell.backgroundColor = [UIColor whiteColor];
+//    
+//    lwRecommendBaseModel *baseModel = (lwRecommendBaseModel *)self.dataSource[indexPath.section];
+//    
+//    WS(ws);
+//    
+//    [cell recommendModel:baseModel.body[indexPath.row] Last:(indexPath.row == baseModel.body.count - 1) Completion:^(id object) {
+//        [(UIButton *)object addTarget:ws action:@selector(refreshPartDataSource:) forControlEvents:UIControlEventTouchUpInside];
+//    }];
+//    return cell;
+    return [self collectionView:collectionView IndexPath:indexPath Model:self.dataSource[indexPath.section]];
 }
 
 
 #pragma mark - UICollectionViewDelegateFlowLayout
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    return CGSizeMake(lW / 2, 150);
+//    return CGSizeMake(lW / 2, 150);
+    lwRecommendBaseModel *model = self.dataSource[indexPath.section];
+    return [self collectionItemSize:model];
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
@@ -170,7 +235,7 @@ UICollectionViewDelegateFlowLayout
         _myCollectionView.showsVerticalScrollIndicator = NO;
         
         //cell
-        [_myCollectionView registerClass:[lwHomeRecommendCell class] forCellWithReuseIdentifier:lwRecommendCellID];//普通cell
+        [self registCell:_myCollectionView];
     }
     return _myCollectionView;
 }
