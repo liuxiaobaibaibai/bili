@@ -11,6 +11,54 @@
 
 @interface lwCommon : NSObject
 
+#pragma mark - about device
+
+/**
+ 获取电池状态
+
+ @return 电池剩余电量
+ */
++ (CGFloat)getBatteryQuantity;
+
+/**
+ 获取总内存大小
+
+ @return 总内存大小
+ */
++ (long long)getTotalMemorySize;
+
+/**
+ 获取当前可用内存
+
+ @return 当前可用内存
+ */
++ (long long)getAvailableMemorySize;
+
+/**
+ 磁盘总空间
+
+ @return 总空间大小
+ */
++ (CGFloat)diskOfAllSizeMBytes;
+
+/**
+ 磁盘可用空间
+
+ @return 可用空间大小
+ */
++ (CGFloat)diskOfFreeSizeMBytes;
+
+/**
+ long long 转成字符串
+
+ @param fileSize 文件大小
+
+ @return 字符串（文件大小）
+ */
++ (NSString *)fileSizeToString:(unsigned long long)fileSize;
+
+#pragma mark - other
+
 /**
  *  倒计时操作
  *  @param  timeLine        倒计时时间

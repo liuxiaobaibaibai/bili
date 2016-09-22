@@ -25,7 +25,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    NSLog(@"当前电池状态：%.2f",[lwCommon getBatteryQuantity]);
+    NSLog(@"内存总大小：%@",[lwCommon fileSizeToString:[lwCommon getTotalMemorySize]]);
+    NSLog(@"当前可用内存：%@",[lwCommon fileSizeToString:[lwCommon getAvailableMemorySize]]);
+    NSLog(@"磁盘总空间大小：%.2f",[lwCommon diskOfAllSizeMBytes]);
+    NSLog(@"磁盘可用空间大小：%.2f",[lwCommon diskOfFreeSizeMBytes]);
+    
     [self setupVC];
+    
     return YES;
 }
 

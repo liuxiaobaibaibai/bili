@@ -11,7 +11,99 @@
 #import <SystemConfiguration/CaptiveNetwork.h>
 #import <MapKit/MapKit.h>
 
+
+#include <mach/mach.h>
+#import <sys/utsname.h>
+
 @implementation lwCommon
+
+#pragma mark - 设备相关
+
+//获取电池状态
++ (CGFloat)getBatteryQuantity
+{
+    return [[UIDevice currentDevice] batteryLevel];
+}
+// 获取总内存大小
++ (long long)getTotalMemorySize
+{
+    return [NSProcessInfo processInfo].physicalMemory;
+}
+// 获取当前可用内存
++ (long long)getAvailableMemorySize
+{
+    vm_statistics_data_t vmStats;
+    mach_msg_type_number_t infoCount = HOST_VM_INFO_COUNT;
+    kern_return_t kernReturn = host_statistics(mach_host_self(), HOST_VM_INFO, (host_info_t)&vmStats, &infoCount);
+    if (kernReturn != KERN_SUCCESS)
+    {
+        return NSNotFound;
+    }
+    
+    return ((vm_page_size * vmStats.free_count + vm_page_size * vmStats.inactive_count));
+}
+//磁盘总空间
++ (CGFloat)diskOfAllSizeMBytes
+{
+    CGFloat size = 0.0;
+    NSError *error;
+    NSDictionary *dic = [[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:&error];
+    if (error) {
+#ifdef DEBUG
+        NSLog(@"error: %@", error.localizedDescription);
+#endif
+    }else{
+        NSNumber *number = [dic objectForKey:NSFileSystemSize];
+        size = [number floatValue]/1024/1024;
+    }
+    return size;
+}
+//磁盘可用空间
++ (CGFloat)diskOfFreeSizeMBytes
+{
+    CGFloat size = 0.0;
+    NSError *error;
+    NSDictionary *dic = [[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:&error];
+    if (error) {
+#ifdef DEBUG
+        NSLog(@"error: %@", error.localizedDescription);
+#endif
+    }else{
+        NSNumber *number = [dic objectForKey:NSFileSystemFreeSize];
+        size = [number floatValue]/1024/1024;
+    }
+    return size;
+}
+// 转成字符串
++ (NSString *)fileSizeToString:(unsigned long long)fileSize
+{
+    NSInteger KB = 1024;
+    NSInteger MB = KB*KB;
+    NSInteger GB = MB*KB;
+    
+    if (fileSize < 10)
+    {
+        return @"0 B";
+        
+    }else if (fileSize < KB)
+    {
+        return @"< 1 KB";
+        
+    }else if (fileSize < MB)
+    {
+        return [NSString stringWithFormat:@"%.1f KB",((CGFloat)fileSize)/KB];
+        
+    }else if (fileSize < GB)
+    {
+        return [NSString stringWithFormat:@"%.1f MB",((CGFloat)fileSize)/MB];
+        
+    }else
+    {
+        return [NSString stringWithFormat:@"%.1f GB",((CGFloat)fileSize)/GB];
+    }
+}
+
+#pragma mark - other
 
 /**
  *  倒计时操作

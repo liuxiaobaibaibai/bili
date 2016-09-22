@@ -99,6 +99,7 @@ UICollectionViewDelegateFlowLayout
         _headerReusableView.backgroundColor = [UIColor whiteColor];
         
         UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 0, lW - 15, 40)];
+        
         if (indexPath.section == 0) {
             titleLabel.text = @"个人中心";
         }else{

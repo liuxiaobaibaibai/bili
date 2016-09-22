@@ -81,6 +81,10 @@
 		C99F4B2A1D77BBC90006D255 /* lwHomeLiveVideoHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C99F4B291D77BBC90006D255 /* lwHomeLiveVideoHeaderView.m */; };
 		C9AE644A1D8E8B2D00188B3F /* lwPersonalMenuList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9AE64491D8E8B2C00188B3F /* lwPersonalMenuList.plist */; };
 		C9AE644E1D8E8F3C00188B3F /* lwPersonalMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AE644D1D8E8F3C00188B3F /* lwPersonalMenuCell.m */; };
+		C9E690481D93B63700D811C3 /* lwRecommendBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E690471D93B63700D811C3 /* lwRecommendBaseModel.m */; };
+		C9E6904C1D93C12700D811C3 /* lwHomeRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E6904B1D93C12700D811C3 /* lwHomeRecommendCell.m */; };
+		C9E690521D93D76C00D811C3 /* lwHomeRecommedActityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E690511D93D76C00D811C3 /* lwHomeRecommedActityCell.m */; };
+		C9E690551D93D78800D811C3 /* lwHomeRecommendOperaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E690541D93D78800D811C3 /* lwHomeRecommendOperaCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -239,6 +243,14 @@
 		C9AE64491D8E8B2C00188B3F /* lwPersonalMenuList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lwPersonalMenuList.plist; sourceTree = "<group>"; };
 		C9AE644C1D8E8F3C00188B3F /* lwPersonalMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwPersonalMenuCell.h; sourceTree = "<group>"; };
 		C9AE644D1D8E8F3C00188B3F /* lwPersonalMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwPersonalMenuCell.m; sourceTree = "<group>"; };
+		C9E690461D93B63700D811C3 /* lwRecommendBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwRecommendBaseModel.h; sourceTree = "<group>"; };
+		C9E690471D93B63700D811C3 /* lwRecommendBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwRecommendBaseModel.m; sourceTree = "<group>"; };
+		C9E6904A1D93C12700D811C3 /* lwHomeRecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeRecommendCell.h; sourceTree = "<group>"; };
+		C9E6904B1D93C12700D811C3 /* lwHomeRecommendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwHomeRecommendCell.m; sourceTree = "<group>"; };
+		C9E690501D93D76C00D811C3 /* lwHomeRecommedActityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeRecommedActityCell.h; sourceTree = "<group>"; };
+		C9E690511D93D76C00D811C3 /* lwHomeRecommedActityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwHomeRecommedActityCell.m; sourceTree = "<group>"; };
+		C9E690531D93D78800D811C3 /* lwHomeRecommendOperaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeRecommendOperaCell.h; sourceTree = "<group>"; };
+		C9E690541D93D78800D811C3 /* lwHomeRecommendOperaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwHomeRecommendOperaCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -597,9 +609,8 @@
 		C984EF741D757D160050F805 /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				C9E690451D93B62300D811C3 /* 推荐 */,
 				C984EF761D757D250050F805 /* 直播 */,
-				C984EF771D757D3A0050F805 /* 推荐 */,
-				C984EF781D757D3A0050F805 /* 追番 */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
@@ -611,20 +622,6 @@
 				C984EF7A1D757D610050F805 /* lwLiveVideoModel.m */,
 			);
 			path = "直播";
-			sourceTree = "<group>";
-		};
-		C984EF771D757D3A0050F805 /* 推荐 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "推荐";
-			sourceTree = "<group>";
-		};
-		C984EF781D757D3A0050F805 /* 追番 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "追番";
 			sourceTree = "<group>";
 		};
 		C98F0DC41D7D1ABE00E85355 /* 关注 */ = {
@@ -783,6 +780,7 @@
 		C99F4B231D77BB440006D255 /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				C9E690491D93C0F300D811C3 /* 推荐 */,
 				C97E1B061D7EB16000DF88FF /* 全部分类 */,
 				C99F4B241D77BB530006D255 /* 直播 */,
 			);
@@ -817,6 +815,28 @@
 				C9AE644D1D8E8F3C00188B3F /* lwPersonalMenuCell.m */,
 			);
 			path = "我的";
+			sourceTree = "<group>";
+		};
+		C9E690451D93B62300D811C3 /* 推荐 */ = {
+			isa = PBXGroup;
+			children = (
+				C9E690461D93B63700D811C3 /* lwRecommendBaseModel.h */,
+				C9E690471D93B63700D811C3 /* lwRecommendBaseModel.m */,
+			);
+			path = "推荐";
+			sourceTree = "<group>";
+		};
+		C9E690491D93C0F300D811C3 /* 推荐 */ = {
+			isa = PBXGroup;
+			children = (
+				C9E6904A1D93C12700D811C3 /* lwHomeRecommendCell.h */,
+				C9E6904B1D93C12700D811C3 /* lwHomeRecommendCell.m */,
+				C9E690531D93D78800D811C3 /* lwHomeRecommendOperaCell.h */,
+				C9E690541D93D78800D811C3 /* lwHomeRecommendOperaCell.m */,
+				C9E690501D93D76C00D811C3 /* lwHomeRecommedActityCell.h */,
+				C9E690511D93D76C00D811C3 /* lwHomeRecommedActityCell.m */,
+			);
+			path = "推荐";
 			sourceTree = "<group>";
 		};
 		D70AAE3C12929BFE7E884BD1 /* Frameworks */ = {
@@ -1036,11 +1056,13 @@
 				C9810B621D701EE0006A858E /* lwCategoryVC.m in Sources */,
 				C95F04611D6EEE8100168F5A /* lwBaseVC.m in Sources */,
 				C997C8701D740B09005468D8 /* lwLiveVideoVC.m in Sources */,
+				C9E6904C1D93C12700D811C3 /* lwHomeRecommendCell.m in Sources */,
 				C993DE031D751B5A0098D86A /* lwLabelVC.m in Sources */,
 				C95F046A1D6EEF5800168F5A /* lwCoreDataManager.m in Sources */,
 				C99E38CC1D8F80590008AB15 /* lwSrarchHeaderView.m in Sources */,
 				C97E1B091D7EB18800DF88FF /* lwAllCategoryCell.m in Sources */,
 				C9810B451D6FE2BA006A858E /* UIColor+lwColor.m in Sources */,
+				C9E690481D93B63700D811C3 /* lwRecommendBaseModel.m in Sources */,
 				C95F042C1D6EE62A00168F5A /* bilibili.xcdatamodeld in Sources */,
 				C95F04671D6EEEEE00168F5A /* lwBaseNavVC.m in Sources */,
 				C99E38D31D8FA7720008AB15 /* lwFindBaseModel.m in Sources */,
@@ -1076,12 +1098,14 @@
 				C997C8831D7434DC005468D8 /* lwChaseSopaOperaVC.m in Sources */,
 				C95F04571D6EEC1900168F5A /* AppDelegate.m in Sources */,
 				C9810B421D6FE2BA006A858E /* NSDate+lwDate.m in Sources */,
+				C9E690551D93D78800D811C3 /* lwHomeRecommendOperaCell.m in Sources */,
 				C984EF6A1D756D530050F805 /* lwNetwork.m in Sources */,
 				C9810B441D6FE2BA006A858E /* UIButton+lwButton.m in Sources */,
 				C980916E1D7826DC0015A985 /* lwScrollView.m in Sources */,
 				C97E1AF71D7E524300DF88FF /* lwTagView.m in Sources */,
 				C9810B4D1D6FE2BA006A858E /* UIView+lwView.m in Sources */,
 				C97E1AFD1D7EA1BB00DF88FF /* lwIconButton.m in Sources */,
+				C9E690521D93D76C00D811C3 /* lwHomeRecommedActityCell.m in Sources */,
 				C95F04641D6EEECC00168F5A /* lwBaseTabBarVC.m in Sources */,
 				C9810B431D6FE2BA006A858E /* NSString+lwString.m in Sources */,
 				C997C8801D741F74005468D8 /* lwCategoryModel.m in Sources */,
