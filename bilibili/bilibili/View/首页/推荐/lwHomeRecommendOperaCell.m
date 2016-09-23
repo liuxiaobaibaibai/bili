@@ -60,8 +60,8 @@
 #pragma mark - loadView
 - (void)loadView{
     [self.contentView addSubview:self.iconView];
-    [self.contentView addSubview:self.shadowView];
     [self.contentView addSubview:self.shadowBottomView];
+    [self.contentView addSubview:self.shadowView];
     [self.contentView addSubview:self.titleLabel];
     [self.contentView addSubview:self.decriptionLabel];
     

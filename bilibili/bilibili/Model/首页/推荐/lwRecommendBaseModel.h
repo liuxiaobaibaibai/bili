@@ -72,7 +72,7 @@
 @property (copy, nonatomic) NSString *style;
 @property (copy, nonatomic) NSString *title;
 @property (strong, nonatomic) NSMutableArray <lwRecommendBodyModel *> *body;
-@property (strong, nonatomic) NSMutableArray <lwRecommendBannerModel *> *banner;
+@property (strong, nonatomic) lwRecommendBannerModel *banner;
 // 直播的才有
 @property (assign, nonatomic) int live_count;
 

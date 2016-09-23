@@ -1,18 +1,17 @@
 //
-//  lwHomeLiveVideoCustomCell.m
+//  lwHomeRecommendLiveCell.m
 //  bilibili
 //
-//  Created by lw on 16/9/1.
+//  Created by lw on 2016/9/23.
 //  Copyright © 2016年 lw. All rights reserved.
 //
 
-#import "lwHomeLiveVideoCustomCell.h"
-
-#import "lwLiveVideoModel.h"
+#import "lwHomeRecommendLiveCell.h"
+#import "lwRecommendBaseModel.h"
 
 #define padding 5
 
-@interface lwHomeLiveVideoCustomCell ()
+@interface lwHomeRecommendLiveCell ()
 
 @property (strong, nonatomic) UIImageView *iconView;
 
@@ -30,7 +29,7 @@
 
 @end
 
-@implementation lwHomeLiveVideoCustomCell
+@implementation lwHomeRecommendLiveCell
 
 #pragma mark - init
 - (id)initWithFrame:(CGRect)frame{
@@ -42,7 +41,7 @@
 }
 
 #pragma mark - userOperation
-- (NSMutableAttributedString *)setBiliPinkColor:(lwLiveModel *)liveModel{
+- (NSMutableAttributedString *)setBiliPinkColor:(lwRecommendBodyModel *)liveModel{
     NSString *description = [NSString stringWithFormat:@"#%@# %@",liveModel.area,liveModel.title];
     NSMutableAttributedString *result = [[NSMutableAttributedString alloc] initWithString:description];
     [result addAttribute:NSForegroundColorAttributeName value:[UIColor biliPinkColor] range:NSMakeRange(0, liveModel.area.length + 2)];
@@ -61,11 +60,11 @@
 
 #pragma mark - setter
 
-- (void)liveModel:(lwLiveModel *)liveModel Last:(BOOL)last Completion:(void (^)(id))completion{
+- (void)liveModel:(lwRecommendBodyModel *)liveModel Last:(BOOL)last Completion:(void (^)(id))completion{
     _liveModel = liveModel;
     
-    [_iconView sd_setImageWithURL:[NSURL URLWithString:liveModel.cover.src] placeholderImage:[UIImage imageNamed:@"default_img"]];
-    [_titleLabel setText:liveModel.owner.name];
+    [_iconView sd_setImageWithURL:[NSURL URLWithString:liveModel.cover] placeholderImage:[UIImage imageNamed:@"default_img"]];
+    [_titleLabel setText:liveModel.name];
     [_countLabel setTitle:[self viewCountOperation:liveModel.online] forState:UIControlStateNormal];
     [_descriptionLabel setAttributedText:[self setBiliPinkColor:liveModel]];
     [self.refreshBtn setHidden:!last];
@@ -75,7 +74,6 @@
     if (completion) {
         completion(ws.refreshBtn);
     }
-    
 }
 
 #pragma mark - loadView
@@ -194,5 +192,4 @@
     }
     return _refreshBtn;
 }
-
 @end

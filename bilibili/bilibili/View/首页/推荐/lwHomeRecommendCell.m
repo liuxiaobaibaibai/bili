@@ -78,8 +78,8 @@
 #pragma mark - loadView
 - (void)loadView{
     [self.contentView addSubview:self.iconView];
-    [self.contentView addSubview:self.shadowView];
     [self.contentView addSubview:self.shadowBottomView];
+    [self.contentView addSubview:self.shadowView];
     [self.contentView addSubview:self.playCountLabel];
     [self.contentView addSubview:self.danmakuCountLabel];
     [self.contentView addSubview:self.titleLabel];
@@ -169,7 +169,7 @@
     if (_playCountLabel == nil) {
         _playCountLabel = [[UIButton alloc] init];
         [_playCountLabel.titleLabel setFont:[UIFont systemFontOfSize:14.0]];
-        [_playCountLabel setImage:[UIImage imageNamed:@"home_viewCount"] forState:UIControlStateNormal];
+        [_playCountLabel setImage:[UIImage imageNamed:@"misc_playCount_new"] forState:UIControlStateNormal];
     }
     return _playCountLabel;
 }
@@ -178,7 +178,7 @@
     if (_danmakuCountLabel == nil) {
         _danmakuCountLabel = [[UIButton alloc] init];
         [_danmakuCountLabel.titleLabel setFont:[UIFont systemFontOfSize:14.0]];
-        [_danmakuCountLabel setImage:[UIImage imageNamed:@"home_viewCount"] forState:UIControlStateNormal];
+        [_danmakuCountLabel setImage:[UIImage imageNamed:@"misc_danmakuCount_new"] forState:UIControlStateNormal];
     }
     return _danmakuCountLabel;
 }

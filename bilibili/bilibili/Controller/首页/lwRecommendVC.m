@@ -14,12 +14,25 @@
 #import "lwHomeRecommendCell.h"
 #import "lwHomeRecommendOperaCell.h"
 #import "lwHomeRecommedActityCell.h"
-#import "lwHomeLiveVideoCustomCell.h"
+#import "lwHomeRecommendLiveCell.h"
+#import "lwHomeRecommendHeaderView.h"
+
+
+#import "lwHomeRecommendOperaFooterView.h"
+#import "lwHomeRecommendFooterView.h"
 
 static NSString *lwRecommendCellID = @"cee";
 static NSString *lwRecommendActityCellID = @"edd";
 static NSString *lwRecommendOperaCellID = @"oll";
 static NSString *lwRecommendLiveCellID  = @"live";
+
+static NSString *lwRecommendHeaderViewID = @"banner";
+static NSString *lwRecommendHeaderCustomViewID = @"as";
+
+static NSString *lwRecommendFooterViewID = @"footer";       //  标题
+static NSString *lwRecommendOperaFooterViewID = @"opera";   //  番剧
+static NSString *lwRecommendOperaWithBannerViewID = @"operaWithBanner";
+static NSString *lwRecommendFooterCustomViewID = @"custom"; //  空白
 
 @interface lwRecommendVC ()
 <
@@ -53,7 +66,18 @@ UICollectionViewDelegateFlowLayout
     [collectionView registerClass:[lwHomeRecommendCell class] forCellWithReuseIdentifier:lwRecommendCellID];
     [collectionView registerClass:[lwHomeRecommedActityCell class] forCellWithReuseIdentifier:lwRecommendActityCellID];
     [collectionView registerClass:[lwHomeRecommendOperaCell class] forCellWithReuseIdentifier:lwRecommendOperaCellID];
-    [collectionView registerClass:[lwHomeLiveVideoCustomCell class] forCellWithReuseIdentifier:lwRecommendLiveCellID];
+    [collectionView registerClass:[lwHomeRecommendLiveCell class] forCellWithReuseIdentifier:lwRecommendLiveCellID];
+}
+
+- (void)registHeaderOrFooter:(UICollectionView *)collectionView{
+    [collectionView registerClass:[lwHomeRecommendHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:lwRecommendHeaderViewID];
+    [collectionView registerClass:[lwHomeRecommendHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:lwRecommendHeaderCustomViewID];
+    
+    // footer
+    [collectionView registerClass:[lwHomeRecommendFooterView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:lwRecommendOperaFooterViewID];
+    [collectionView registerClass:[lwHomeRecommendFooterView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:lwRecommendFooterViewID];
+    [collectionView registerClass:[lwHomeRecommendFooterView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:lwRecommendOperaWithBannerViewID];
+    [collectionView registerClass:[lwHomeRecommendFooterView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:lwRecommendFooterCustomViewID];
 }
 
 - (CGSize)collectionItemSize:(lwRecommendBaseModel *)model{
@@ -68,12 +92,36 @@ UICollectionViewDelegateFlowLayout
     }
 }
 
+- (CGSize)collectionHeaderViewSize:(lwRecommendBaseModel *)model{
+    if (model.banner.top.count != 0) {
+        return CGSizeMake(lW, 160);
+    }else{
+        return CGSizeMake(lW, 40);
+    }
+}
+
+- (CGSize)collectionFooterViewSize:(lwRecommendBaseModel *)model{
+    if ([model.title isEqualToString:@"番剧推荐"]) {
+        if (model.banner.bottom.count != 0) {
+            return CGSizeMake(lW, 230);
+        }else{
+            return CGSizeMake(lW, 60);
+        }
+    }else{
+        if (model.banner.bottom.count != 0) {
+            return CGSizeMake(lW, 170);
+        }else{
+            return CGSizeMake(lW, 0);
+        }
+    }
+}
+
 - ( __kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView IndexPath:(NSIndexPath *)indexPath Model:(lwRecommendBaseModel *)model{
     
     lwHomeRecommendCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:lwRecommendCellID forIndexPath:indexPath];
     lwHomeRecommedActityCell *actityCell = [collectionView dequeueReusableCellWithReuseIdentifier:lwRecommendActityCellID forIndexPath:indexPath];
     lwHomeRecommendOperaCell *operaCell = [collectionView dequeueReusableCellWithReuseIdentifier:lwRecommendOperaCellID forIndexPath:indexPath];
-    lwHomeLiveVideoCustomCell *liveCell = [collectionView dequeueReusableCellWithReuseIdentifier:lwRecommendLiveCellID forIndexPath:indexPath];
+    lwHomeRecommendLiveCell *liveCell = [collectionView dequeueReusableCellWithReuseIdentifier:lwRecommendLiveCellID forIndexPath:indexPath];
     
     BOOL last = indexPath.row == model.body.count - 1 ? YES : NO;
     
@@ -83,6 +131,9 @@ UICollectionViewDelegateFlowLayout
         }];
         return operaCell;
     }else if ([model.type isEqualToString:@"live"]){
+        [liveCell liveModel:model.body[indexPath.row] Last:last Completion:^(id object) {
+            NSLog(@"a");
+        }];
         return liveCell;
     }else if ([model.type isEqualToString:@"activity"]){
         [actityCell actityModel:model Completion:^(id object) {
@@ -94,6 +145,49 @@ UICollectionViewDelegateFlowLayout
             
         }];
         return cell;
+    }
+}
+
+- (__kindof UICollectionReusableView *)collectionHeaderView:(UICollectionView *)collectionView IndexPath:(NSIndexPath *)indexPath Model:(lwRecommendBaseModel *)model{
+    lwHomeRecommendHeaderView *headerWithBanner = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:lwRecommendHeaderViewID forIndexPath:indexPath];
+    lwHomeRecommendHeaderView *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:lwRecommendHeaderCustomViewID forIndexPath:indexPath];
+ 
+    if (model.banner.top.count != 0) {
+        [headerWithBanner headerModel:model Type:lwHomeRecommendHeaderTypeTitleWithBanner Completion:^(id object) {
+            NSLog(@"加载上去了!");
+        }];
+        return headerWithBanner;
+    }else{
+        [header headerModel:model Type:lwHomeRecommendHeaderTypeTitle Completion:^(id object) {
+            NSLog(@"加载上去了!");
+        }];
+        return header;
+    }
+    
+}
+
+- (__kindof UICollectionReusableView *)collectionFooterView:(UICollectionView *)collectionView IndexPath:(NSIndexPath *)indexPath Model:(lwRecommendBaseModel *)model{
+    lwHomeRecommendFooterView *opera = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:lwRecommendOperaFooterViewID forIndexPath:indexPath];
+    lwHomeRecommendFooterView *operaWithBanner = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:lwRecommendOperaWithBannerViewID forIndexPath:indexPath];
+    lwHomeRecommendFooterView *footerWithTitle = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:lwRecommendFooterViewID forIndexPath:indexPath];
+    lwHomeRecommendFooterView *customView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:lwRecommendFooterCustomViewID forIndexPath:indexPath];
+    
+    if ([model.title isEqualToString:@"番剧推荐"]) {
+        if (model.banner.bottom.count != 0) {
+            [operaWithBanner footerModel:model Type:lwHomeRecommendFooterTypeOperaWithBanner Completion:nil];
+            return operaWithBanner;
+        }else{
+            [opera footerModel:model Type:lwHomeRecommendFooterTypeOpera Completion:nil];
+            return opera;
+        }
+    }else{
+        if (model.banner.bottom.count != 0) {
+            [footerWithTitle footerModel:model Type:lwHomeRecommendFooterTypeTitleWithBanner Completion:nil];
+            return footerWithTitle;
+        }else{
+            [customView footerModel:model Type:lwHomeRecommendFooterTypeUsually Completion:nil];
+            return customView;
+        }
     }
 }
 
@@ -175,18 +269,16 @@ UICollectionViewDelegateFlowLayout
     }
 }
 
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
+    lwRecommendBaseModel *model = self.dataSource[indexPath.section];
+    if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
+        return [self collectionHeaderView:collectionView IndexPath:indexPath Model:model];
+    }else{
+        return [self collectionFooterView:collectionView IndexPath:indexPath Model:model];
+    }
+}
+
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-//    lwHomeRecommendCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:lwRecommendCellID forIndexPath:indexPath];
-//    cell.backgroundColor = [UIColor whiteColor];
-//    
-//    lwRecommendBaseModel *baseModel = (lwRecommendBaseModel *)self.dataSource[indexPath.section];
-//    
-//    WS(ws);
-//    
-//    [cell recommendModel:baseModel.body[indexPath.row] Last:(indexPath.row == baseModel.body.count - 1) Completion:^(id object) {
-//        [(UIButton *)object addTarget:ws action:@selector(refreshPartDataSource:) forControlEvents:UIControlEventTouchUpInside];
-//    }];
-//    return cell;
     return [self collectionView:collectionView IndexPath:indexPath Model:self.dataSource[indexPath.section]];
 }
 
@@ -194,13 +286,18 @@ UICollectionViewDelegateFlowLayout
 #pragma mark - UICollectionViewDelegateFlowLayout
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-//    return CGSizeMake(lW / 2, 150);
     lwRecommendBaseModel *model = self.dataSource[indexPath.section];
     return [self collectionItemSize:model];
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
-    return CGSizeZero;
+    lwRecommendBaseModel *model = self.dataSource[section];
+    return [self collectionHeaderViewSize:model];
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section{
+    lwRecommendBaseModel *model = self.dataSource[section];
+    return [self collectionFooterViewSize:model];
 }
 
 #pragma mark - loadView
@@ -236,6 +333,7 @@ UICollectionViewDelegateFlowLayout
         
         //cell
         [self registCell:_myCollectionView];
+        [self registHeaderOrFooter:_myCollectionView];
     }
     return _myCollectionView;
 }

@@ -79,8 +79,12 @@
 		C99E38D31D8FA7720008AB15 /* lwFindBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C99E38D21D8FA7720008AB15 /* lwFindBaseModel.m */; };
 		C99F4B271D77BB770006D255 /* lwHomeLiveVideoCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C99F4B261D77BB770006D255 /* lwHomeLiveVideoCustomCell.m */; };
 		C99F4B2A1D77BBC90006D255 /* lwHomeLiveVideoHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C99F4B291D77BBC90006D255 /* lwHomeLiveVideoHeaderView.m */; };
+		C9A9DEB01D94BD760075C5CC /* lwHomeRecommendHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A9DEAF1D94BD760075C5CC /* lwHomeRecommendHeaderView.m */; };
 		C9AE644A1D8E8B2D00188B3F /* lwPersonalMenuList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9AE64491D8E8B2C00188B3F /* lwPersonalMenuList.plist */; };
 		C9AE644E1D8E8F3C00188B3F /* lwPersonalMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AE644D1D8E8F3C00188B3F /* lwPersonalMenuCell.m */; };
+		C9C5DA501D950EEF00DC6624 /* lwHomeRecommendLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C5DA4F1D950EEF00DC6624 /* lwHomeRecommendLiveCell.m */; };
+		C9C5DA531D95125A00DC6624 /* lwHomeRecommendFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C5DA521D95125A00DC6624 /* lwHomeRecommendFooterView.m */; };
+		C9C5DA561D95131A00DC6624 /* lwHomeRecommendOperaFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C5DA551D95131A00DC6624 /* lwHomeRecommendOperaFooterView.m */; };
 		C9E690481D93B63700D811C3 /* lwRecommendBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E690471D93B63700D811C3 /* lwRecommendBaseModel.m */; };
 		C9E6904C1D93C12700D811C3 /* lwHomeRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E6904B1D93C12700D811C3 /* lwHomeRecommendCell.m */; };
 		C9E690521D93D76C00D811C3 /* lwHomeRecommedActityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E690511D93D76C00D811C3 /* lwHomeRecommedActityCell.m */; };
@@ -240,9 +244,17 @@
 		C99F4B261D77BB770006D255 /* lwHomeLiveVideoCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwHomeLiveVideoCustomCell.m; sourceTree = "<group>"; };
 		C99F4B281D77BBC90006D255 /* lwHomeLiveVideoHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeLiveVideoHeaderView.h; sourceTree = "<group>"; };
 		C99F4B291D77BBC90006D255 /* lwHomeLiveVideoHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwHomeLiveVideoHeaderView.m; sourceTree = "<group>"; };
+		C9A9DEAE1D94BD760075C5CC /* lwHomeRecommendHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeRecommendHeaderView.h; sourceTree = "<group>"; };
+		C9A9DEAF1D94BD760075C5CC /* lwHomeRecommendHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwHomeRecommendHeaderView.m; sourceTree = "<group>"; };
 		C9AE64491D8E8B2C00188B3F /* lwPersonalMenuList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lwPersonalMenuList.plist; sourceTree = "<group>"; };
 		C9AE644C1D8E8F3C00188B3F /* lwPersonalMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwPersonalMenuCell.h; sourceTree = "<group>"; };
 		C9AE644D1D8E8F3C00188B3F /* lwPersonalMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwPersonalMenuCell.m; sourceTree = "<group>"; };
+		C9C5DA4E1D950EEF00DC6624 /* lwHomeRecommendLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeRecommendLiveCell.h; sourceTree = "<group>"; };
+		C9C5DA4F1D950EEF00DC6624 /* lwHomeRecommendLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwHomeRecommendLiveCell.m; sourceTree = "<group>"; };
+		C9C5DA511D95125A00DC6624 /* lwHomeRecommendFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeRecommendFooterView.h; sourceTree = "<group>"; };
+		C9C5DA521D95125A00DC6624 /* lwHomeRecommendFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwHomeRecommendFooterView.m; sourceTree = "<group>"; };
+		C9C5DA541D95131A00DC6624 /* lwHomeRecommendOperaFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeRecommendOperaFooterView.h; sourceTree = "<group>"; };
+		C9C5DA551D95131A00DC6624 /* lwHomeRecommendOperaFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwHomeRecommendOperaFooterView.m; sourceTree = "<group>"; };
 		C9E690461D93B63700D811C3 /* lwRecommendBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwRecommendBaseModel.h; sourceTree = "<group>"; };
 		C9E690471D93B63700D811C3 /* lwRecommendBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwRecommendBaseModel.m; sourceTree = "<group>"; };
 		C9E6904A1D93C12700D811C3 /* lwHomeRecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeRecommendCell.h; sourceTree = "<group>"; };
@@ -829,12 +841,20 @@
 		C9E690491D93C0F300D811C3 /* 推荐 */ = {
 			isa = PBXGroup;
 			children = (
+				C9A9DEAE1D94BD760075C5CC /* lwHomeRecommendHeaderView.h */,
+				C9A9DEAF1D94BD760075C5CC /* lwHomeRecommendHeaderView.m */,
+				C9C5DA541D95131A00DC6624 /* lwHomeRecommendOperaFooterView.h */,
+				C9C5DA551D95131A00DC6624 /* lwHomeRecommendOperaFooterView.m */,
+				C9C5DA511D95125A00DC6624 /* lwHomeRecommendFooterView.h */,
+				C9C5DA521D95125A00DC6624 /* lwHomeRecommendFooterView.m */,
 				C9E6904A1D93C12700D811C3 /* lwHomeRecommendCell.h */,
 				C9E6904B1D93C12700D811C3 /* lwHomeRecommendCell.m */,
 				C9E690531D93D78800D811C3 /* lwHomeRecommendOperaCell.h */,
 				C9E690541D93D78800D811C3 /* lwHomeRecommendOperaCell.m */,
 				C9E690501D93D76C00D811C3 /* lwHomeRecommedActityCell.h */,
 				C9E690511D93D76C00D811C3 /* lwHomeRecommedActityCell.m */,
+				C9C5DA4E1D950EEF00DC6624 /* lwHomeRecommendLiveCell.h */,
+				C9C5DA4F1D950EEF00DC6624 /* lwHomeRecommendLiveCell.m */,
 			);
 			path = "推荐";
 			sourceTree = "<group>";
@@ -1055,6 +1075,7 @@
 				C9810B5A1D700739006A858E /* lwHomeVC.m in Sources */,
 				C9810B621D701EE0006A858E /* lwCategoryVC.m in Sources */,
 				C95F04611D6EEE8100168F5A /* lwBaseVC.m in Sources */,
+				C9C5DA531D95125A00DC6624 /* lwHomeRecommendFooterView.m in Sources */,
 				C997C8701D740B09005468D8 /* lwLiveVideoVC.m in Sources */,
 				C9E6904C1D93C12700D811C3 /* lwHomeRecommendCell.m in Sources */,
 				C993DE031D751B5A0098D86A /* lwLabelVC.m in Sources */,
@@ -1068,6 +1089,7 @@
 				C99E38D31D8FA7720008AB15 /* lwFindBaseModel.m in Sources */,
 				C9810B681D701F0A006A858E /* lwSearchVC.m in Sources */,
 				C9810B491D6FE2BA006A858E /* UISearchBar+lwSearchBar.m in Sources */,
+				C9C5DA561D95131A00DC6624 /* lwHomeRecommendOperaFooterView.m in Sources */,
 				C993DE071D75544E0098D86A /* lwDynamicCell.m in Sources */,
 				C98F0DD31D7D1CE000E85355 /* lwAttentionTagCell.m in Sources */,
 				C9810B651D701EFA006A858E /* lwAttentionVC.m in Sources */,
@@ -1077,6 +1099,7 @@
 				C9810B461D6FE2BA006A858E /* UIImage+lwImage.m in Sources */,
 				C98F0DDA1D7D4B2200E85355 /* lwAttentionTagModel.m in Sources */,
 				C9810B471D6FE2BA006A858E /* UIImageView+lwImageView.m in Sources */,
+				C9A9DEB01D94BD760075C5CC /* lwHomeRecommendHeaderView.m in Sources */,
 				C984EF7B1D757D610050F805 /* lwLiveVideoModel.m in Sources */,
 				C95F04201D6EE62A00168F5A /* main.m in Sources */,
 				C997C8731D740B30005468D8 /* lwRecommendVC.m in Sources */,
@@ -1086,6 +1109,7 @@
 				C9810B4B1D6FE2BA006A858E /* UITableView+lwTableView.m in Sources */,
 				C97E1B051D7EB01200DF88FF /* lwAllCategoryVC.m in Sources */,
 				C98091711D7827160015A985 /* lwHomeLiveVideoHeaderCell.m in Sources */,
+				C9C5DA501D950EEF00DC6624 /* lwHomeRecommendLiveCell.m in Sources */,
 				C98739181D8283B200D2EDF8 /* lwCategoryDetailVC.m in Sources */,
 				C997C87D1D741DEB005468D8 /* lwCategoryCell.m in Sources */,
 				C99F4B271D77BB770006D255 /* lwHomeLiveVideoCustomCell.m in Sources */,

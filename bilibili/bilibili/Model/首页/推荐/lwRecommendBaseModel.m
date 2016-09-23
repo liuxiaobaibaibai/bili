@@ -113,14 +113,12 @@
         self.body = bodys;
         
         id banner = dict[@"banner"];
-        NSMutableArray *banners = [NSMutableArray new];
-        if ([banner isKindOfClass:[NSArray class]]) {
-            for (NSDictionary *info in banner) {
-                lwRecommendBannerModel *bannerModel = [[lwRecommendBannerModel alloc] initWithDict:info];
-                [banners addObject:bannerModel];
-            }
+        if ([banner isKindOfClass:[NSDictionary class]]) {
+            self.banner = [[lwRecommendBannerModel alloc] initWithDict:banner];
+        }else{
+            self.banner = [[lwRecommendBannerModel alloc] init];
         }
-        self.banner = banners;
+        
         
         id ext = dict[@"ext"];
         if (ext && [ext isKindOfClass:[NSDictionary class]]) {

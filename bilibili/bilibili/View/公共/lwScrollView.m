@@ -85,11 +85,17 @@
 }
 
 - (void)layoutSubviews{
-    [_myScrollView setFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
-    [_leftImageView setFrame:CGRectMake(0, 0, SCREENWIDTH, self.frame.size.height)];
-    [_middleImageView setFrame:CGRectMake(SCREENWIDTH, 0, SCREENWIDTH, self.frame.size.height)];
-    [_rightImageView setFrame:CGRectMake(SCREENWIDTH * 2, 0, SCREENWIDTH, self.frame.size.height)];
-    [_pageControl setFrame:CGRectMake(0, self.frame.size.height - 30, SCREENWIDTH, 30)];
+    [super layoutSubviews];
+    
+    if (self.height == 0) {
+        
+    }else{
+        [_myScrollView setFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+        [_leftImageView setFrame:CGRectMake(0, 0, SCREENWIDTH, self.frame.size.height)];
+        [_middleImageView setFrame:CGRectMake(SCREENWIDTH, 0, SCREENWIDTH, self.frame.size.height)];
+        [_rightImageView setFrame:CGRectMake(SCREENWIDTH * 2, 0, SCREENWIDTH, self.frame.size.height)];
+        [_pageControl setFrame:CGRectMake(0, self.frame.size.height - 30, SCREENWIDTH, 30)];
+    }
 }
 
 - (void)dealloc{
