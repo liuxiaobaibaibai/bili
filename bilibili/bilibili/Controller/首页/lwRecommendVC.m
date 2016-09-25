@@ -18,7 +18,6 @@
 #import "lwHomeRecommendHeaderView.h"
 
 
-#import "lwHomeRecommendOperaFooterView.h"
 #import "lwHomeRecommendFooterView.h"
 
 static NSString *lwRecommendCellID = @"cee";
@@ -50,9 +49,12 @@ UICollectionViewDelegateFlowLayout
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     [self setupView];
     [self loadDataSource];
+
 }
+
 
 - (void)loadDataSource{
     self.dataSource = [NSMutableArray arrayWithArray:[lwRecommendBaseModel recommendSource]];
@@ -117,74 +119,78 @@ UICollectionViewDelegateFlowLayout
 }
 
 - ( __kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView IndexPath:(NSIndexPath *)indexPath Model:(lwRecommendBaseModel *)model{
-    
-    lwHomeRecommendCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:lwRecommendCellID forIndexPath:indexPath];
-    lwHomeRecommedActityCell *actityCell = [collectionView dequeueReusableCellWithReuseIdentifier:lwRecommendActityCellID forIndexPath:indexPath];
-    lwHomeRecommendOperaCell *operaCell = [collectionView dequeueReusableCellWithReuseIdentifier:lwRecommendOperaCellID forIndexPath:indexPath];
-    lwHomeRecommendLiveCell *liveCell = [collectionView dequeueReusableCellWithReuseIdentifier:lwRecommendLiveCellID forIndexPath:indexPath];
-    
     BOOL last = indexPath.row == model.body.count - 1 ? YES : NO;
-    
     if ([model.type isEqualToString:@"bangumi"]) {
-        [operaCell recommendModel:model.body[indexPath.row] Last:last Completion:^(id object) {
-            NSLog(@"nsl");
-        }];
+        
+        lwHomeRecommendOperaCell *operaCell = [collectionView dequeueReusableCellWithReuseIdentifier:lwRecommendOperaCellID forIndexPath:indexPath];
+        [operaCell recommendModel:model.body[indexPath.row] Last:last Completion:nil];
         return operaCell;
+        
     }else if ([model.type isEqualToString:@"live"]){
-        [liveCell liveModel:model.body[indexPath.row] Last:last Completion:^(id object) {
-            NSLog(@"a");
-        }];
+        
+        lwHomeRecommendLiveCell *liveCell = [collectionView dequeueReusableCellWithReuseIdentifier:lwRecommendLiveCellID forIndexPath:indexPath];
+        [liveCell liveModel:model.body[indexPath.row] Last:last Completion:nil];
         return liveCell;
+        
     }else if ([model.type isEqualToString:@"activity"]){
-        [actityCell actityModel:model Completion:^(id object) {
-            
-        }];
+        
+        lwHomeRecommedActityCell *actityCell = [collectionView dequeueReusableCellWithReuseIdentifier:lwRecommendActityCellID forIndexPath:indexPath];
+        [actityCell actityModel:model Completion:nil];
         return actityCell;
+        
     }else{
+        
+        lwHomeRecommendCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:lwRecommendCellID forIndexPath:indexPath];
         [cell recommendModel:model.body[indexPath.row] Last:last Completion:^(id object) {
             
         }];
         return cell;
+        
     }
 }
 
 - (__kindof UICollectionReusableView *)collectionHeaderView:(UICollectionView *)collectionView IndexPath:(NSIndexPath *)indexPath Model:(lwRecommendBaseModel *)model{
-    lwHomeRecommendHeaderView *headerWithBanner = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:lwRecommendHeaderViewID forIndexPath:indexPath];
-    lwHomeRecommendHeaderView *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:lwRecommendHeaderCustomViewID forIndexPath:indexPath];
- 
     if (model.banner.top.count != 0) {
-        [headerWithBanner headerModel:model Type:lwHomeRecommendHeaderTypeTitleWithBanner Completion:^(id object) {
-            NSLog(@"加载上去了!");
-        }];
+        lwHomeRecommendHeaderView *headerWithBanner = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:lwRecommendHeaderViewID forIndexPath:indexPath];
+        [headerWithBanner headerModel:model Type:lwHomeRecommendHeaderTypeTitleWithBanner Completion:nil];
         return headerWithBanner;
     }else{
-        [header headerModel:model Type:lwHomeRecommendHeaderTypeTitle Completion:^(id object) {
-            NSLog(@"加载上去了!");
-        }];
+        lwHomeRecommendHeaderView *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:lwRecommendHeaderCustomViewID forIndexPath:indexPath];
+        [header headerModel:model Type:lwHomeRecommendHeaderTypeTitle Completion:nil];
         return header;
     }
-    
 }
 
 - (__kindof UICollectionReusableView *)collectionFooterView:(UICollectionView *)collectionView IndexPath:(NSIndexPath *)indexPath Model:(lwRecommendBaseModel *)model{
-    lwHomeRecommendFooterView *opera = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:lwRecommendOperaFooterViewID forIndexPath:indexPath];
-    lwHomeRecommendFooterView *operaWithBanner = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:lwRecommendOperaWithBannerViewID forIndexPath:indexPath];
-    lwHomeRecommendFooterView *footerWithTitle = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:lwRecommendFooterViewID forIndexPath:indexPath];
-    lwHomeRecommendFooterView *customView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:lwRecommendFooterCustomViewID forIndexPath:indexPath];
     
     if ([model.title isEqualToString:@"番剧推荐"]) {
         if (model.banner.bottom.count != 0) {
+            // 番剧+banner
+            lwHomeRecommendFooterView *operaWithBanner = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:lwRecommendOperaWithBannerViewID forIndexPath:indexPath];
+            
             [operaWithBanner footerModel:model Type:lwHomeRecommendFooterTypeOperaWithBanner Completion:nil];
             return operaWithBanner;
         }else{
+            
+            // 番剧
+            lwHomeRecommendFooterView *opera = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:lwRecommendOperaFooterViewID forIndexPath:indexPath];
+            
             [opera footerModel:model Type:lwHomeRecommendFooterTypeOpera Completion:nil];
             return opera;
         }
     }else{
         if (model.banner.bottom.count != 0) {
+            
+            // 只有banner
+            lwHomeRecommendFooterView *footerWithTitle = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:lwRecommendFooterViewID forIndexPath:indexPath];
+            
             [footerWithTitle footerModel:model Type:lwHomeRecommendFooterTypeTitleWithBanner Completion:nil];
             return footerWithTitle;
         }else{
+
+            // 空白
+            lwHomeRecommendFooterView *customView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:lwRecommendFooterCustomViewID forIndexPath:indexPath];
+            
             [customView footerModel:model Type:lwHomeRecommendFooterTypeUsually Completion:nil];
             return customView;
         }

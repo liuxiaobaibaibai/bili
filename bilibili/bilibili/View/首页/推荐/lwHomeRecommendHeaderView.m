@@ -250,6 +250,11 @@
 
 #pragma mark - loadView
 - (void)loadView{
+    
+    [[self subviews] enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [obj removeFromSuperview];
+    }];
+    
     [self addSubview:self.bannerView];
     [self addSubview:self.iconView];
     [self addSubview:self.titleLabel];

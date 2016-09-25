@@ -84,7 +84,6 @@
 		C9AE644E1D8E8F3C00188B3F /* lwPersonalMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AE644D1D8E8F3C00188B3F /* lwPersonalMenuCell.m */; };
 		C9C5DA501D950EEF00DC6624 /* lwHomeRecommendLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C5DA4F1D950EEF00DC6624 /* lwHomeRecommendLiveCell.m */; };
 		C9C5DA531D95125A00DC6624 /* lwHomeRecommendFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C5DA521D95125A00DC6624 /* lwHomeRecommendFooterView.m */; };
-		C9C5DA561D95131A00DC6624 /* lwHomeRecommendOperaFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C5DA551D95131A00DC6624 /* lwHomeRecommendOperaFooterView.m */; };
 		C9E690481D93B63700D811C3 /* lwRecommendBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E690471D93B63700D811C3 /* lwRecommendBaseModel.m */; };
 		C9E6904C1D93C12700D811C3 /* lwHomeRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E6904B1D93C12700D811C3 /* lwHomeRecommendCell.m */; };
 		C9E690521D93D76C00D811C3 /* lwHomeRecommedActityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E690511D93D76C00D811C3 /* lwHomeRecommedActityCell.m */; };
@@ -253,8 +252,6 @@
 		C9C5DA4F1D950EEF00DC6624 /* lwHomeRecommendLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwHomeRecommendLiveCell.m; sourceTree = "<group>"; };
 		C9C5DA511D95125A00DC6624 /* lwHomeRecommendFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeRecommendFooterView.h; sourceTree = "<group>"; };
 		C9C5DA521D95125A00DC6624 /* lwHomeRecommendFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwHomeRecommendFooterView.m; sourceTree = "<group>"; };
-		C9C5DA541D95131A00DC6624 /* lwHomeRecommendOperaFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeRecommendOperaFooterView.h; sourceTree = "<group>"; };
-		C9C5DA551D95131A00DC6624 /* lwHomeRecommendOperaFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwHomeRecommendOperaFooterView.m; sourceTree = "<group>"; };
 		C9E690461D93B63700D811C3 /* lwRecommendBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwRecommendBaseModel.h; sourceTree = "<group>"; };
 		C9E690471D93B63700D811C3 /* lwRecommendBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwRecommendBaseModel.m; sourceTree = "<group>"; };
 		C9E6904A1D93C12700D811C3 /* lwHomeRecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeRecommendCell.h; sourceTree = "<group>"; };
@@ -843,8 +840,6 @@
 			children = (
 				C9A9DEAE1D94BD760075C5CC /* lwHomeRecommendHeaderView.h */,
 				C9A9DEAF1D94BD760075C5CC /* lwHomeRecommendHeaderView.m */,
-				C9C5DA541D95131A00DC6624 /* lwHomeRecommendOperaFooterView.h */,
-				C9C5DA551D95131A00DC6624 /* lwHomeRecommendOperaFooterView.m */,
 				C9C5DA511D95125A00DC6624 /* lwHomeRecommendFooterView.h */,
 				C9C5DA521D95125A00DC6624 /* lwHomeRecommendFooterView.m */,
 				C9E6904A1D93C12700D811C3 /* lwHomeRecommendCell.h */,
@@ -1089,7 +1084,6 @@
 				C99E38D31D8FA7720008AB15 /* lwFindBaseModel.m in Sources */,
 				C9810B681D701F0A006A858E /* lwSearchVC.m in Sources */,
 				C9810B491D6FE2BA006A858E /* UISearchBar+lwSearchBar.m in Sources */,
-				C9C5DA561D95131A00DC6624 /* lwHomeRecommendOperaFooterView.m in Sources */,
 				C993DE071D75544E0098D86A /* lwDynamicCell.m in Sources */,
 				C98F0DD31D7D1CE000E85355 /* lwAttentionTagCell.m in Sources */,
 				C9810B651D701EFA006A858E /* lwAttentionVC.m in Sources */,

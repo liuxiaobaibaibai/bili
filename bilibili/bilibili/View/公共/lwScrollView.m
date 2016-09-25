@@ -88,8 +88,9 @@
     [super layoutSubviews];
     
     if (self.height == 0) {
-        
+        self.hidden = YES;
     }else{
+        self.hidden = NO;
         [_myScrollView setFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
         [_leftImageView setFrame:CGRectMake(0, 0, SCREENWIDTH, self.frame.size.height)];
         [_middleImageView setFrame:CGRectMake(SCREENWIDTH, 0, SCREENWIDTH, self.frame.size.height)];
@@ -228,8 +229,13 @@
     [self.pageControl setNumberOfPages:_flashs.count];
     [self setImageView];
     // 数据加载完成之后，判断如果开启了自动滚动就开始自动滚动
-    if (_autoScroll) {
-        [self startAutoScroll];
+    if (flashs.count >1) {
+        if (_autoScroll) {
+            [self startAutoScroll];
+        }
+    }else{
+        self.myScrollView.scrollEnabled = NO;
+        [self.pageControl setHidden:YES];
     }
 }
 

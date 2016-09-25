@@ -83,8 +83,8 @@
         case lwHomeRecommendFooterTypeOperaWithBanner:
         {
             NSMutableArray *flash = [NSMutableArray new];
-            for (lwRecommendHeaderModel *header in model.banner.top) {
-                [flash addObject:header.image];
+            for (lwRecommendHeaderModel *footer in model.banner.bottom) {
+                [flash addObject:footer.image];
             }
             [self.bannerView setFlashs:flash];
             self.iconView.image = [UIImage imageNamed:[self imageValueForKey:model.title]];
@@ -93,8 +93,8 @@
         case lwHomeRecommendFooterTypeTitleWithBanner:
         {
             NSMutableArray *flash = [NSMutableArray new];
-            for (lwRecommendHeaderModel *header in model.banner.top) {
-                [flash addObject:header.image];
+            for (lwRecommendHeaderModel *footer in model.banner.bottom) {
+                [flash addObject:footer.image];
             }
             [self.bannerView setFlashs:flash];
             self.iconView.image = [UIImage imageNamed:[self imageValueForKey:model.title]];
@@ -118,21 +118,40 @@
     switch (type) {
         case lwHomeRecommendFooterTypeOpera:
         {
+            // 去掉
+            [_indexBtn setHidden:NO];
+            [_broadcastBtn setHidden:NO];
+            [_iconView setHidden:YES];
+            [_titleLabel setHidden:YES];
+            [_subtitleLabel setHidden:YES];
+            [_detailView setHidden:YES];
+            [_bannerView setHidden:YES];
+            
+            
             [_broadcastBtn mas_remakeConstraints:^(MASConstraintMaker *make) {
                 make.left.mas_equalTo(10);
                 make.centerY.equalTo(ws);
+                make.height.mas_equalTo(40);
             }];
             
             [_indexBtn mas_remakeConstraints:^(MASConstraintMaker *make) {
                 make.left.mas_equalTo(ws.broadcastBtn.mas_right).offset(10);
-                make.right.mas_equalTo(10);
-                make.width.mas_equalTo(ws.broadcastBtn);
+                make.right.mas_equalTo(-10);
+                make.height.width.mas_equalTo(ws.broadcastBtn);
                 make.centerY.equalTo(ws);
             }];
         }
             break;
         case lwHomeRecommendFooterTypeOperaWithBanner:
         {
+            [_indexBtn setHidden:NO];
+            [_broadcastBtn setHidden:NO];
+            [_iconView setHidden:NO];
+            [_titleLabel setHidden:NO];
+            [_subtitleLabel setHidden:NO];
+            [_detailView setHidden:NO];
+            [_bannerView setHidden:NO];
+            
             [_broadcastBtn mas_remakeConstraints:^(MASConstraintMaker *make) {
                 make.left.mas_equalTo(10);
                 make.top.mas_equalTo(10);
@@ -150,7 +169,6 @@
                 make.left.mas_equalTo(10);
                 make.top.mas_equalTo(10);
                 make.size.mas_equalTo(CGSizeMake(20, 20));
-                make.bottom.mas_equalTo(-10);
             }];
             
             [_titleLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
@@ -183,11 +201,18 @@
             break;
         case lwHomeRecommendFooterTypeTitleWithBanner:
         {
+            [_broadcastBtn setHidden:YES];
+            [_indexBtn setHidden:YES];
+            [_iconView setHidden:NO];
+            [_titleLabel setHidden:NO];
+            [_subtitleLabel setHidden:NO];
+            [_detailView setHidden:NO];
+            [_bannerView setHidden:NO];
+            
             [_iconView mas_remakeConstraints:^(MASConstraintMaker *make) {
                 make.left.mas_equalTo(10);
                 make.top.mas_equalTo(10);
                 make.size.mas_equalTo(CGSizeMake(20, 20));
-                make.bottom.mas_equalTo(-10);
             }];
             
             [_titleLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
@@ -240,6 +265,11 @@
 
 #pragma mark - loadView
 - (void)loadView{
+    
+    [[self subviews] enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [obj removeFromSuperview];
+    }];
+    
     // 番剧
     [self addSubview:self.indexBtn];
     [self addSubview:self.broadcastBtn];
