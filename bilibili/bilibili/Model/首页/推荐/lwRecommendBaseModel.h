@@ -78,7 +78,7 @@
 
 + (NSMutableArray <lwRecommendBaseModel *> *)recommendSource;
 
-+ ( __kindof UICollectionViewCell *)collectionView:(UICollectionView *)collection IndexPath:(NSIndexPath *)indexPath Model:(lwRecommendBaseModel *)model;
+//+ ( __kindof UICollectionViewCell *)collectionView:(UICollectionView *)collection IndexPath:(NSIndexPath *)indexPath Model:(lwRecommendBaseModel *)model;
 
 @end
 

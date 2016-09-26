@@ -49,10 +49,29 @@ UICollectionViewDelegateFlowLayout
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    [self setupView];
+    
     [self loadDataSource];
+}
 
+- (void)dealloc{
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    NSLog(@"%s",__func__);
+    
+    [self setupView];
+}
+
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    NSLog(@"%s",__func__);
+    
+    self.myCollectionView.delegate = nil;
+    self.myCollectionView.dataSource = nil;
+    self.myCollectionView = nil;
 }
 
 

@@ -6,79 +6,73 @@
         "style": "medium",
         "title": "热门焦点",
         "body": [{
-            "title": "韩国向中国借了两只熊猫，动物园拍出把人萌出一脸血的广告",
-            "cover": "http://i0.hdslb.com//bfs/archive/50c1dedde1bf6c285a5589d923dd56d3dfbec6ac.png",
-            "uri": "bilibili://video/6282069",
-            "param": "6282069",
+            "title": "【谷阿莫】3分钟看完2016混水摸鲨鱼的电影《鲨滩 The Shallows》",
+            "cover": "http://i0.hdslb.com//bfs/archive/3c8f4697e1cae8f007c7727554c3a6a3613a74fa.jpg",
+            "uri": "bilibili://video/6384705",
+            "param": "6384705",
             "goto": "av",
-            "play": 52235,
-            "danmaku": 180
+            "play": 253570,
+            "danmaku": 946
         }, {
-            "title": "来啊！快活啊！",
-            "cover": "http://i0.hdslb.com//bfs/archive/c6df9320a7f713259abc709f971075247c878118.jpg",
-            "uri": "bilibili://video/6305662",
-            "param": "6305662",
+            "title": "不扣扣子的小流氓_超清",
+            "cover": "http://i0.hdslb.com//bfs/archive/4443a36e4a5a86f2df27e207994b19067656cfce.png",
+            "uri": "bilibili://video/6374144",
+            "param": "6374144",
             "goto": "av",
-            "play": 4124,
-            "danmaku": 18
+            "play": 3615,
+            "danmaku": 21
         }, {
-            "title": "RC大比例虎式坦克",
-            "cover": "http://i0.hdslb.com//bfs/archive/c513645aa1ff3bcf7ec5c2db397ee8e7bcb1a830.jpg",
-            "uri": "bilibili://video/6360155",
-            "param": "6360155",
+            "title": "某暴死的冷番推荐 II",
+            "cover": "http://i0.hdslb.com//bfs/archive/153918d01d12cfe39a74e0f09cb08cd6ac09d1f2.jpg",
+            "uri": "bilibili://video/6392490",
+            "param": "6392490",
             "goto": "av",
-            "play": 1420,
-            "danmaku": 23
+            "play": 200032,
+            "danmaku": 2521
         }, {
-            "title": "【LifeHacks】每个女孩都应该知道的17个偏门时尚小技巧@油兔不二字幕组",
-            "cover": "http://i0.hdslb.com//bfs/archive/7909244216ed4bdb5cf24082ba8851f08ce98722.jpg",
-            "uri": "bilibili://video/6350082",
-            "param": "6350082",
+            "title": "我妈终于接受了这个设定，看见我戴假发毫无波动~甚至还笑了起来",
+            "cover": "http://i0.hdslb.com//bfs/archive/dd21acd97e8f46ac2beb9a9e6b689c9d81fca1e4.jpg",
+            "uri": "bilibili://video/6401720",
+            "param": "6401720",
             "goto": "av",
-            "play": 73080,
-            "danmaku": 524
+            "play": 597206,
+            "danmaku": 6641
         }, {
-            "title": "【波导勇者】同学手机的第一次被我夺了1_x264",
-            "cover": "http://i0.hdslb.com//bfs/archive/2cb224120d5c142b78443830b17645cfa5fb7540.png",
-            "uri": "bilibili://video/6344471",
-            "param": "6344471",
+            "title": "异域风情热舞【萌王EX-拉美西斯二世】Follow the Leader",
+            "cover": "http://i0.hdslb.com//bfs/archive/2561013b81f942cb4ad4d2b16fcaa10075a42eed.jpg",
+            "uri": "bilibili://video/6414693",
+            "param": "6414693",
             "goto": "av",
-            "play": 1586,
-            "danmaku": 9
+            "play": 7906,
+            "danmaku": 137
         }, {
-            "title": "关于江波喷厂长，机器人有说法",
-            "cover": "http://i0.hdslb.com//bfs/archive/33dc44db09378b45197284fc6da20f5375cf18c3.png",
-            "uri": "bilibili://video/6297502",
-            "param": "6297502",
+            "title": "【逗鱼时刻】第86期 厉害了我的哥",
+            "cover": "http://i0.hdslb.com//bfs/archive/a8048c1728fdf741f5d6cbb06c5e4f340d9cbfd9.jpg",
+            "uri": "bilibili://video/6378784",
+            "param": "6378784",
             "goto": "av",
-            "play": 808,
-            "danmaku": 4
+            "play": 637904,
+            "danmaku": 4334
         }],
         "banner": {
             "top": [{
-                "id": 9525,
-                "title": "频道精选 生活区 No.30",
-                "image": "http://i0.hdslb.com/bfs/archive/5066224648b610e758fb804457e070d1b33aa270.jpg",
-                "hash": "626bf1a1ccd5f06431739afd159c5285",
-                "uri": "http://www.bilibili.com/topic/v2/phone1525.html"
+                "id": 10380,
+                "title": "动画频道精选",
+                "image": "http://i0.hdslb.com/bfs/archive/4ca77715df7a2a10652786c8ef8a1483bf5ec6bd.jpg",
+                "hash": "e16b41a8565502174c6ba4471dd39a37",
+                "uri": "http://www.bilibili.com/topic/v2/phone1536.html"
             }, {
-                "id": 9217,
-                "title": "梦100",
-                "image": "http://i0.hdslb.com/bfs/archive/bed4f0afd51b9c3a025e1e93193dd95c5ddd5ae5.jpg",
-                "hash": "c59dd0c9897564e8df08468cd48e2484",
-                "uri": "http://acg.tv/u12Z"
+                "id": 10166,
+                "title": "10月正版新番",
+                "image": "http://i0.hdslb.com/bfs/bangumi/08a6eee0c60b7d0de0f495e7f3905abd91bc7db1.jpg",
+                "hash": "dfe2c74bd66c6756c10ff8c6fedbcb35",
+                "uri": "http://www.bilibili.com/html/activity-20160922newbangumi-mob.html"
             }, {
-                "id": 9060,
-                "title": "逗趣问答一战成神",
-                "image": "http://i0.hdslb.com/bfs/archive/056f5ad71f17a9fbb9581f16735768e3d9c54008.png",
-                "hash": "3e054fa6f2fb4632eb8c7a6203e5201c",
-                "uri": "http://acg.tv/u1ue"
-            }, {
-                "id": 9473,
-                "title": "双星之阴阳师",
-                "image": "http://i0.hdslb.com/bfs/archive/e465f3daa8ebf9488b851e2dd847e3ca457ea20e.jpg",
-                "hash": "d22f922a4e3771a265491bb45ff42d73",
-                "uri": "bilibili://bangumi/season/3462"
+                "id": 10252,
+                "title": "伪物真传",
+                "image": "http://i0.hdslb.com/bfs/archive/66516c26af6212fa1056bbd67a9bc14930473d55.jpg",
+                "hash": "55ab3d29643daafe9d32e3b5a8bb4f67",
+                "uri": "http://www.bilibili.com/html/activity-20160923fgo.html"
             }]
         }
     }, {
@@ -87,52 +81,52 @@
         "style": "medium",
         "title": "热门直播",
         "body": [{
-            "title": "B站第一交际草",
-            "cover": "http://i0.hdslb.com/bfs/live/44dcbdd719d9192b472bd886d33af0dc6d72f778.jpg",
-            "uri": "bilibili://live/333048",
-            "param": "333048",
-            "goto": "live",
-            "area": "御宅文化",
-            "area_id": 2,
-            "name": "-威尔菌-",
-            "face": "http://i0.hdslb.com/bfs/face/c49959c1948f1a62a19f053c30148f0bbcd928e0.jpg",
-            "online": 1362
-        }, {
-            "title": "东方音乐厅",
-            "cover": "http://i0.hdslb.com/bfs/live/152131c66a2720d3b4ebb85095f64ea021107ec5.jpg",
-            "uri": "bilibili://live/10101",
-            "param": "10101",
-            "goto": "live",
-            "area": "御宅文化",
-            "area_id": 2,
-            "name": "猫耳爱丽丝",
-            "face": "http://i0.hdslb.com/bfs/face/cf3968e0df32fc3a73e6ed37c52796941355b4d2.jpg",
-            "online": 2951
-        }, {
-            "title": "要玩擦马赛克嘛？",
-            "cover": "http://i0.hdslb.com/bfs/live/a011e10cf1e01ab712d133dc5a3eb94bc078b430.jpg",
-            "uri": "bilibili://live/46353",
-            "param": "46353",
-            "goto": "live",
-            "area": "唱见舞见",
-            "area_id": 10,
-            "name": "澔v白",
-            "face": "http://i2.hdslb.com/bfs/face/9dd73f99c8fd16a0021633a63dc9bc8ecacfca4a.jpg",
-            "online": 222
-        }, {
-            "title": "是谁~~~~送你来到我身边！( *︾▽︾)",
-            "cover": "http://i0.hdslb.com/bfs/live/ea530f486cc84baee1c324f6ab8213ffeca9a643.jpg",
-            "uri": "bilibili://live/14682",
-            "param": "14682",
+            "title": "田工头的原画集中营---色彩实用大法",
+            "cover": "http://i0.hdslb.com/bfs/live/9075f050e1f2c4c3d200dcd2af5dfb5c02b7f4a8.jpg",
+            "uri": "bilibili://live/67983",
+            "param": "67983",
             "goto": "live",
             "area": "绘画专区",
             "area_id": 9,
-            "name": "奶油小布丁131",
-            "face": "http://i2.hdslb.com/bfs/face/f837bf352e49d6084dd7ff828598597937e103da.jpg",
-            "online": 1154
+            "name": "田工头",
+            "face": "http://i2.hdslb.com/bfs/face/96549714663ba5f84061cb830d012a99152498ee.jpg",
+            "online": 3426
+        }, {
+            "title": "女仆咖啡厅打工中，水手服福利丝袜",
+            "cover": "http://i0.hdslb.com/bfs/live/177738ebd1537c850c729005253139fc535a1079.jpg",
+            "uri": "bilibili://live/287969",
+            "param": "287969",
+            "goto": "live",
+            "area": "手机直播",
+            "area_id": 11,
+            "name": "大宝子肉不肉",
+            "face": "http://i0.hdslb.com/bfs/face/99c38648ec25f4910b93c63b4126033628a16e08.jpg",
+            "online": 3452
+        }, {
+            "title": "120w颜料或者活动第一就女装！（滑稽脸）",
+            "cover": "http://i0.hdslb.com/bfs/live/07858d8607f9d8effaaa8cf9d68558137787dd2a.jpg",
+            "uri": "bilibili://live/35598",
+            "param": "35598",
+            "goto": "live",
+            "area": "绘画专区",
+            "area_id": 9,
+            "name": "BIBIA",
+            "face": "http://i0.hdslb.com/bfs/face/c769bcbede516487e8679a6af461fa456d914270.jpg",
+            "online": 8941
+        }, {
+            "title": "游戏名：黎明杀机。打不死的奈小强！",
+            "cover": "http://x-img.hdslb.net/group1/M00/09/FB/oYYBAFZ83wiAaLTDAAEpmlJAPsQ571.jpg",
+            "uri": "bilibili://live/39936",
+            "param": "39936",
+            "goto": "live",
+            "area": "单机联机",
+            "area_id": 1,
+            "name": "奈さま",
+            "face": "http://i0.hdslb.com/bfs/face/47a917d949c3355adc977908e6cd4ac72d1737d5.jpg",
+            "online": 6806
         }],
         "ext": {
-            "live_count": 2157
+            "live_count": 2112
         }
     }, {
         "param": "13",
@@ -140,40 +134,40 @@
         "style": "medium",
         "title": "番剧推荐",
         "body": [{
-            "title": "魔法少女？Naria☆Girls",
-            "cover": "http://i1.hdslb.com/bfs/archive/729004dc198438d6bbcef364f4aabf9bed57404d.jpg",
-            "uri": "bilibili://bangumi/season/5040",
-            "param": "5040",
+            "title": "齐木楠雄的灾难",
+            "cover": "http://i2.hdslb.com/bfs/archive/6984e8513540db5d18eb1754a1cf54b64d278618.jpg",
+            "uri": "bilibili://bangumi/season/5069",
+            "param": "5069",
             "goto": "bangumi",
             "index": "12",
-            "mtime": "2016-09-21 23:14:40.0",
+            "mtime": "2016-09-26 01:35:10.0",
             "status": 2
         }, {
-            "title": "OZMAFIA!!",
-            "cover": "http://i0.hdslb.com/bfs/archive/72c9f820d32755e28a9d83e40468e453707efff4.jpg",
-            "uri": "bilibili://bangumi/season/5039",
-            "param": "5039",
+            "title": "热诚传说X",
+            "cover": "http://i2.hdslb.com/bfs/archive/2f97e256b77d505c5c3a215821ef8cd395581aff.jpg",
+            "uri": "bilibili://bangumi/season/5022",
+            "param": "5022",
+            "goto": "bangumi",
+            "index": "13",
+            "mtime": "2016-09-25 22:30:10.0",
+            "status": 2
+        }, {
+            "title": "Ange Vierge",
+            "cover": "http://i2.hdslb.com/bfs/archive/132d29a9228522aa5ecd3944a0c87f91c4a2f966.jpg",
+            "uri": "bilibili://bangumi/season/5053",
+            "param": "5053",
             "goto": "bangumi",
             "index": "12",
-            "mtime": "2016-09-21 23:00:10.0",
+            "mtime": "2016-09-25 02:00:10.0",
             "status": 2
         }, {
-            "title": "月歌",
-            "cover": "http://i1.hdslb.com/bfs/archive/a84df530163ad44b3d222c97ced5d0bdc4fecbf7.jpg",
-            "uri": "bilibili://bangumi/season/5038",
-            "param": "5038",
+            "title": "屁屁吾郎",
+            "cover": "http://i1.hdslb.com/bfs/archive/a03eec66eeb6371c701adadb2b843ddd6158cb78.jpg",
+            "uri": "bilibili://bangumi/season/5066",
+            "param": "5066",
             "goto": "bangumi",
-            "index": "12",
-            "mtime": "2016-09-21 23:00:09.0",
-            "status": 2
-        }, {
-            "title": "双星之阴阳师",
-            "cover": "http://i0.hdslb.com/bfs/archive/d26cee2c6382381ad2528c6a264da846105c28bc.jpg",
-            "uri": "bilibili://bangumi/season/3462",
-            "param": "3462",
-            "goto": "bangumi",
-            "index": "24",
-            "mtime": "2016-09-21 18:48:31.0",
+            "index": "13",
+            "mtime": "2016-09-25 00:47:10.0",
             "status": 2
         }]
     }, {
@@ -182,169 +176,160 @@
         "style": "medium",
         "title": "动画区",
         "body": [{
-            "title": "【东方MMD】邪白莲（扭曲的白莲）【全程高能】",
-            "cover": "http://i0.hdslb.com//bfs/archive/598164215d13f5aece4a851866bafa410e4bf4ac.jpg",
-            "uri": "bilibili://video/6364974",
-            "param": "6364974",
+            "title": "哈莉奎因袭击DC公司总部？与毒藤女的闺蜜之夜~第7-10章【Lorre】小丑女？",
+            "cover": "http://i0.hdslb.com//bfs/archive/f9cad55f203552f5789c66368e582d44b74f34e7.jpg",
+            "uri": "bilibili://video/6384750",
+            "param": "6384750",
             "goto": "av",
-            "play": 4394,
-            "danmaku": 399
+            "play": 23087,
+            "danmaku": 179
         }, {
-            "title": "【废柴君】盘点动画中的各种奇葩死亡方式! DIE！DIE！DIE！",
-            "cover": "http://i0.hdslb.com//bfs/archive/e13c298fbea72754e006ca7f400f65838fa83882.jpg",
-            "uri": "bilibili://video/6363383",
-            "param": "6363383",
+            "title": "【我就不信了第二季07】淫兽与触手魔法少女背后的神秘力量来源",
+            "cover": "http://i0.hdslb.com//bfs/archive/0bb8946b69b020c26084de8c1f491d28ff5f6c79.jpg",
+            "uri": "bilibili://video/6382888",
+            "param": "6382888",
             "goto": "av",
-            "play": 16371,
-            "danmaku": 597
+            "play": 37500,
+            "danmaku": 221
         }, {
-            "title": "RS带你回顾《超时空要塞》系列",
-            "cover": "http://i0.hdslb.com//bfs/archive/ea30d6615d0d362c025a7cc8ac7bb4a83ef60719.jpg",
-            "uri": "bilibili://video/6368728",
-            "param": "6368728",
+            "title": "【创想动画片】我们为了被点赞做过的那些傻事 @柚子木字幕组",
+            "cover": "http://i0.hdslb.com//bfs/archive/1ace93943080afb3150075b637c4aba545335ba1.jpg",
+            "uri": "bilibili://video/6396258",
+            "param": "6396258",
             "goto": "av",
-            "play": 5717,
-            "danmaku": 274
+            "play": 32628,
+            "danmaku": 166
         }, {
-            "title": " 【MMD】散发和服弱音 换装Play『极乐净土』",
-            "cover": "http://i0.hdslb.com//bfs/archive/1e0b1bd07d2e8a6ae2abf67f248a3e12e581bebd.jpg",
-            "uri": "bilibili://video/6343627",
-            "param": "6343627",
+            "title": "【台配国语】蜡笔小新·新番 【1080P】",
+            "cover": "http://i0.hdslb.com//bfs/archive/4c816cee023d98e94deedf528d4b8b13b5af5b5e.jpg",
+            "uri": "bilibili://video/6385384",
+            "param": "6385384",
             "goto": "av",
-            "play": 8073,
-            "danmaku": 107
-        }],
-        "banner": {
-            "bottom": [{
-                "id": 9175,
-                "title": "回归动画本身——浅谈作画MAD",
-                "image": "http://i0.hdslb.com/bfs/archive/6f2e93c1de87e399ccafa0ee17914b4e3a7b38b5.png",
-                "hash": "0590f04bb14bf7f15ff8c33a6be86919",
-                "uri": "http://www.bilibili.com/topic/v2/phone1523.html"
-            }]
-        }
+            "play": 8948,
+            "danmaku": 311
+        }]
     }, {
         "param": "3",
         "type": "region",
         "style": "medium",
         "title": "音乐区",
         "body": [{
-            "title": "走心翻唱林宥嘉《天真有邪》，我也就听了100多遍就关了！",
-            "cover": "http://i0.hdslb.com//bfs/archive/f1bac789abe4d35c4282f8848c7a60060e6a0244.jpg",
-            "uri": "bilibili://video/6342427",
-            "param": "6342427",
+            "title": "【NMB48】渡邊美優紀畢業演唱會 兩日全場「直到最後都是壞路姬真抱歉啦」【生肉】",
+            "cover": "http://i0.hdslb.com//bfs/archive/df2d3716dcdf980ba45105086b55b4ff03b22a5b.jpg",
+            "uri": "bilibili://video/6390925",
+            "param": "6390925",
             "goto": "av",
-            "play": 11308,
-            "danmaku": 1040
+            "play": 4149,
+            "danmaku": 162
         }, {
-            "title": "【白止】小小鹿 【动画《尸兄》官方角色曲】",
-            "cover": "http://i0.hdslb.com//bfs/archive/8ffa118863530f102113df7fbce97b7ac7c62b9e.png",
-            "uri": "bilibili://video/6355435",
-            "param": "6355435",
+            "title": "Егор Крид-Самая самая",
+            "cover": "http://i0.hdslb.com//bfs/archive/802d6511a55df126ec9571f3f7504171a3d54013.jpg",
+            "uri": "bilibili://video/6409728",
+            "param": "6409728",
             "goto": "av",
-            "play": 6244,
-            "danmaku": 405
+            "play": 2380,
+            "danmaku": 41
         }, {
-            "title": "【琵琶】凶残燃爆版《unravel》东京喰种音乐 金木研热血精分向",
-            "cover": "http://i0.hdslb.com//bfs/archive/3edb3fefaf501f27f4f48ee350114f7fbe1da784.jpg",
-            "uri": "bilibili://video/6359472",
-            "param": "6359472",
+            "title": "【そらる×まふまふ】前前前世【「你的名字。」主题曲】",
+            "cover": "http://i0.hdslb.com//bfs/archive/01e32ffbc75c395db30e25f129cf3d1685c7ad9a.jpg",
+            "uri": "bilibili://video/6384332",
+            "param": "6384332",
             "goto": "av",
-            "play": 7553,
-            "danmaku": 286
+            "play": 151857,
+            "danmaku": 2844
         }, {
-            "title": "NICO翻唱周刊 #411 [9月第3週]",
-            "cover": "http://i0.hdslb.com//bfs/archive/a1afa4faf6a8900495e498206cd4ada7778cc360.jpg",
-            "uri": "bilibili://video/6342620",
-            "param": "6342620",
+            "title": "【超时空要塞 Δ】Walküre -「Walküre Trap!」專輯完整版",
+            "cover": "http://i0.hdslb.com//bfs/archive/93ce8934e91679842067c36b3be8da111ba82d38.jpg",
+            "uri": "bilibili://video/6396593",
+            "param": "6396593",
             "goto": "av",
-            "play": 2805,
-            "danmaku": 443
-        }]
+            "play": 35162,
+            "danmaku": 1269
+        }],
+        "banner": {
+            "bottom": [{
+                "id": 10037,
+                "title": "这是一个简单V家科普帖",
+                "image": "http://i0.hdslb.com/bfs/archive/6150951bcc566283270f866c0133d15221dee84c.jpg",
+                "hash": "73553ec0a79a36283f92444ad44959eb",
+                "uri": "http://www.bilibili.com/topic/v2/phone1528.html"
+            }]
+        }
     }, {
         "param": "129",
         "type": "region",
         "style": "medium",
         "title": "舞蹈区",
         "body": [{
-            "title": "【SL宅舞联盟】【末子】---一起前往极乐净土吧",
-            "cover": "http://i0.hdslb.com//bfs/archive/d25356bdbff059714b8ef57214d377a5dcdc9be9.jpg",
-            "uri": "bilibili://video/6344503",
-            "param": "6344503",
+            "title": "【尋】从零开始的最后一支舞【原创编舞累死俺系列】究极撩妹法给你要不要",
+            "cover": "http://i0.hdslb.com//bfs/archive/488312cd9771c708348ed4b4d0662f67f4fbd290.jpg",
+            "uri": "bilibili://video/6391648",
+            "param": "6391648",
             "goto": "av",
-            "play": 172790,
-            "danmaku": 1235
+            "play": 3812,
+            "danmaku": 95
         }, {
-            "title": "【防弹孙子团】BTS-Butterfly女生版(?)翻跳完整版",
-            "cover": "http://i0.hdslb.com//bfs/archive/8bb77c35ad2142f2439a6dd58981f8a0f2e69e80.jpg",
-            "uri": "bilibili://video/6347133",
-            "param": "6347133",
+            "title": "【桃桃】拼凑的断音♪【被偷走状态的试跳】",
+            "cover": "http://i0.hdslb.com//bfs/archive/9742fd603fae049d802275faf3ed9cfb6a67699f.jpg",
+            "uri": "bilibili://video/6402681",
+            "param": "6402681",
             "goto": "av",
-            "play": 4656,
-            "danmaku": 118
+            "play": 8871,
+            "danmaku": 187
         }, {
-            "title": "【10岁萝莉初投稿】【竺竹x竹筱】告白日和 short.ver",
-            "cover": "http://i0.hdslb.com//bfs/archive/af9d25055cb095233aee407c5a1b9be586650ddb.jpg",
-            "uri": "bilibili://video/6354904",
-            "param": "6354904",
+            "title": "【神子】世界第一公主殿下 初投稿(｡･ω･｡)祝我生日快乐",
+            "cover": "http://i0.hdslb.com//bfs/archive/4f113212917c19e64d7b1fa935b9fec35af34487.jpg",
+            "uri": "bilibili://video/6414050",
+            "param": "6414050",
             "goto": "av",
-            "play": 3437,
-            "danmaku": 67
+            "play": 3348,
+            "danmaku": 87
         }, {
-            "title": "【七七/茉莉味的凉面】【Lamb】跟着软妹动起来",
-            "cover": "http://i0.hdslb.com//bfs/archive/69072460322e8564db04b59204bc29a62ebf0899.png",
-            "uri": "bilibili://video/6346441",
-            "param": "6346441",
+            "title": "【阿叶君】沉迷于害人假酒的恋之2411【未成年人请勿模仿】",
+            "cover": "http://i0.hdslb.com//bfs/archive/4b5c9fb809311ec3fff63b8d26d16467e170d7fb.jpg",
+            "uri": "bilibili://video/6385087",
+            "param": "6385087",
             "goto": "av",
-            "play": 3146,
-            "danmaku": 47
-        }],
-        "banner": {
-            "bottom": [{
-                "id": 9342,
-                "title": "你喜欢哪只旗袍娘？",
-                "image": "http://i0.hdslb.com/bfs/archive/5bb1475ec6bf5d92be081e7d537b3fe679390fae.jpg",
-                "hash": "551b33e99f54d33924598c7c8ceed555",
-                "uri": "http://www.bilibili.com/topic/v2/phone1522.html"
-            }]
-        }
+            "play": 28211,
+            "danmaku": 169
+        }]
     }, {
         "param": "4",
         "type": "region",
         "style": "medium",
         "title": "游戏区",
         "body": [{
-            "title": "起小点TOP10 VOL233 孤胆枪手纯爷们，枪林弹雨中的绝地反击！",
-            "cover": "http://i0.hdslb.com//bfs/archive/3bcb748142faff2355194093d82c863a51c99820.jpg",
-            "uri": "bilibili://video/6357123",
-            "param": "6357123",
+            "title": "[老E 录播] 9.21下午 渡劫！五百强！",
+            "cover": "http://i0.hdslb.com//bfs/archive/06c22a8ea2336e82db72247b25bdd2a06c8b8fc3.jpg",
+            "uri": "bilibili://video/6386112",
+            "param": "6386112",
             "goto": "av",
-            "play": 172907,
-            "danmaku": 999
+            "play": 49839,
+            "danmaku": 3317
         }, {
-            "title": "女王大人在召唤你~~",
-            "cover": "http://i0.hdslb.com//bfs/archive/65cc9ff0e5ecdec3d208d7d329c918eba1c1fdd9.jpg",
-            "uri": "bilibili://video/6352762",
-            "param": "6352762",
+            "title": "【CSGO】在下金水区第一狙神 ep1",
+            "cover": "http://i0.hdslb.com//bfs/archive/0562ac36a7187a3f42ce77ae5f752197326def09.jpg",
+            "uri": "bilibili://video/6410765",
+            "param": "6410765",
             "goto": "av",
-            "play": 22684,
-            "danmaku": 241
+            "play": 18128,
+            "danmaku": 330
         }, {
-            "title": "主播碉堡了vol.26  小智两次痛失五杀生无可恋！",
-            "cover": "http://i0.hdslb.com//bfs/archive/8fe2c450e7d9bccf08aaf0fe4126346ef4bd600e.jpg",
-            "uri": "bilibili://video/6345612",
-            "param": "6345612",
+            "title": "PDD16.9.24直播：与五五开约♂战",
+            "cover": "http://i0.hdslb.com//bfs/archive/4b314b1dd88bb8a7a0350e655d2eeac7b6aab282.jpg",
+            "uri": "bilibili://video/6405740",
+            "param": "6405740",
             "goto": "av",
-            "play": 40408,
-            "danmaku": 386
+            "play": 34207,
+            "danmaku": 1273
         }, {
-            "title": "LOL魔法少女皮肤，金克丝-迦娜-波比-露露",
-            "cover": "http://i0.hdslb.com//bfs/archive/cb1a0a662e923c9c0bac22ab47e45af0296632db.jpg",
-            "uri": "bilibili://video/6349359",
-            "param": "6349359",
+            "title": "笑笑西卡德云色 16.9.23 学识丰富的主播",
+            "cover": "http://i0.hdslb.com//bfs/archive/29681d848164a787d742bd3efd6d9ec2fed807e6.jpg",
+            "uri": "bilibili://video/6390846",
+            "param": "6390846",
             "goto": "av",
-            "play": 20285,
-            "danmaku": 107
+            "play": 58229,
+            "danmaku": 2197
         }]
     }, {
         "param": "119",
@@ -352,75 +337,84 @@
         "style": "medium",
         "title": "鬼畜区",
         "body": [{
-            "title": "喵帕斯的狂热节拍",
-            "cover": "http://i0.hdslb.com//bfs/archive/4e0884dd3ab727ff8c2d1d62ba085cbd0fb4c504.jpg",
-            "uri": "bilibili://video/6371181",
-            "param": "6371181",
+            "title": "Calameme Fortune",
+            "cover": "http://i0.hdslb.com//bfs/archive/feea82615b376ed4eb625ebab6c8e080e00e7b1e.jpg",
+            "uri": "bilibili://video/6387185",
+            "param": "6387185",
             "goto": "av",
-            "play": 1453,
-            "danmaku": 48
+            "play": 4560,
+            "danmaku": 42
         }, {
-            "title": "【兄贵】真的Van♂你",
-            "cover": "http://i0.hdslb.com//bfs/archive/2011ded6b028eb4807c3c0160d4c319dc2e84801.jpg",
-            "uri": "bilibili://video/6344241",
-            "param": "6344241",
+            "title": "【金坷垃】忘情水",
+            "cover": "http://i0.hdslb.com//bfs/archive/0e57956b0ba4d11e329017adc96b5a3261dd9000.jpg",
+            "uri": "bilibili://video/6387947",
+            "param": "6387947",
             "goto": "av",
-            "play": 32988,
-            "danmaku": 471
+            "play": 12838,
+            "danmaku": 297
         }, {
-            "title": "【枪声音乐】彩虹六号的极乐净土",
-            "cover": "http://i0.hdslb.com//bfs/archive/ae2a5ea91284a7b10916983ba1ca4410c5669a48.jpg",
-            "uri": "bilibili://video/6360645",
-            "param": "6360645",
+            "title": "【灵魂rap】全明星鬼畜rap【gentleman】",
+            "cover": "http://i0.hdslb.com//bfs/archive/52c5951a0e6e08dbedc3c169375f0bbe947aee0b.jpg",
+            "uri": "bilibili://video/6397831",
+            "param": "6397831",
             "goto": "av",
-            "play": 2176,
-            "danmaku": 51
+            "play": 7614,
+            "danmaku": 150
         }, {
-            "title": "守望屁股全英雄微燃向混剪【全场最佳-源氏】",
-            "cover": "http://i0.hdslb.com//bfs/archive/2569ea554354e81330815403fbaa31fa053534eb.jpg",
-            "uri": "bilibili://video/6367562",
-            "param": "6367562",
+            "title": "【黑人绿帽哥】TEXT THEM ！",
+            "cover": "http://i0.hdslb.com//bfs/archive/3c6bbd4851f34272e687f434a33b0c67c9e65502.jpg",
+            "uri": "bilibili://video/6397404",
+            "param": "6397404",
             "goto": "av",
-            "play": 3229,
-            "danmaku": 22
-        }]
+            "play": 136188,
+            "danmaku": 1277
+        }],
+        "banner": {
+            "bottom": [{
+                "id": 10329,
+                "title": "论黑人的RAP天赋②",
+                "image": "http://i0.hdslb.com/bfs/archive/7d71b162885c315675e95f0e099efa097ba59970.jpg",
+                "hash": "e1b5db0b07fc5108a56fc251cb843c22",
+                "uri": "http://www.bilibili.com/topic/v2/phone1534.html"
+            }]
+        }
     }, {
         "param": "36",
         "type": "region",
         "style": "medium",
         "title": "科技区",
         "body": [{
-            "title": "文化探索记录-牡丹江\u0026延边#寰行中国",
-            "cover": "http://i0.hdslb.com//bfs/archive/76f646d8ecbab98d05e469239b94a2d1710d04e7.jpg",
-            "uri": "bilibili://video/6363476",
-            "param": "6363476",
+            "title": "《中国妖怪录》孟婆",
+            "cover": "http://i0.hdslb.com//bfs/archive/17d6fad745afd7add73ec5e133988e396bb2aa5e.jpg",
+            "uri": "bilibili://video/6414042",
+            "param": "6414042",
             "goto": "av",
-            "play": 7784,
-            "danmaku": 957
+            "play": 12103,
+            "danmaku": 329
         }, {
-            "title": "【点兵47】中国第一艘航母秘闻：是他靠50瓶二锅头换回来的！",
-            "cover": "http://i0.hdslb.com//bfs/archive/2421ea86338b7ab52d57b59c9ecc07735fa97986.jpg",
-            "uri": "bilibili://video/6344545",
-            "param": "6344545",
+            "title": "【大蜡烛】用VR设备看蕾姆跳极乐净土~嘿嘿嘿",
+            "cover": "http://i0.hdslb.com//bfs/archive/fae34239e411da0121010293ab6a0ceb57a43a42.jpg",
+            "uri": "bilibili://video/6385782",
+            "param": "6385782",
             "goto": "av",
-            "play": 34518,
-            "danmaku": 848
+            "play": 110095,
+            "danmaku": 2157
         }, {
-            "title": "地上挖个坑就有鱼？ 看柬埔寨人用独创的方法來捉鱼。。。。。",
-            "cover": "http://i0.hdslb.com//bfs/archive/e7ff5bdcd6b100853fc89e060782725fb6a07bfc.jpg",
-            "uri": "bilibili://video/6362253",
-            "param": "6362253",
+            "title": "俄罗斯警察就义前的最后一句话“兄弟们，继续干！”",
+            "cover": "http://i0.hdslb.com//bfs/archive/65a7b0e6c9bb5095e44b8537579b96ac4acaed8b.jpg",
+            "uri": "bilibili://video/6386713",
+            "param": "6386713",
             "goto": "av",
-            "play": 21252,
-            "danmaku": 554
+            "play": 16477,
+            "danmaku": 78
         }, {
-            "title": "3个很棒的主意3 Awesome Ideas",
-            "cover": "http://i0.hdslb.com//bfs/archive/d79b8c77d579c1c0a7eddb5f83ffa038d4b62797.jpg",
-            "uri": "bilibili://video/6346836",
-            "param": "6346836",
+            "title": "【科技微讯】鸵鸟蛋，遇上高温熔化的金属，会怎样？",
+            "cover": "http://i0.hdslb.com//bfs/archive/d11fed325954fa341c315e8fe3b384801ec38222.jpg",
+            "uri": "bilibili://video/6403432",
+            "param": "6403432",
             "goto": "av",
-            "play": 10793,
-            "danmaku": 179
+            "play": 13521,
+            "danmaku": 133
         }]
     }, {
         "param": "subarea",
@@ -458,37 +452,37 @@
         "style": "medium",
         "title": "生活区",
         "body": [{
-            "title": "【飞碟头条】恐怖丧尸潮再起，却看哭了人性",
-            "cover": "http://i0.hdslb.com//bfs/archive/6f42c49d773c437afb85c33ee7797bc086a77514.jpg",
-            "uri": "bilibili://video/6343527",
-            "param": "6343527",
+            "title": "【木下佑香】【大胃王】【中文字幕】名古屋名产交趾鸡炖煮味噌乌龙面 10人份 ＋ 白饭5合 [8005千卡]6.3公斤",
+            "cover": "http://i0.hdslb.com//bfs/archive/0ffb8e3d752ce01f578d92843f1e9cd571a3912a.jpg",
+            "uri": "bilibili://video/6384361",
+            "param": "6384361",
             "goto": "av",
-            "play": 40044,
-            "danmaku": 238
+            "play": 11290,
+            "danmaku": 179
         }, {
-            "title": "【阿福来了】胖老外被中国老婆的闺蜜们大考验！笑翻了！",
-            "cover": "http://i0.hdslb.com//bfs/archive/72513e0ecd041cd6ffe5b58df5f8d1b433211400.jpg",
-            "uri": "bilibili://video/6365806",
-            "param": "6365806",
+            "title": "【食戟之灵 贰之皿】药王特制亲子大碗盖饭 我就是信了你的邪♂！！！  #食戟之灵贰之皿 第13集 威风堂堂",
+            "cover": "http://i0.hdslb.com//bfs/archive/8834fbdcb020829bd8a6eb9f22bdd79171a0dcba.jpg",
+            "uri": "bilibili://video/6402556",
+            "param": "6402556",
             "goto": "av",
-            "play": 14226,
-            "danmaku": 366
+            "play": 9517,
+            "danmaku": 233
         }, {
-            "title": "【淮秀帮】迷妹的日常：我们都是追星狗！",
-            "cover": "http://i0.hdslb.com//bfs/archive/fda3a4613afd90ff95ed6eea6837aa51168e5629.jpg",
-            "uri": "bilibili://video/6350955",
-            "param": "6350955",
+            "title": "方言怒斥淘宝史上差距最大买家秀和卖家秀，笑喷了！！！",
+            "cover": "http://i0.hdslb.com//bfs/archive/0bb4d319fcd89ce958e082cad25dfd5984039026.jpg",
+            "uri": "bilibili://video/6384799",
+            "param": "6384799",
             "goto": "av",
-            "play": 33663,
-            "danmaku": 1398
+            "play": 24235,
+            "danmaku": 137
         }, {
-            "title": "天生吃货之马来西亚菜【848】",
-            "cover": "http://i0.hdslb.com//bfs/archive/98370254485a4bf15caea985f1d6907085ef7be1.jpg",
-            "uri": "bilibili://video/6344184",
-            "param": "6344184",
+            "title": "【猫片】这些猫咪一个个的都厉害了我的哥",
+            "cover": "http://i0.hdslb.com//bfs/archive/8309394075b7fb96bd0d80eaba2156c1dea3b2ce.jpg",
+            "uri": "bilibili://video/6382551",
+            "param": "6382551",
             "goto": "av",
-            "play": 9155,
-            "danmaku": 2295
+            "play": 21162,
+            "danmaku": 493
         }]
     }, {
         "param": "155",
@@ -496,37 +490,37 @@
         "style": "medium",
         "title": "时尚区",
         "body": [{
-            "title": "【国货挖掘机】不输大牌的国产彩妆试测",
-            "cover": "http://i0.hdslb.com//bfs/archive/7e196d608c352e081afd5693ebd966f2aecc35d8.jpg",
-            "uri": "bilibili://video/6360022",
-            "param": "6360022",
+            "title": "【《釜山行》丧尸仿妆】【桃酱】",
+            "cover": "http://i0.hdslb.com//bfs/archive/36cebe634e20617aad9746dd8a0c901e5a211136.jpg",
+            "uri": "bilibili://video/6394019",
+            "param": "6394019",
             "goto": "av",
-            "play": 10681,
-            "danmaku": 864
+            "play": 10772,
+            "danmaku": 318
         }, {
-            "title": "【粉星榜】显高显瘦拍照技巧（实用涨姿势!）",
-            "cover": "http://i0.hdslb.com//bfs/archive/e07d3a79e325ec24f10edfff40be09d1cd656617.jpg",
-            "uri": "bilibili://video/6344736",
-            "param": "6344736",
+            "title": "超有型街头感秋季穿搭LOOKBOOK | Hanbyul",
+            "cover": "http://i0.hdslb.com//bfs/archive/08afe7ec775885cdca95cd642765130c808f9821.jpg",
+            "uri": "bilibili://video/6386985",
+            "param": "6386985",
             "goto": "av",
-            "play": 23786,
-            "danmaku": 242
+            "play": 4762,
+            "danmaku": 40
         }, {
-            "title": "秋冬必备唇膏MACchili接到替代色魔法森林RD03的挑战书！上唇较高下！",
-            "cover": "http://i0.hdslb.com//bfs/archive/bcc66cdd66b17a43313b136881bd7d5d8bc5762a.jpg",
-            "uri": "bilibili://video/6345085",
-            "param": "6345085",
+            "title": "♡ 秋冬深色吃土喝血口红试色",
+            "cover": "http://i0.hdslb.com//bfs/archive/9fad61c55e7afff26fd1893cbf929969502be08f.jpg",
+            "uri": "bilibili://video/6419534",
+            "param": "6419534",
             "goto": "av",
-            "play": 3063,
-            "danmaku": 144
+            "play": 3462,
+            "danmaku": 268
         }, {
-            "title": "如何遮住脸上的粉刺 Acne Coverage Foundation routine",
-            "cover": "http://i0.hdslb.com//bfs/archive/db3fe71a4aa70e21e9896ea142c008b9295b82d2.jpg",
-            "uri": "bilibili://video/6348943",
-            "param": "6348943",
+            "title": "大神教你如何优美地剪开美女的“比基尼”",
+            "cover": "http://i0.hdslb.com//bfs/archive/f25c6031cb4f99fdadc6f5562aed1d9e7d53be6e.jpg",
+            "uri": "bilibili://video/6407217",
+            "param": "6407217",
             "goto": "av",
-            "play": 3536,
-            "danmaku": 83
+            "play": 3413,
+            "danmaku": 53
         }]
     }, {
         "param": "165",
@@ -534,37 +528,37 @@
         "style": "medium",
         "title": "广告区",
         "body": [{
-            "title": "OPPO F1s 印度广告",
-            "cover": "http://i0.hdslb.com//bfs/archive/3d1dcfa6e1beb949fdc9071a7b03538b3316f9fa.png",
-            "uri": "bilibili://video/6358734",
-            "param": "6358734",
+            "title": "Apple别眨眼107秒宣传片英文版",
+            "cover": "http://i0.hdslb.com//bfs/archive/4b931956d76599d6f29353ac8f5a3f62fb8473e9.jpg",
+            "uri": "bilibili://video/6396523",
+            "param": "6396523",
             "goto": "av",
-            "play": 1340,
-            "danmaku": 1
+            "play": 1870,
+            "danmaku": 4
         }, {
-            "title": "【周星驰】- 眼鏡 88 (第一个广告代言) 1989年 [广告] - 不如我哋坐低饮啖茶，食个包 Stephen",
-            "cover": "http://i0.hdslb.com//bfs/archive/0a78cfd6aed2aee86b8e7044e7f2ed95cd8fc95b.png",
-            "uri": "bilibili://video/6342512",
-            "param": "6342512",
+            "title": "【创意】没想到你是这样的电风扇！比杜蕾斯还污的VR广告来了",
+            "cover": "http://i0.hdslb.com//bfs/archive/bba3d0543236cb015dcd7fee5ee64cce572f0607.png",
+            "uri": "bilibili://video/6402740",
+            "param": "6402740",
             "goto": "av",
-            "play": 4623,
-            "danmaku": 16
+            "play": 9727,
+            "danmaku": 112
         }, {
-            "title": "【神反转】一群挑剔的僵尸",
-            "cover": "http://i0.hdslb.com//bfs/archive/d9b0109a22f7c70d70f3f99bbe222b7d6f71f24f.jpg",
-            "uri": "bilibili://video/6371024",
-            "param": "6371024",
+            "title": "百看不厌的汽车广告",
+            "cover": "http://i0.hdslb.com//bfs/archive/b3094f912a8cff062723d8194c0c370ccedf9ea7.jpg",
+            "uri": "bilibili://video/6407132",
+            "param": "6407132",
             "goto": "av",
-            "play": 1265,
-            "danmaku": 18
+            "play": 2476,
+            "danmaku": 8
         }, {
-            "title": "【广告福利】卡乐星15分钟终极版！肉体和精神的双重摧残",
-            "cover": "http://i0.hdslb.com//bfs/archive/e307c7c52533500e909af14d22a77add455eb0c6.jpg",
-            "uri": "bilibili://video/6349320",
-            "param": "6349320",
+            "title": "神一樣的拍攝手法｜看了一遍又一邊的廣告｜等待冒險｜Adventure Awaits｜Lurpak Cook's Rang",
+            "cover": "http://i0.hdslb.com//bfs/archive/2c25b16376d8ac771f7c6a3d0a7a3441608a10b5.jpg",
+            "uri": "bilibili://video/6413976",
+            "param": "6413976",
             "goto": "av",
-            "play": 19483,
-            "danmaku": 418
+            "play": 372,
+            "danmaku": 5
         }]
     }, {
         "param": "5",
@@ -572,37 +566,37 @@
         "style": "medium",
         "title": "娱乐区",
         "body": [{
-            "title": "【王青】【Spicy__Chicken】160917汪苏泷演唱会王青表演部分高清剪辑",
-            "cover": "http://i0.hdslb.com//bfs/archive/0772ec890a7d6cafdad026f556d5786779754963.jpg",
-            "uri": "bilibili://video/6345410",
-            "param": "6345410",
+            "title": "【网络剧错生】关于手的问题-接近原声版、姚望and杨业明也是套路了",
+            "cover": "http://i0.hdslb.com//bfs/archive/d8a36353baa05eff1fc8ee2970732bc3b0b38b22.jpg",
+            "uri": "bilibili://video/6408115",
+            "param": "6408115",
             "goto": "av",
-            "play": 4267,
-            "danmaku": 600
+            "play": 1600,
+            "danmaku": 21
         }, {
-            "title": "【王博文】160919 粉丝网直播全程（谈不可抗力、新专辑、新作品等）",
-            "cover": "http://i0.hdslb.com//bfs/archive/2d3f1f790b7fcc125878950d439b3fd4af110a83.jpg",
-            "uri": "bilibili://video/6347552",
-            "param": "6347552",
+            "title": "160923 ≪王青超级大首映≫ CUT",
+            "cover": "http://i0.hdslb.com//bfs/archive/2fb7dce7fc12615a241d50e6279a63acdf9dbefd.jpg",
+            "uri": "bilibili://video/6390154",
+            "param": "6390154",
             "goto": "av",
-            "play": 22751,
-            "danmaku": 4323
+            "play": 1724,
+            "danmaku": 48
         }, {
-            "title": "【一分析13期】上海场分析09",
-            "cover": "http://i0.hdslb.com//bfs/archive/b43d2641dc6fab74e434f0d9b23491d978461e26.png",
-            "uri": "bilibili://video/6344147",
-            "param": "6344147",
+            "title": "一直播  王博文 0924 北京发布会【录屏】",
+            "cover": "http://i0.hdslb.com//bfs/archive/ad36496a275b6cd85b21931e21e0067cc4a8a4c5.jpg",
+            "uri": "bilibili://video/6398062",
+            "param": "6398062",
             "goto": "av",
-            "play": 1650,
-            "danmaku": 68
+            "play": 2411,
+            "danmaku": 79
         }, {
-            "title": "【张艺兴】缠绵共舞不停歇 舞起腿来我还要",
-            "cover": "http://i0.hdslb.com//bfs/archive/be0c902f8e767c40d1662883c0df9829911d2f51.jpg",
-            "uri": "bilibili://video/6367822",
-            "param": "6367822",
+            "title": "【ARASHI】自带放送事故的山风团②",
+            "cover": "http://i0.hdslb.com//bfs/archive/5e77ac34f60057d8c05d5858d0be13e1890cf286.jpg",
+            "uri": "bilibili://video/6405686",
+            "param": "6405686",
             "goto": "av",
-            "play": 3092,
-            "danmaku": 548
+            "play": 3053,
+            "danmaku": 52
         }]
     }, {
         "param": "11",
@@ -610,37 +604,37 @@
         "style": "medium",
         "title": "电视剧区",
         "body": [{
-            "title": "【楼诚/现代双医生AU】对你说（亲情/推歌向）",
-            "cover": "http://i0.hdslb.com//bfs/archive/99a4998e906688a0117bf7340fbed4a8215fbae9.jpg",
-            "uri": "bilibili://video/6361925",
-            "param": "6361925",
+            "title": "凡瑶-眼里只有碧瑶的张小凡",
+            "cover": "http://i0.hdslb.com//bfs/archive/ef1fba853cd999e789ed1357d46873925cd91e79.jpg",
+            "uri": "bilibili://video/6386028",
+            "param": "6386028",
             "goto": "av",
-            "play": 2771,
-            "danmaku": 188
+            "play": 6548,
+            "danmaku": 288
         }, {
-            "title": "【刺客列传】【蹇齐】了结",
-            "cover": "http://i0.hdslb.com//bfs/archive/828a585ce644aa49207dfec5740e2f4cd5a5eeef.jpg",
-            "uri": "bilibili://video/6345894",
-            "param": "6345894",
+            "title": "【李易峰×赵丽颖】重生之天生丽质",
+            "cover": "http://i0.hdslb.com//bfs/archive/8b85894f39393b7fa4f4e00f435ab94c3587047e.jpg",
+            "uri": "bilibili://video/6384305",
+            "param": "6384305",
             "goto": "av",
-            "play": 324,
-            "danmaku": 17
+            "play": 2680,
+            "danmaku": 85
         }, {
-            "title": " 【麻雀】张若昀|唐山海 个人MV--Play On",
-            "cover": "http://i0.hdslb.com//bfs/archive/498ed0e537dd7f05b6a1c5d58c341fb232766dee.jpg",
-            "uri": "bilibili://video/6362507",
-            "param": "6362507",
+            "title": "【马天宇】自制半预告落樱坡-背景乐马天宇版爱如樱",
+            "cover": "http://i0.hdslb.com//bfs/archive/720b86bf9341f1006ce71999f1441f659911c0af.jpg",
+            "uri": "bilibili://video/6384425",
+            "param": "6384425",
             "goto": "av",
-            "play": 592,
-            "danmaku": 8
+            "play": 5441,
+            "danmaku": 142
         }, {
-            "title": "【刺客列传】【白衣组】蹇宾X齐之侃  君臣大婚和婚后的日常",
-            "cover": "http://i0.hdslb.com//bfs/archive/cc38434b6ea0401fb2af2144ac1d3aeb76deb780.jpg",
-            "uri": "bilibili://video/6352485",
-            "param": "6352485",
+            "title": "【李易峰】【杨蓉】What Have You Done（深寒）",
+            "cover": "http://i0.hdslb.com//bfs/archive/311c721dc5dfe5ddafba853903e71ff52a3ba2f9.jpg",
+            "uri": "bilibili://video/6396090",
+            "param": "6396090",
             "goto": "av",
-            "play": 499,
-            "danmaku": 26
+            "play": 1265,
+            "danmaku": 41
         }]
     }, {
         "param": "23",
@@ -648,38 +642,47 @@
         "style": "medium",
         "title": "电影区",
         "body": [{
-            "title": "虾扯电影：童年阴影《魔胎》，色魔花瓶与少奶奶的风流韵事",
-            "cover": "http://i0.hdslb.com//bfs/archive/506253d9c2fd615b8e25c71a9abe13649d85d44d.jpg",
-            "uri": "bilibili://video/6343649",
-            "param": "6343649",
+            "title": "R级电影《钢铁少女》片段",
+            "cover": "http://i0.hdslb.com//bfs/archive/05e37f8a05032c95ec2bae6479e04259acf33413.jpg",
+            "uri": "bilibili://video/6398037",
+            "param": "6398037",
             "goto": "av",
-            "play": 48268,
-            "danmaku": 365
+            "play": 20329,
+            "danmaku": 297
         }, {
-            "title": "【西瓜解说】三分钟说一说日本电影《被舍弃的人们》",
-            "cover": "http://i0.hdslb.com//bfs/archive/cb5a99ce71a693c998faa9f3e042faab587df5ab.jpg",
-            "uri": "bilibili://video/6346825",
-            "param": "6346825",
+            "title": "十大不希望被你发现的DC电影错误",
+            "cover": "http://i0.hdslb.com//bfs/archive/ecb29d2be272aadb11d0e3a1ac554a197864b29c.jpg",
+            "uri": "bilibili://video/6385386",
+            "param": "6385386",
             "goto": "av",
-            "play": 18781,
-            "danmaku": 90
+            "play": 3293,
+            "danmaku": 83
         }, {
-            "title": "28： 夜店达人，撩妹老司机！",
-            "cover": "http://i0.hdslb.com//bfs/archive/b960963f7859ec56013f939a9ef5b0de342b815a.jpg",
-            "uri": "bilibili://video/6359479",
-            "param": "6359479",
+            "title": "华语电影里出现过经典歌曲AB向3",
+            "cover": "http://i0.hdslb.com//bfs/archive/0d18360075e23e163bf6c9709e4a617340818476.jpg",
+            "uri": "bilibili://video/6391275",
+            "param": "6391275",
             "goto": "av",
-            "play": 6426,
-            "danmaku": 13
+            "play": 3120,
+            "danmaku": 374
         }, {
-            "title": "【HISHE】《美国队长3 内战》应该这样结束 第二版＠柚子木字幕组",
-            "cover": "http://i0.hdslb.com//bfs/archive/2da23805c4849c00bf5c9fa9b559f188a5d7e1e5.jpg",
-            "uri": "bilibili://video/6352743",
-            "param": "6352743",
+            "title": "31：邻家女孩，激发隔壁男生把妹斗志！",
+            "cover": "http://i0.hdslb.com//bfs/archive/9661e60d2d4eef15705555dbb2842ed1ae1c125b.jpg",
+            "uri": "bilibili://video/6392278",
+            "param": "6392278",
             "goto": "av",
-            "play": 27883,
-            "danmaku": 132
-        }]
+            "play": 2708,
+            "danmaku": 15
+        }],
+        "banner": {
+            "bottom": [{
+                "id": 10262,
+                "title": "周末放映室 第108期",
+                "image": "http://i0.hdslb.com/bfs/archive/76545aaa18bdf557d68cd6083add5d0eacff0937.jpg",
+                "hash": "625c0a3d8edb76c21d93da550f08af9b",
+                "uri": "http://www.bilibili.com/html/activity-20160923movieweekend.html"
+            }]
+        }
     }],
     "message": "ok"
 }

@@ -84,6 +84,8 @@
 		C9AE644E1D8E8F3C00188B3F /* lwPersonalMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AE644D1D8E8F3C00188B3F /* lwPersonalMenuCell.m */; };
 		C9C5DA501D950EEF00DC6624 /* lwHomeRecommendLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C5DA4F1D950EEF00DC6624 /* lwHomeRecommendLiveCell.m */; };
 		C9C5DA531D95125A00DC6624 /* lwHomeRecommendFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C5DA521D95125A00DC6624 /* lwHomeRecommendFooterView.m */; };
+		C9D3A7061D98F221008F00D0 /* lwOperaBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D3A7051D98F220008F00D0 /* lwOperaBaseModel.m */; };
+		C9D3A7091D99122C008F00D0 /* lwOperaFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D3A7081D99122C008F00D0 /* lwOperaFlowLayout.m */; };
 		C9E690481D93B63700D811C3 /* lwRecommendBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E690471D93B63700D811C3 /* lwRecommendBaseModel.m */; };
 		C9E6904C1D93C12700D811C3 /* lwHomeRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E6904B1D93C12700D811C3 /* lwHomeRecommendCell.m */; };
 		C9E690521D93D76C00D811C3 /* lwHomeRecommedActityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E690511D93D76C00D811C3 /* lwHomeRecommedActityCell.m */; };
@@ -252,6 +254,10 @@
 		C9C5DA4F1D950EEF00DC6624 /* lwHomeRecommendLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwHomeRecommendLiveCell.m; sourceTree = "<group>"; };
 		C9C5DA511D95125A00DC6624 /* lwHomeRecommendFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeRecommendFooterView.h; sourceTree = "<group>"; };
 		C9C5DA521D95125A00DC6624 /* lwHomeRecommendFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwHomeRecommendFooterView.m; sourceTree = "<group>"; };
+		C9D3A7041D98F220008F00D0 /* lwOperaBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwOperaBaseModel.h; sourceTree = "<group>"; };
+		C9D3A7051D98F220008F00D0 /* lwOperaBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwOperaBaseModel.m; sourceTree = "<group>"; };
+		C9D3A7071D99122C008F00D0 /* lwOperaFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwOperaFlowLayout.h; sourceTree = "<group>"; };
+		C9D3A7081D99122C008F00D0 /* lwOperaFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwOperaFlowLayout.m; sourceTree = "<group>"; };
 		C9E690461D93B63700D811C3 /* lwRecommendBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwRecommendBaseModel.h; sourceTree = "<group>"; };
 		C9E690471D93B63700D811C3 /* lwRecommendBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwRecommendBaseModel.m; sourceTree = "<group>"; };
 		C9E6904A1D93C12700D811C3 /* lwHomeRecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeRecommendCell.h; sourceTree = "<group>"; };
@@ -527,6 +533,8 @@
 				C997C8721D740B30005468D8 /* lwRecommendVC.m */,
 				C997C8741D740B5E005468D8 /* lwSoapOperaVC.h */,
 				C997C8751D740B5E005468D8 /* lwSoapOperaVC.m */,
+				C9D3A7071D99122C008F00D0 /* lwOperaFlowLayout.h */,
+				C9D3A7081D99122C008F00D0 /* lwOperaFlowLayout.m */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
@@ -618,6 +626,7 @@
 		C984EF741D757D160050F805 /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				C9D3A7031D98F1D7008F00D0 /* 番剧 */,
 				C9E690451D93B62300D811C3 /* 推荐 */,
 				C984EF761D757D250050F805 /* 直播 */,
 			);
@@ -824,6 +833,15 @@
 				C9AE644D1D8E8F3C00188B3F /* lwPersonalMenuCell.m */,
 			);
 			path = "我的";
+			sourceTree = "<group>";
+		};
+		C9D3A7031D98F1D7008F00D0 /* 番剧 */ = {
+			isa = PBXGroup;
+			children = (
+				C9D3A7041D98F220008F00D0 /* lwOperaBaseModel.h */,
+				C9D3A7051D98F220008F00D0 /* lwOperaBaseModel.m */,
+			);
+			path = "番剧";
 			sourceTree = "<group>";
 		};
 		C9E690451D93B62300D811C3 /* 推荐 */ = {
@@ -1074,6 +1092,7 @@
 				C997C8701D740B09005468D8 /* lwLiveVideoVC.m in Sources */,
 				C9E6904C1D93C12700D811C3 /* lwHomeRecommendCell.m in Sources */,
 				C993DE031D751B5A0098D86A /* lwLabelVC.m in Sources */,
+				C9D3A7091D99122C008F00D0 /* lwOperaFlowLayout.m in Sources */,
 				C95F046A1D6EEF5800168F5A /* lwCoreDataManager.m in Sources */,
 				C99E38CC1D8F80590008AB15 /* lwSrarchHeaderView.m in Sources */,
 				C97E1B091D7EB18800DF88FF /* lwAllCategoryCell.m in Sources */,
@@ -1084,6 +1103,7 @@
 				C99E38D31D8FA7720008AB15 /* lwFindBaseModel.m in Sources */,
 				C9810B681D701F0A006A858E /* lwSearchVC.m in Sources */,
 				C9810B491D6FE2BA006A858E /* UISearchBar+lwSearchBar.m in Sources */,
+				C9D3A7061D98F221008F00D0 /* lwOperaBaseModel.m in Sources */,
 				C993DE071D75544E0098D86A /* lwDynamicCell.m in Sources */,
 				C98F0DD31D7D1CE000E85355 /* lwAttentionTagCell.m in Sources */,
 				C9810B651D701EFA006A858E /* lwAttentionVC.m in Sources */,
