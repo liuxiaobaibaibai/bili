@@ -15,4 +15,6 @@
 
 @property (strong, nonatomic) lwCategoryModel *categoryModel;
 
+@property (copy, nonatomic) NSString *badge;
+
 @end

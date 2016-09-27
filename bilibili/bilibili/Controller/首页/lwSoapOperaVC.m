@@ -39,6 +39,9 @@ static NSString *lwOperaCustomCellID = @"cell";
 }
 
 #pragma mark - UICollectionViewDelegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    [self showToast:[NSString stringWithFormat:@"%ld",indexPath.row + 1]];
+}
 
 #pragma mark - UICollectionViewDataSource
 
@@ -47,7 +50,7 @@ static NSString *lwOperaCustomCellID = @"cell";
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return  8;
+    return  11;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -74,8 +77,20 @@ static NSString *lwOperaCustomCellID = @"cell";
      item宽度 = (屏幕宽度 - sectionInset的左右边距 - ((列 - 1) * 列间距))) / 列
      */
     
-    CGFloat width = (lW - (padding * 2) - ((column - 1) * padding)) / column;
-    return  CGSizeMake(width, width);
+    switch (indexPath.row) {
+        case 5:
+        {
+            CGFloat width = (lW - (padding * 2));
+            return  CGSizeMake(width, 130);
+        }
+            break;
+        default:
+        {
+            CGFloat width = (lW - (padding * 2) - ((column - 1) * padding)) / column;
+            return  CGSizeMake(width, width);
+        }
+            break;
+    }
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
