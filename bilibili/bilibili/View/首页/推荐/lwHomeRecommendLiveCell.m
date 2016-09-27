@@ -89,20 +89,17 @@
     WS(ws);
     
     [_iconView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.top.mas_equalTo(padding);
-        make.right.mas_equalTo(-padding);
+        make.left.right.top.mas_equalTo(ws.contentView);
         make.height.mas_equalTo(100);
     }];
     
     [_shadowView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.top.mas_equalTo(padding);
-        make.right.mas_equalTo(-padding);
+        make.left.right.top.mas_equalTo(ws.contentView);
         make.height.mas_equalTo(100);
     }];
     
     [_shadowBottomView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.top.mas_equalTo(padding);
-        make.right.mas_equalTo(-padding);
+        make.left.right.top.mas_equalTo(ws.contentView);
         make.height.mas_equalTo(100);
     }];
     

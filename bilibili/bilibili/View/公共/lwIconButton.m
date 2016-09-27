@@ -43,9 +43,9 @@
     
     [_iconView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(ws);
-        make.top.mas_equalTo(5);
+        make.top.mas_equalTo(0);
         make.left.right.mas_equalTo(ws);
-        make.bottom.equalTo(ws.titleLabel.mas_top);
+        make.bottom.equalTo(ws.titleLabel.mas_top).offset(-5);
     }];
     
     [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {

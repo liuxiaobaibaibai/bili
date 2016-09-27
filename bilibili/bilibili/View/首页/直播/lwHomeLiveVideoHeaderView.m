@@ -10,7 +10,6 @@
 
 #import "lwLiveVideoModel.h"
 
-//#import "UIButton+lwButton.h"
 #import <SDWebImage/UIButton+WebCache.h>
 
 @interface lwHomeLiveVideoHeaderView ()

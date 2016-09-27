@@ -101,41 +101,6 @@ UICollectionViewDelegateFlowLayout
     [collectionView registerClass:[lwHomeRecommendFooterView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:lwRecommendFooterCustomViewID];
 }
 
-- (CGSize)collectionItemSize:(lwRecommendBaseModel *)model{
-    if ([model.type isEqualToString:@"bangumi"]) {
-        return CGSizeMake(lW / 2, 150);
-    }else if ([model.type isEqualToString:@"live"]){
-        return CGSizeMake(lW / 2, 150);
-    }else if ([model.type isEqualToString:@"activity"]){
-        return CGSizeMake(lW, 150);
-    }else{
-        return CGSizeMake(lW / 2, 150);
-    }
-}
-
-- (CGSize)collectionHeaderViewSize:(lwRecommendBaseModel *)model{
-    if (model.banner.top.count != 0) {
-        return CGSizeMake(lW, 160);
-    }else{
-        return CGSizeMake(lW, 40);
-    }
-}
-
-- (CGSize)collectionFooterViewSize:(lwRecommendBaseModel *)model{
-    if ([model.title isEqualToString:@"番剧推荐"]) {
-        if (model.banner.bottom.count != 0) {
-            return CGSizeMake(lW, 230);
-        }else{
-            return CGSizeMake(lW, 60);
-        }
-    }else{
-        if (model.banner.bottom.count != 0) {
-            return CGSizeMake(lW, 170);
-        }else{
-            return CGSizeMake(lW, 0);
-        }
-    }
-}
 
 - ( __kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView IndexPath:(NSIndexPath *)indexPath Model:(lwRecommendBaseModel *)model{
     BOOL last = indexPath.row == model.body.count - 1 ? YES : NO;
@@ -309,6 +274,51 @@ UICollectionViewDelegateFlowLayout
 
 
 #pragma mark - UICollectionViewDelegateFlowLayout
+
+#define padding 10
+
+- (CGSize)collectionItemSize:(lwRecommendBaseModel *)model{
+    CGFloat column;
+    if ([model.type isEqualToString:@"bangumi"]) {
+       column = 2;
+    }else if ([model.type isEqualToString:@"live"]){
+        column = 2;
+    }else if ([model.type isEqualToString:@"activity"]){
+        column = 1;
+    }else{
+        column = 2;
+    }
+    CGFloat width = (lW - (padding * 2) - ((column - 1) * padding)) / column;
+    return CGSizeMake(width, 150);
+}
+
+- (CGSize)collectionHeaderViewSize:(lwRecommendBaseModel *)model{
+    if (model.banner.top.count != 0) {
+        return CGSizeMake(lW, 160);
+    }else{
+        return CGSizeMake(lW, 40);
+    }
+}
+
+- (CGSize)collectionFooterViewSize:(lwRecommendBaseModel *)model{
+    if ([model.title isEqualToString:@"番剧推荐"]) {
+        if (model.banner.bottom.count != 0) {
+            return CGSizeMake(lW, 230);
+        }else{
+            return CGSizeMake(lW, 60);
+        }
+    }else{
+        if (model.banner.bottom.count != 0) {
+            return CGSizeMake(lW, 170);
+        }else{
+            return CGSizeMake(lW, 0);
+        }
+    }
+}
+
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
+    return UIEdgeInsetsMake(padding, padding, padding, padding);
+}
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     lwRecommendBaseModel *model = self.dataSource[indexPath.section];

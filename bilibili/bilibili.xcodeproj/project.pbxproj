@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0123727F1D9AA01600BA32EA /* lwOperaHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0123727E1D9AA01600BA32EA /* lwOperaHeaderView.m */; };
 		0B92825FD94A6588BB584A8B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F31263CAD1E1062239DCE2F /* libPods.a */; };
 		C955D4851D8289BA00D4C9B5 /* lwTestPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C955D4841D8289BA00D4C9B5 /* lwTestPageVC.m */; };
 		C955D4881D828AEA00D4C9B5 /* lwSlideTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = C955D4871D828AEA00D4C9B5 /* lwSlideTagView.m */; };
@@ -110,6 +111,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0123727D1D9AA01600BA32EA /* lwOperaHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwOperaHeaderView.h; sourceTree = "<group>"; };
+		0123727E1D9AA01600BA32EA /* lwOperaHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwOperaHeaderView.m; sourceTree = "<group>"; };
 		3F31263CAD1E1062239DCE2F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9235D81C2FE2200058A09383 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9D19F653A25CC233BDE16ED5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -200,9 +203,9 @@
 		C984EF6C1D7577350050F805 /* lwBasePageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwBasePageVC.m; sourceTree = "<group>"; };
 		C984EF791D757D610050F805 /* lwLiveVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwLiveVideoModel.h; sourceTree = "<group>"; };
 		C984EF7A1D757D610050F805 /* lwLiveVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwLiveVideoModel.m; sourceTree = "<group>"; };
-		C984EF7C1D757FA10050F805 /* lwHomeLiveVideo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lwHomeLiveVideo; sourceTree = "<group>"; };
-		C984EF7E1D75812A0050F805 /* lwHomeRecommend */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lwHomeRecommend; sourceTree = "<group>"; };
-		C984EF801D75813D0050F805 /* lwSoapOpera */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lwSoapOpera; sourceTree = "<group>"; };
+		C984EF7C1D757FA10050F805 /* lwHomeLiveVideo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = lwHomeLiveVideo; path = ../lwHomeLiveVideo; sourceTree = "<group>"; };
+		C984EF7E1D75812A0050F805 /* lwHomeRecommend */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = lwHomeRecommend; path = ../lwHomeRecommend; sourceTree = "<group>"; };
+		C984EF801D75813D0050F805 /* lwSoapOpera */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = lwSoapOpera; path = ../lwSoapOpera; sourceTree = "<group>"; };
 		C984EF821D7582380050F805 /* lwBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwBaseModel.h; sourceTree = "<group>"; };
 		C984EF831D7582380050F805 /* lwBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwBaseModel.m; sourceTree = "<group>"; };
 		C98739161D8283B200D2EDF8 /* lwCategoryDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwCategoryDetailVC.h; sourceTree = "<group>"; };
@@ -294,6 +297,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0123727C1D9A9DF500BA32EA /* 番剧 */ = {
+			isa = PBXGroup;
+			children = (
+				0123727D1D9AA01600BA32EA /* lwOperaHeaderView.h */,
+				0123727E1D9AA01600BA32EA /* lwOperaHeaderView.m */,
+			);
+			path = "番剧";
+			sourceTree = "<group>";
+		};
 		815DCD982C7DC271E0566012 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -551,6 +563,9 @@
 		C97E1AFE1D7EAED700DF88FF /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				C984EF7C1D757FA10050F805 /* lwHomeLiveVideo */,
+				C984EF7E1D75812A0050F805 /* lwHomeRecommend */,
+				C984EF801D75813D0050F805 /* lwSoapOpera */,
 				C97E1AFF1D7EAED700DF88FF /* 全部分类 */,
 			);
 			path = "首页";
@@ -613,9 +628,6 @@
 				C9AE64481D8E8B0700188B3F /* 我的 */,
 				C97E1AFE1D7EAED700DF88FF /* 首页 */,
 				C98F0DC41D7D1ABE00E85355 /* 关注 */,
-				C984EF7C1D757FA10050F805 /* lwHomeLiveVideo */,
-				C984EF7E1D75812A0050F805 /* lwHomeRecommend */,
-				C984EF801D75813D0050F805 /* lwSoapOpera */,
 				C9810B5E1D701841006A858E /* lwTabbarConfig.plist */,
 				C997C8771D7416E8005468D8 /* lwCategorySource.plist */,
 				C9810B511D6FE47B006A858E /* lwHeader.pch */,
@@ -798,6 +810,7 @@
 		C99F4B231D77BB440006D255 /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				0123727C1D9A9DF500BA32EA /* 番剧 */,
 				C9E690491D93C0F300D811C3 /* 推荐 */,
 				C97E1B061D7EB16000DF88FF /* 全部分类 */,
 				C99F4B241D77BB530006D255 /* 直播 */,
@@ -1116,6 +1129,7 @@
 				C9A9DEB01D94BD760075C5CC /* lwHomeRecommendHeaderView.m in Sources */,
 				C984EF7B1D757D610050F805 /* lwLiveVideoModel.m in Sources */,
 				C95F04201D6EE62A00168F5A /* main.m in Sources */,
+				0123727F1D9AA01600BA32EA /* lwOperaHeaderView.m in Sources */,
 				C997C8731D740B30005468D8 /* lwRecommendVC.m in Sources */,
 				C997C8881D7435EE005468D8 /* lwChaseSopaOperaCell.m in Sources */,
 				C955D4881D828AEA00D4C9B5 /* lwSlideTagView.m in Sources */,
