@@ -46,6 +46,9 @@ NSString *const lwOperaCustomHeadViewID = @"header1";
 }
 
 #pragma mark - UICollectionViewDelegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    [self showToast:[NSString stringWithFormat:@"%ld",indexPath.row + 1]];
+}
 
 #pragma mark - UICollectionViewDataSource
 
@@ -70,6 +73,7 @@ NSString *const lwOperaCustomHeadViewID = @"header1";
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+<<<<<<< HEAD
     switch (section) {
         case 0:
             return 6;
@@ -81,6 +85,9 @@ NSString *const lwOperaCustomHeadViewID = @"header1";
             return 10;
             break;
     }
+=======
+    return  11;
+>>>>>>> 81b75cbaef9fcf40386260e3916c17a6f3a1036a
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -107,8 +114,25 @@ NSString *const lwOperaCustomHeadViewID = @"header1";
      item宽度 = (屏幕宽度 - sectionInset的左右边距 - ((列 - 1) * 列间距))) / 列
      */
     
+<<<<<<< HEAD
     CGFloat width = (lW - (padding * 2) - ((column - 1) * padding)) / column;
     return (indexPath.section == 0 || indexPath.section == 1) ? CGSizeMake(width, 150) : CGSizeMake(lW - 20, 120);
+=======
+    switch (indexPath.row) {
+        case 5:
+        {
+            CGFloat width = (lW - (padding * 2));
+            return  CGSizeMake(width, 130);
+        }
+            break;
+        default:
+        {
+            CGFloat width = (lW - (padding * 2) - ((column - 1) * padding)) / column;
+            return  CGSizeMake(width, width);
+        }
+            break;
+    }
+>>>>>>> 81b75cbaef9fcf40386260e3916c17a6f3a1036a
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
