@@ -67,6 +67,7 @@
 		C993DE001D751B420098D86A /* lwDynamicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C993DDFF1D751B420098D86A /* lwDynamicVC.m */; };
 		C993DE031D751B5A0098D86A /* lwLabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C993DE021D751B5A0098D86A /* lwLabelVC.m */; };
 		C993DE071D75544E0098D86A /* lwDynamicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C993DE061D75544E0098D86A /* lwDynamicCell.m */; };
+		C995DC8C1D9CEC96004581C6 /* File in Resources */ = {isa = PBXBuildFile; fileRef = C995DC8B1D9CEC96004581C6 /* File */; };
 		C997C8701D740B09005468D8 /* lwLiveVideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C997C86F1D740B09005468D8 /* lwLiveVideoVC.m */; };
 		C997C8731D740B30005468D8 /* lwRecommendVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C997C8721D740B30005468D8 /* lwRecommendVC.m */; };
 		C997C8761D740B5E005468D8 /* lwSoapOperaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C997C8751D740B5E005468D8 /* lwSoapOperaVC.m */; };
@@ -224,6 +225,7 @@
 		C993DE021D751B5A0098D86A /* lwLabelVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwLabelVC.m; sourceTree = "<group>"; };
 		C993DE051D75544E0098D86A /* lwDynamicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwDynamicCell.h; sourceTree = "<group>"; };
 		C993DE061D75544E0098D86A /* lwDynamicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwDynamicCell.m; sourceTree = "<group>"; };
+		C995DC8B1D9CEC96004581C6 /* File */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
 		C997C86E1D740B09005468D8 /* lwLiveVideoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwLiveVideoVC.h; sourceTree = "<group>"; };
 		C997C86F1D740B09005468D8 /* lwLiveVideoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwLiveVideoVC.m; sourceTree = "<group>"; };
 		C997C8711D740B30005468D8 /* lwRecommendVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwRecommendVC.h; sourceTree = "<group>"; };
@@ -631,6 +633,7 @@
 				C9810B5E1D701841006A858E /* lwTabbarConfig.plist */,
 				C997C8771D7416E8005468D8 /* lwCategorySource.plist */,
 				C9810B511D6FE47B006A858E /* lwHeader.pch */,
+				C995DC8B1D9CEC96004581C6 /* File */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -1023,6 +1026,7 @@
 				C98F0DCC1D7D1BDD00E85355 /* lwAttentionDynamicSource in Resources */,
 				C9810B5F1D701841006A858E /* lwTabbarConfig.plist in Resources */,
 				C99E38CF1D8FA00F0008AB15 /* lwFindConfigList.plist in Resources */,
+				C995DC8C1D9CEC96004581C6 /* File in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
