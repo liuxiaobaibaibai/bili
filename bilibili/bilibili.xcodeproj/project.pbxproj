@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0123727F1D9AA01600BA32EA /* lwOperaHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0123727E1D9AA01600BA32EA /* lwOperaHeaderView.m */; };
+		01EBBE2C1D9D6510003B5611 /* lwHomeOperaCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EBBE2B1D9D6510003B5611 /* lwHomeOperaCustomCell.m */; };
+		01EBBE2F1D9D6543003B5611 /* lwHomeOperaRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EBBE2E1D9D6543003B5611 /* lwHomeOperaRecommendCell.m */; };
 		0B92825FD94A6588BB584A8B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F31263CAD1E1062239DCE2F /* libPods.a */; };
 		C955D4851D8289BA00D4C9B5 /* lwTestPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C955D4841D8289BA00D4C9B5 /* lwTestPageVC.m */; };
 		C955D4881D828AEA00D4C9B5 /* lwSlideTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = C955D4871D828AEA00D4C9B5 /* lwSlideTagView.m */; };
@@ -87,7 +89,6 @@
 		C9C5DA501D950EEF00DC6624 /* lwHomeRecommendLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C5DA4F1D950EEF00DC6624 /* lwHomeRecommendLiveCell.m */; };
 		C9C5DA531D95125A00DC6624 /* lwHomeRecommendFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C5DA521D95125A00DC6624 /* lwHomeRecommendFooterView.m */; };
 		C9D3A7061D98F221008F00D0 /* lwOperaBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D3A7051D98F220008F00D0 /* lwOperaBaseModel.m */; };
-		C9D3A7091D99122C008F00D0 /* lwOperaFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D3A7081D99122C008F00D0 /* lwOperaFlowLayout.m */; };
 		C9E690481D93B63700D811C3 /* lwRecommendBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E690471D93B63700D811C3 /* lwRecommendBaseModel.m */; };
 		C9E6904C1D93C12700D811C3 /* lwHomeRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E6904B1D93C12700D811C3 /* lwHomeRecommendCell.m */; };
 		C9E690521D93D76C00D811C3 /* lwHomeRecommedActityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E690511D93D76C00D811C3 /* lwHomeRecommedActityCell.m */; };
@@ -114,6 +115,10 @@
 /* Begin PBXFileReference section */
 		0123727D1D9AA01600BA32EA /* lwOperaHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwOperaHeaderView.h; sourceTree = "<group>"; };
 		0123727E1D9AA01600BA32EA /* lwOperaHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwOperaHeaderView.m; sourceTree = "<group>"; };
+		01EBBE2A1D9D6510003B5611 /* lwHomeOperaCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeOperaCustomCell.h; sourceTree = "<group>"; };
+		01EBBE2B1D9D6510003B5611 /* lwHomeOperaCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwHomeOperaCustomCell.m; sourceTree = "<group>"; };
+		01EBBE2D1D9D6543003B5611 /* lwHomeOperaRecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeOperaRecommendCell.h; sourceTree = "<group>"; };
+		01EBBE2E1D9D6543003B5611 /* lwHomeOperaRecommendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwHomeOperaRecommendCell.m; sourceTree = "<group>"; };
 		3F31263CAD1E1062239DCE2F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9235D81C2FE2200058A09383 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9D19F653A25CC233BDE16ED5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -261,8 +266,6 @@
 		C9C5DA521D95125A00DC6624 /* lwHomeRecommendFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwHomeRecommendFooterView.m; sourceTree = "<group>"; };
 		C9D3A7041D98F220008F00D0 /* lwOperaBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwOperaBaseModel.h; sourceTree = "<group>"; };
 		C9D3A7051D98F220008F00D0 /* lwOperaBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwOperaBaseModel.m; sourceTree = "<group>"; };
-		C9D3A7071D99122C008F00D0 /* lwOperaFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwOperaFlowLayout.h; sourceTree = "<group>"; };
-		C9D3A7081D99122C008F00D0 /* lwOperaFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwOperaFlowLayout.m; sourceTree = "<group>"; };
 		C9E690461D93B63700D811C3 /* lwRecommendBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwRecommendBaseModel.h; sourceTree = "<group>"; };
 		C9E690471D93B63700D811C3 /* lwRecommendBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwRecommendBaseModel.m; sourceTree = "<group>"; };
 		C9E6904A1D93C12700D811C3 /* lwHomeRecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeRecommendCell.h; sourceTree = "<group>"; };
@@ -304,6 +307,10 @@
 			children = (
 				0123727D1D9AA01600BA32EA /* lwOperaHeaderView.h */,
 				0123727E1D9AA01600BA32EA /* lwOperaHeaderView.m */,
+				01EBBE2A1D9D6510003B5611 /* lwHomeOperaCustomCell.h */,
+				01EBBE2B1D9D6510003B5611 /* lwHomeOperaCustomCell.m */,
+				01EBBE2D1D9D6543003B5611 /* lwHomeOperaRecommendCell.h */,
+				01EBBE2E1D9D6543003B5611 /* lwHomeOperaRecommendCell.m */,
 			);
 			path = "番剧";
 			sourceTree = "<group>";
@@ -547,8 +554,6 @@
 				C997C8721D740B30005468D8 /* lwRecommendVC.m */,
 				C997C8741D740B5E005468D8 /* lwSoapOperaVC.h */,
 				C997C8751D740B5E005468D8 /* lwSoapOperaVC.m */,
-				C9D3A7071D99122C008F00D0 /* lwOperaFlowLayout.h */,
-				C9D3A7081D99122C008F00D0 /* lwOperaFlowLayout.m */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
@@ -1107,9 +1112,9 @@
 				C95F04611D6EEE8100168F5A /* lwBaseVC.m in Sources */,
 				C9C5DA531D95125A00DC6624 /* lwHomeRecommendFooterView.m in Sources */,
 				C997C8701D740B09005468D8 /* lwLiveVideoVC.m in Sources */,
+				01EBBE2C1D9D6510003B5611 /* lwHomeOperaCustomCell.m in Sources */,
 				C9E6904C1D93C12700D811C3 /* lwHomeRecommendCell.m in Sources */,
 				C993DE031D751B5A0098D86A /* lwLabelVC.m in Sources */,
-				C9D3A7091D99122C008F00D0 /* lwOperaFlowLayout.m in Sources */,
 				C95F046A1D6EEF5800168F5A /* lwCoreDataManager.m in Sources */,
 				C99E38CC1D8F80590008AB15 /* lwSrarchHeaderView.m in Sources */,
 				C97E1B091D7EB18800DF88FF /* lwAllCategoryCell.m in Sources */,
@@ -1133,6 +1138,7 @@
 				C9A9DEB01D94BD760075C5CC /* lwHomeRecommendHeaderView.m in Sources */,
 				C984EF7B1D757D610050F805 /* lwLiveVideoModel.m in Sources */,
 				C95F04201D6EE62A00168F5A /* main.m in Sources */,
+				01EBBE2F1D9D6543003B5611 /* lwHomeOperaRecommendCell.m in Sources */,
 				0123727F1D9AA01600BA32EA /* lwOperaHeaderView.m in Sources */,
 				C997C8731D740B30005468D8 /* lwRecommendVC.m in Sources */,
 				C997C8881D7435EE005468D8 /* lwChaseSopaOperaCell.m in Sources */,

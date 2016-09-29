@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class lwOperaBaseModel;
+
 @interface lwOperaHeaderView : UICollectionReusableView
+
+@property (strong, nonatomic) lwOperaBaseModel *operaModel;
 
 @end

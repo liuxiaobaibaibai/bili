@@ -10,6 +10,8 @@
 #import "lwScrollView.h"
 #import "lwIconButton.h"
 
+#import "lwOperaBaseModel.h"
+
 
 @interface lwOperaHeaderView ()
 
@@ -33,6 +35,19 @@
 #pragma mark - lwScrollViewDelegate
 - (void)flashClick:(id)sender Index:(NSInteger)index{
     
+}
+
+#pragma mark - setter
+- (void)setOperaModel:(lwOperaBaseModel *)operaModel{
+    _operaModel = operaModel;
+    
+    NSMutableArray *flash = [NSMutableArray new];
+    for (lwADHeadModel *head in operaModel.ADModel.head) {
+        [flash addObject:head.img];
+    }
+    
+    self.bannerView.sourceIsLocal = NO;
+    [self.bannerView setFlashs:flash];
 }
 
 #pragma mark - init

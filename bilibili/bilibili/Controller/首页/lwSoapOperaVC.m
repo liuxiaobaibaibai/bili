@@ -8,8 +8,18 @@
 
 #import "lwSoapOperaVC.h"
 #import "lwOperaBaseModel.h"
-
+#import "lwHomeOperaCustomCell.h"
+#import "lwHomeOperaRecommendCell.h"
 #import "lwOperaHeaderView.h"
+
+
+// 三种cell
+NSString *const lwOperaSerializingCellID = @"cellSerializing";
+NSString *const lwOperaPreviousCellID = @"cellPrevious";
+NSString *const lwOperaRecommendCellID = @"recommend";
+
+NSString *const lwOperaTopHeadViewID = @"header";
+NSString *const lwOperaCustomHeadViewID = @"header1";
 
 @interface lwSoapOperaVC ()
 <
@@ -26,23 +36,71 @@ UICollectionViewDelegateFlowLayout
 
 @implementation lwSoapOperaVC
 
+#pragma mark - private method
+- (void)loadDataSource{
+    self.baseModel = [lwOperaBaseModel operaSource];
+    [self.myCollectionView reloadData];
+}
+
+#pragma mark - cycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupView];
+    [self loadDataSource];
 }
 
 #pragma mark - 其实我觉得下面两段可以整合一下
-static NSString *lwOperaCustomCellID = @"cell";
-NSString *const lwOperaTopHeadViewID = @"header";
-NSString *const lwOperaCustomHeadViewID = @"header1";
 - (void)registCell:(UICollectionView *)collectionView{
-    [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:lwOperaCustomCellID];
+    [collectionView registerClass:[lwHomeOperaCustomCell class] forCellWithReuseIdentifier:lwOperaSerializingCellID];
+    [collectionView registerClass:[lwHomeOperaCustomCell class] forCellWithReuseIdentifier:lwOperaPreviousCellID];
+    [collectionView registerClass:[lwHomeOperaRecommendCell class] forCellWithReuseIdentifier:lwOperaRecommendCellID];
+    
 }
 
 - (void)registHeaderOrFooter:(UICollectionView *)collectionView{
     [collectionView registerClass:[lwOperaHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:lwOperaTopHeadViewID];
     [collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:lwOperaCustomHeadViewID];
     [collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"footer"];
+}
+
+
+- (__kindof UICollectionViewCell *)configCell:(UICollectionView *)collectionView AtIndexPath:(NSIndexPath *)indexPath{
+    switch (indexPath.section) {
+        case 0:
+        {
+            lwPreviousListModel *model = [[lwPreviousListModel alloc] init];
+            if (indexPath.row < self.baseModel.serializing.count) {
+                model = self.baseModel.serializing[indexPath.row];
+            }
+            lwHomeOperaCustomCell *serailizingCell = [collectionView dequeueReusableCellWithReuseIdentifier:lwOperaSerializingCellID forIndexPath:indexPath];
+            [serailizingCell operaModel:model Style:lwHomeOperaCustomCellStyleSerializing];
+            return serailizingCell;
+        }
+            break;
+        case 1:
+        {
+            lwPreviousListModel *model = [[lwPreviousListModel alloc] init];
+            if (indexPath.row < self.baseModel.previous.list.count) {
+                model = self.baseModel.previous.list[indexPath.row];
+            }
+            lwHomeOperaCustomCell *previousCell = [collectionView dequeueReusableCellWithReuseIdentifier:lwOperaPreviousCellID forIndexPath:indexPath];
+            [previousCell operaModel:model Style:lwHomeOperaCustomCellStylePrevious];
+            return previousCell;
+        }
+            break;
+        default:
+        {
+            lwOperaRecommendModel *model = [lwOperaRecommendModel new];
+            if (indexPath.row < self.baseModel.recommend.count) {
+                model = self.baseModel.recommend[indexPath.row];
+            }
+            lwHomeOperaRecommendCell *recommendCell = [collectionView dequeueReusableCellWithReuseIdentifier:lwOperaRecommendCellID forIndexPath:indexPath];
+            [recommendCell setRecommendModel:model];
+            return recommendCell;
+        }
+            break;
+    }
 }
 
 #pragma mark - UICollectionViewDelegate
@@ -60,6 +118,7 @@ NSString *const lwOperaCustomHeadViewID = @"header1";
             return headerView;
         }else{
             lwOperaHeaderView *header = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:lwOperaTopHeadViewID forIndexPath:indexPath];
+            header.operaModel = self.baseModel;
             return header;
         }
     }else{
@@ -75,21 +134,19 @@ NSString *const lwOperaCustomHeadViewID = @"header1";
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     switch (section) {
         case 0:
-            return 6;
+            return self.baseModel.serializing.count;
             break;
         case 1:
-            return 3;
+            return self.baseModel.previous.list.count;
             break;
         default:
-            return 10;
+            return self.baseModel.recommend.count;
             break;
     }
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:lwOperaCustomCellID forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor randomColor];
-    return cell;
+    return [self configCell:collectionView AtIndexPath:indexPath];
 }
 
 
@@ -110,11 +167,11 @@ NSString *const lwOperaCustomHeadViewID = @"header1";
      item宽度 = (屏幕宽度 - sectionInset的左右边距 - ((列 - 1) * 列间距))) / 列
      */
     CGFloat width = (lW - (padding * 2) - ((column - 1) * padding)) / column;
-    return (indexPath.section == 0 || indexPath.section == 1) ? CGSizeMake(width, 150) : CGSizeMake(lW - 20, 120);
+    return (indexPath.section == 0 || indexPath.section == 1) ? CGSizeMake(width, 200) : CGSizeMake(lW - 20, 200);
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
-    return UIEdgeInsetsMake(padding, padding, padding, padding);
+    return UIEdgeInsetsMake(0, padding, padding, padding);
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{

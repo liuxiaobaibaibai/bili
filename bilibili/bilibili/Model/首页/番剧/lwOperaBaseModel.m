@@ -45,7 +45,7 @@
         self.favourites = dict[@"favourites"];
         self.is_finish = [dict[@"is_finish"] boolValue];
         self.last_time = [dict[@"last_time"] intValue];
-        self.newwest_ep_index = dict[@"newwest_ep_index"];
+        self.newwest_ep_index = dict[@"newest_ep_index"];
         self.pub_time = [dict[@"pub_time"] intValue];
         self.season_id = [dict[@"season_id"] intValue];
         self.season_status = [dict[@"season_status"] intValue];
@@ -66,7 +66,7 @@
         NSMutableArray <lwADBodyModel *> *bodys = [NSMutableArray new];
         if ([body isKindOfClass:[NSArray class]]) {
             for (NSDictionary *dict in body) {
-                NSLog(@"%@ %s %d",dict,__func__,__LINE__);
+//                NSLog(@"%@ %s %d",dict,__func__,__LINE__);
             }
         }
         self.body = bodys;
@@ -162,7 +162,7 @@
         self.serializing = serializings;
         
         // 番剧推荐
-        id recommend = dict[@"operaRecommend"];
+        id recommend = dict[@"recommend"];
         NSMutableArray <lwOperaRecommendModel *> *recommends = [NSMutableArray new];
         if ([recommend isKindOfClass:[NSArray class]]) {
             for (NSDictionary *dict in recommend) {
