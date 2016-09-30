@@ -32,7 +32,8 @@ UICollectionViewDelegateFlowLayout
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self setupView];
+    [self loadDataSource];
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle{
@@ -41,13 +42,13 @@ UICollectionViewDelegateFlowLayout
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    [self setupView];
-    [self loadDataSource];
 }
 
 - (void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
-    
+}
+
+- (void)dealloc{
     self.myCollectionView.delegate = nil;
     self.myCollectionView.dataSource = nil;
     self.myCollectionView = nil;

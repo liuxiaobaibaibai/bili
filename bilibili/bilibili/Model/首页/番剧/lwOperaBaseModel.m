@@ -13,7 +13,10 @@
 - (instancetype)initWithDict:(NSDictionary *)dict{
     self = [super initWithDict:dict];
     if (self) {
-        // 暂时还不知道是什么样的
+        self.img = dict[@"img"];
+        self.index = [dict[@"index"] intValue];
+        self.link = dict[@"link"];
+        self.title = dict[@"title"];
     }
     return self;
 }
@@ -66,7 +69,8 @@
         NSMutableArray <lwADBodyModel *> *bodys = [NSMutableArray new];
         if ([body isKindOfClass:[NSArray class]]) {
             for (NSDictionary *dict in body) {
-//                NSLog(@"%@ %s %d",dict,__func__,__LINE__);
+                lwADBodyModel *bodyModel = [[lwADBodyModel alloc] initWithDict:dict];
+                [bodys addObject:bodyModel];
             }
         }
         self.body = bodys;

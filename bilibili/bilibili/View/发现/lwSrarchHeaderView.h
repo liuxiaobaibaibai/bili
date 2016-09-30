@@ -17,15 +17,13 @@
 
 @interface lwSrarchHeaderView : UIView
 
-@property (strong, nonatomic) UISearchController *searchVC;
+@property (strong, nonatomic) UIButton *searchBtn;
 
 @property (strong, nonatomic) UIButton *qrBtn;
 
 @property (strong, nonatomic) UILabel *titleLabel;
 
 @property (strong, nonatomic) UIButton *moreBtn;
-
-@property (assign, nonatomic) id searchUpdate;
 
 @property (assign, nonatomic) id <lwSearchHeaderViewDelegate>delegate;
 

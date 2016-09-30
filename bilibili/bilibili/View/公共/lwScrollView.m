@@ -215,6 +215,16 @@
 }
 
 #pragma mark - setter
+
+- (void)setAutoScroll:(BOOL)autoScroll{
+    _autoScroll = autoScroll;
+    if (!autoScroll) {
+        [self stopAutoScroll];
+    }else{
+        [self startAutoScroll];
+    }
+}
+
 - (void)setFlashs:(NSArray *)flashs{
     
     if (flashs.count < 1) {
@@ -234,6 +244,7 @@
             [self startAutoScroll];
         }
     }else{
+        _autoScroll = NO;
         self.myScrollView.scrollEnabled = NO;
         [self.pageControl setHidden:YES];
     }

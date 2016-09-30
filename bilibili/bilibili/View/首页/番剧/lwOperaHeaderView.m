@@ -18,6 +18,9 @@
 <lwScrollViewDelegate>
 
 @property (strong, nonatomic) lwScrollView *bannerView;
+
+@property (strong, nonatomic) UIImageView *shadowView;
+
 @property (copy, nonatomic) NSArray <NSDictionary *> *categories;
 @property (copy, nonatomic) NSArray *menus;
 
@@ -31,6 +34,75 @@
 @implementation lwOperaHeaderView
 
 #pragma mark - private method
+- (void)addUsuallyLayout:(lwOperaHeaderViewStyle)style{
+    switch (style) {
+        case lwOperaHeaderViewStyleBannerWithTitle:
+        {
+            // banner & title
+            [self loadBannerWithTitleView];
+        }
+            break;
+        case lwOperaHeaderViewStyleTitle:
+        {
+            // title
+            [self loadTitleView];
+        }
+            break;
+        case lwOperaHeaderViewStyleBottomBanner:
+        {
+            [self loadBannerView];
+            [self.bannerView mas_updateConstraints:^(MASConstraintMaker *make) {
+                make.left.mas_equalTo(10);
+                make.right.right.mas_equalTo(-10);
+            }];
+        }
+            break;
+        default:
+        {
+            // banner
+            [self loadBannerView];
+        }
+            break;
+    }
+}
+
+- (void)contentModel:(lwOperaHeaderViewStyle)style Model:(lwOperaBaseModel *)model{
+    switch (style) {
+        case lwOperaHeaderViewStyleBannerWithTitle:
+        {
+            NSMutableArray *flash = [NSMutableArray new];
+            for (lwADHeadModel *head in model.ADModel.head) {
+                [flash addObject:head.img];
+            }
+            [self.bannerView setFlashs:flash];
+        }
+            break;
+        case lwOperaHeaderViewStyleTitle:
+        {
+            // 没有操作
+        }
+            break;
+        case lwOperaHeaderViewStyleBanner:
+        {
+            NSMutableArray *flash = [NSMutableArray new];
+            for (lwADHeadModel *head in model.ADModel.head) {
+                [flash addObject:head.img];
+            }
+            [self.bannerView setFlashs:flash];
+        }
+            break;
+        default:
+        {
+            NSMutableArray *flash = [NSMutableArray new];
+            for (lwADBodyModel *body in model.ADModel.body) {
+                [flash addObject:body.img];
+            }
+            self.bannerView.autoScroll = flash.count > 1 ? YES : NO;
+            [self.bannerView setFlashs:flash];
+        }
+            break;
+    }
+}
 
 #pragma mark - lwScrollViewDelegate
 - (void)flashClick:(id)sender Index:(NSInteger)index{
@@ -38,16 +110,10 @@
 }
 
 #pragma mark - setter
-- (void)setOperaModel:(lwOperaBaseModel *)operaModel{
-    _operaModel = operaModel;
-    
-    NSMutableArray *flash = [NSMutableArray new];
-    for (lwADHeadModel *head in operaModel.ADModel.head) {
-        [flash addObject:head.img];
-    }
-    
-    self.bannerView.sourceIsLocal = NO;
-    [self.bannerView setFlashs:flash];
+- (void)operaModel:(lwOperaBaseModel *)model Style:(lwOperaHeaderViewStyle)style{
+    _operaModel = model;
+    [self addUsuallyLayout:style];
+    [self contentModel:style Model:model];
 }
 
 #pragma mark - init
@@ -55,13 +121,69 @@
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
-        [self loadView];
     }
     return self;
 }
 
-#pragma mark - 
-- (void)loadView{
+#pragma mark -
+- (void)loadBannerView{
+    
+    [[self subviews] enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [obj removeFromSuperview];
+    }];
+    
+    WS(ws);
+
+    [self addSubview:self.bannerView];
+    [self addSubview:self.shadowView];
+    [_bannerView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.right.bottom.equalTo(ws);
+    }];
+    
+    [_shadowView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.right.bottom.equalTo(ws.bannerView);
+    }];
+}
+- (void)loadTitleView{
+    [[self subviews] enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [obj removeFromSuperview];
+    }];
+    
+    WS(ws);
+    [self addSubview:self.iconView];
+    [self addSubview:self.titleLabel];
+    [self addSubview:self.subtitleLabel];
+    [self addSubview:self.detailView];
+    
+    [_iconView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(10);
+        make.top.mas_equalTo(10);
+        make.size.mas_equalTo(CGSizeMake(20, 20));
+        make.bottom.mas_equalTo(-10);
+    }];
+    
+    [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(ws.iconView.mas_right);
+        make.centerY.equalTo(ws.iconView);
+        make.height.mas_equalTo(ws.iconView);
+    }];
+    
+    [_subtitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(ws.titleLabel.mas_right);
+        make.width.mas_equalTo(100);
+        make.height.equalTo(ws.iconView);
+        make.centerY.equalTo(ws.iconView);
+    }];
+    
+    [_detailView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(ws.subtitleLabel.mas_right).offset(10);
+        make.right.mas_equalTo(-10);
+        make.centerY.equalTo(ws.iconView);
+        make.size.mas_equalTo(ws.iconView);
+    }];
+}
+
+- (void)loadBannerWithTitleView{
     [[self subviews] enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [obj removeFromSuperview];
     }];
@@ -157,6 +279,14 @@
 }
 
 #pragma mark - getter
+
+- (UIImageView *)shadowView{
+    if (_shadowView == nil) {
+        _shadowView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"shadow_5_corner_246_bg"]];
+    }
+    return _shadowView;
+}
+
 - (UILabel *)subtitleLabel{
     if (_subtitleLabel == nil) {
         _subtitleLabel = [[UILabel alloc] init];
@@ -194,7 +324,7 @@
 - (lwScrollView *)bannerView{
     if (_bannerView == nil) {
         _bannerView = [[lwScrollView alloc] initWithFrame:CGRectZero DataSource:self.menus Delegate:self];
-        _bannerView.sourceIsLocal = YES;
+        _bannerView.sourceIsLocal = NO;
     }
     return _bannerView;
 }

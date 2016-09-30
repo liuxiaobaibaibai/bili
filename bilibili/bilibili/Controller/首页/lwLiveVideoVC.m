@@ -39,24 +39,21 @@ UICollectionViewDelegateFlowLayout
 
 @implementation lwLiveVideoVC
 
+#pragma mark - life cycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-}
-
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    NSLog(@"%s",__func__);
     [self setupView];
     [self loadDataSource];
 }
 
-- (void)viewDidDisappear:(BOOL)animated{
-    [super viewDidDisappear:animated];
-    NSLog(@"%s",__func__);
+- (void)dealloc{
     self.myCollectionView.delegate = nil;
     self.myCollectionView.dataSource = nil;
     self.myCollectionView = nil;
 }
+
+#pragma mark - private method
 
 - (void)loadDataSource{
     self.liveVideoModel = [lwLiveVideoModel liveVideoSource];

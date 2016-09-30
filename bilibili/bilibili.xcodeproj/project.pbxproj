@@ -93,6 +93,7 @@
 		C9E6904C1D93C12700D811C3 /* lwHomeRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E6904B1D93C12700D811C3 /* lwHomeRecommendCell.m */; };
 		C9E690521D93D76C00D811C3 /* lwHomeRecommedActityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E690511D93D76C00D811C3 /* lwHomeRecommedActityCell.m */; };
 		C9E690551D93D78800D811C3 /* lwHomeRecommendOperaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E690541D93D78800D811C3 /* lwHomeRecommendOperaCell.m */; };
+		C9ED9D801D9E36A8005CC21D /* lwSerachResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C9ED9D7F1D9E36A8005CC21D /* lwSerachResultVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -274,6 +275,8 @@
 		C9E690511D93D76C00D811C3 /* lwHomeRecommedActityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwHomeRecommedActityCell.m; sourceTree = "<group>"; };
 		C9E690531D93D78800D811C3 /* lwHomeRecommendOperaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeRecommendOperaCell.h; sourceTree = "<group>"; };
 		C9E690541D93D78800D811C3 /* lwHomeRecommendOperaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwHomeRecommendOperaCell.m; sourceTree = "<group>"; };
+		C9ED9D7E1D9E36A8005CC21D /* lwSerachResultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwSerachResultVC.h; sourceTree = "<group>"; };
+		C9ED9D7F1D9E36A8005CC21D /* lwSerachResultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwSerachResultVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -514,6 +517,8 @@
 			children = (
 				C9810B661D701F0A006A858E /* lwSearchVC.h */,
 				C9810B671D701F0A006A858E /* lwSearchVC.m */,
+				C9ED9D7E1D9E36A8005CC21D /* lwSerachResultVC.h */,
+				C9ED9D7F1D9E36A8005CC21D /* lwSerachResultVC.m */,
 			);
 			path = "发现";
 			sourceTree = "<group>";
@@ -1143,6 +1148,7 @@
 				C997C8731D740B30005468D8 /* lwRecommendVC.m in Sources */,
 				C997C8881D7435EE005468D8 /* lwChaseSopaOperaCell.m in Sources */,
 				C955D4881D828AEA00D4C9B5 /* lwSlideTagView.m in Sources */,
+				C9ED9D801D9E36A8005CC21D /* lwSerachResultVC.m in Sources */,
 				C984EF841D7582380050F805 /* lwBaseModel.m in Sources */,
 				C9810B4B1D6FE2BA006A858E /* UITableView+lwTableView.m in Sources */,
 				C97E1B051D7EB01200DF88FF /* lwAllCategoryVC.m in Sources */,

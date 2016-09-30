@@ -7,19 +7,18 @@
 //
 
 #import "lwSearchVC.h"
-
 #import "lwFindBaseModel.h"
-
 #import "lwSrarchHeaderView.h"
+
+
+#import "lwSerachResultVC.h"
 
 @interface lwSearchVC ()
 
 <
 lwSearchHeaderViewDelegate,
 UITableViewDelegate,
-UITableViewDataSource,
-UISearchResultsUpdating,
-UISearchControllerDelegate
+UITableViewDataSource
 >
 
 @property (strong, nonatomic) UITableView *myTableView;
@@ -28,7 +27,9 @@ UISearchControllerDelegate
 
 @property (copy, nonatomic) NSArray *source;
 
-@property (strong, nonatomic) UISearchController *searchController;
+@property (strong, nonatomic) lwSerachResultVC *searchVC;
+
+@property (strong, nonatomic) UINavigationController *searchRootVC;
 
 @end
 
@@ -56,22 +57,37 @@ UISearchControllerDelegate
 
 #pragma mark - lwSearchHeaderViewDelegate
 - (void)headerButtonClick:(UIButton *)btn{
-    [_headerView layoutIfNeeded];
- 
-    if (_headerView.height < 350) {
-        [self.headerView mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.height.mas_equalTo(350);
-        }];
-    }else{
-        [self.headerView mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.height.mas_equalTo(230);
-        }];
+    switch (btn.tag) {
+        case 1:
+        {
+            [_headerView layoutIfNeeded];
+            
+            if (_headerView.height < 350) {
+                [self.headerView mas_updateConstraints:^(MASConstraintMaker *make) {
+                    make.height.mas_equalTo(350);
+                }];
+            }else{
+                [self.headerView mas_updateConstraints:^(MASConstraintMaker *make) {
+                    make.height.mas_equalTo(230);
+                }];
+            }
+        }
+            break;
+        case 2:
+        {
+            // 扫描二维码
+        }
+            break;
+        default:
+        {
+            // 搜索
+            self.searchRootVC = [[UINavigationController alloc] initWithRootViewController:self.searchVC];
+            self.searchVC.navigationController.navigationBarHidden = YES;
+            [self addChildViewController:self.searchRootVC];
+            [self.view addSubview:self.searchRootVC.view];
+        }
+            break;
     }
-}
-
-#pragma mark - UISearchResultsUpdating
-- (void)updateSearchResultsForSearchController:(UISearchController *)searchController{
-    
 }
 
 #pragma mark - UITableViewDelegate
@@ -105,19 +121,17 @@ UISearchControllerDelegate
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     
-    if (!self.searchController.active) {
-        lwFindBaseModel *model = self.source[indexPath.section][indexPath.row];
-        
-        cell.textLabel.text = model.title;
-        cell.imageView.image = [UIImage imageNamed:model.imgPath];
-    }else{
-        cell.textLabel.text = @"快来插我啊！";
-    }
+    lwFindBaseModel *model = self.source[indexPath.section][indexPath.row];
+    
+    cell.textLabel.text = model.title;
+    cell.imageView.image = [UIImage imageNamed:model.imgPath];
+    
     return cell;
 }
 
 #pragma mark - setupView
 - (void)setupView{
+    
     [self.view setBackgroundColor:[UIColor biliPinkColor]];
     [self.view addSubview:self.headerView];
     [self.view addSubview:self.myTableView];
@@ -148,30 +162,18 @@ UISearchControllerDelegate
 - (lwSrarchHeaderView *)headerView{
     if (_headerView == nil) {
         _headerView = [[lwSrarchHeaderView alloc] init];
-        _headerView.searchUpdate = self;
         _headerView.delegate = self;
     }
     return _headerView;
 }
 
-- (UISearchController *)searchController{
-    if (_searchController == nil) {
-        _searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
-        _searchController.searchBar.frame = CGRectMake(0, 0, 0, 44);
-        _searchController.dimsBackgroundDuringPresentation = YES;
-        _searchController.hidesNavigationBarDuringPresentation = NO;
-        
-        //搜索栏表头视图
-        [_searchController.searchBar sizeToFit];
-        //背景颜色
-        _searchController.searchBar.tintColor = [UIColor darkGrayColor];
-        [_searchController.searchBar setBackgroundImage:[UIImage new]];
-        _searchController.searchBar.barTintColor = HTMLColor(@"#f5f5f5");
-        _searchController.searchBar.placeholder = @"搜索视频、番剧、up主或AV号";
-        _searchController.searchResultsUpdater = self;
-        _searchController.delegate = self;
+- (lwSerachResultVC *)searchVC{
+    if (_searchVC == nil) {
+        _searchVC = [[lwSerachResultVC alloc] init];
+        [_searchVC.view setFrame:self.view.frame];
+        [_searchVC.view setBackgroundColor:[UIColor biliPinkColor]];
     }
-    return _searchController;
+    return _searchVC;
 }
 
 - (UITableView *)myTableView{

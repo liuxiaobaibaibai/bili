@@ -149,7 +149,7 @@ UICollectionViewDelegateFlowLayout
     
     [self.view addSubview:self.headerView];
     
-    UIScrollView *myScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 140, lW, lH - lTabbarH - 140)];
+    UIScrollView *myScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 140, lW, lH - lTabbarH - 135)];
     myScrollView.backgroundColor = [UIColor biliPinkColor];
     [myScrollView setContentSize:CGSizeMake(lW, lH - 140)];
     myScrollView.scrollEnabled = YES;
@@ -337,7 +337,7 @@ UICollectionViewDelegateFlowLayout
         _myCollectionView.dataSource = self;
         _myCollectionView.backgroundColor = RGB(235, 235, 235);
         _myCollectionView.scrollEnabled = YES;
-        _myCollectionView.layer.cornerRadius = 10.0;
+        _myCollectionView.layer.cornerRadius = 5.0;
         _myCollectionView.layer.masksToBounds = YES;
         _myCollectionView.backgroundView.layer.cornerRadius = 10.0;
         _myCollectionView.backgroundView.layer.masksToBounds = YES;

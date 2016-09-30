@@ -14,6 +14,11 @@
  */
 @interface lwADBodyModel : lwBaseModel
 
+@property (copy, nonatomic) NSString *img;
+@property (assign, nonatomic) int index;
+@property (copy, nonatomic) NSString *link;
+@property (copy, nonatomic) NSString *title;
+
 @end
 
 /**

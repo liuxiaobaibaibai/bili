@@ -20,6 +20,8 @@ NSString *const lwOperaRecommendCellID = @"recommend";
 
 NSString *const lwOperaTopHeadViewID = @"header";
 NSString *const lwOperaCustomHeadViewID = @"header1";
+NSString *const lwOperaBannerFoooterViewID = @"banner";
+NSString *const lwOperaCustomFoooterViewID = @"footer";
 
 @interface lwSoapOperaVC ()
 <
@@ -60,8 +62,10 @@ UICollectionViewDelegateFlowLayout
 
 - (void)registHeaderOrFooter:(UICollectionView *)collectionView{
     [collectionView registerClass:[lwOperaHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:lwOperaTopHeadViewID];
-    [collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:lwOperaCustomHeadViewID];
-    [collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"footer"];
+    [collectionView registerClass:[lwOperaHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:lwOperaCustomHeadViewID];
+    
+    [collectionView registerClass:[lwOperaHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:lwOperaBannerFoooterViewID];
+    [collectionView registerClass:[lwOperaHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:lwOperaCustomFoooterViewID];
 }
 
 
@@ -113,17 +117,23 @@ UICollectionViewDelegateFlowLayout
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
         if (indexPath.section != 0) {
-            UICollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:lwOperaCustomHeadViewID forIndexPath:indexPath];
-            headerView.backgroundColor = [UIColor randomColor];
-            return headerView;
+            lwOperaHeaderView *header = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:lwOperaCustomHeadViewID forIndexPath:indexPath];
+            [header operaModel:self.baseModel Style:lwOperaHeaderViewStyleTitle];
+            return header;
         }else{
             lwOperaHeaderView *header = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:lwOperaTopHeadViewID forIndexPath:indexPath];
-            header.operaModel = self.baseModel;
+            [header operaModel:self.baseModel Style:lwOperaHeaderViewStyleBannerWithTitle];
             return header;
         }
     }else{
-        UICollectionReusableView *footer = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"footer" forIndexPath:indexPath];
-        return footer;
+        if (indexPath.section != 0) {
+            lwOperaHeaderView *footer = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:lwOperaCustomFoooterViewID forIndexPath:indexPath];
+            return footer;
+        }else{
+            lwOperaHeaderView *footer = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:lwOperaBannerFoooterViewID forIndexPath:indexPath];
+            [footer operaModel:self.baseModel Style:lwOperaHeaderViewStyleBottomBanner];
+            return footer;
+        }
     }
 }
 
@@ -176,6 +186,15 @@ UICollectionViewDelegateFlowLayout
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
     return section == 0 ? CGSizeMake(lW, 280) : CGSizeMake(lW, 40);
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section
+{
+    if (section == 0 && self.baseModel.ADModel.body.count != 0) {
+        return CGSizeMake(lW, 120);
+    }else{
+        return CGSizeZero;
+    }
 }
 
 #pragma mark - loadView

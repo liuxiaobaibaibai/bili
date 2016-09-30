@@ -36,6 +36,12 @@
     }
 }
 
+- (void)customButtonClick:(UIButton *)btn{
+    if ([_delegate respondsToSelector:@selector(headerButtonClick:)]) {
+        [_delegate headerButtonClick:btn];
+    }
+}
+
 #pragma mark - init
 - (instancetype)init{
     self = [super init];
@@ -65,7 +71,7 @@
     self.backgroundColor = [UIColor biliPinkColor];
     
     [self addSubview:self.qrBtn];
-    [self addSubview:self.searchVC.searchBar];
+    [self addSubview:self.searchBtn];
     [self addSubview:self.titleLabel];
     [self addSubview:self.myScrollView];
     [self addSubview:self.moreBtn];
@@ -77,19 +83,19 @@
     [_qrBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(10);
         make.size.mas_equalTo(CGSizeMake(30, 30));
-        make.centerY.equalTo(ws.searchVC.searchBar);
+        make.centerY.equalTo(ws.searchBtn);
     }];
     
-    [_searchVC.searchBar mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(20);
+    [_searchBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(25);
         make.left.mas_equalTo(ws.qrBtn.mas_right).offset(5);
         make.right.mas_equalTo(-10);
-        make.height.mas_equalTo(30);
+        make.height.mas_equalTo(28);
     }];
     
     [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(ws.qrBtn);
-        make.top.mas_equalTo(ws.searchVC.searchBar.mas_bottom).offset(10);
+        make.top.mas_equalTo(ws.searchBtn.mas_bottom).offset(10);
         make.right.mas_equalTo(-10);
         make.height.mas_equalTo(21);
     }];
@@ -124,35 +130,28 @@
     
 }
 
-- (void)setSearchUpdate:(id)searchUpdate{
-    self.searchVC.searchResultsUpdater = searchUpdate;
-    _searchUpdate = searchUpdate;
-}
-
 #pragma mark - getter
-- (UISearchController *)searchVC{
-    if (_searchVC == nil) {
-        _searchVC = [[UISearchController alloc] initWithSearchResultsController:nil];
-        _searchVC.searchBar.frame = CGRectMake(0, 0, 0, 44);
-        _searchVC.dimsBackgroundDuringPresentation = YES;
-        _searchVC.hidesNavigationBarDuringPresentation = NO;
-        
-        //搜索栏表头视图
-        [_searchVC.searchBar sizeToFit];
-        //背景颜色
-        _searchVC.searchBar.tintColor = [UIColor darkGrayColor];
-        [_searchVC.searchBar setBackgroundImage:[UIImage new]];
-        _searchVC.searchBar.barTintColor = HTMLColor(@"#f5f5f5");
-        _searchVC.searchBar.placeholder = @"搜索视频、番剧、up主或AV号";
-        _searchVC.searchResultsUpdater = nil;
+- (UIButton *)searchBtn{
+    if (_searchBtn == nil) {
+        _searchBtn = [[UIButton alloc] init];
+        [_searchBtn setTitle:@"  搜索视频、番剧、up主或AV号" forState:UIControlStateNormal];
+        [_searchBtn setImage:[UIImage imageNamed:@"search_prompt_icon"] forState:UIControlStateNormal];
+        [_searchBtn.layer setCornerRadius:5.0];
+        [_searchBtn setBackgroundColor:[UIColor whiteColor]];
+        [_searchBtn.titleLabel setFont:[UIFont systemFontOfSize:14.0]];
+        [_searchBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+        [_searchBtn setTag:3];
+        [_searchBtn addTarget:self action:@selector(customButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
-    return _searchVC;
+    return _searchBtn;
 }
 
 - (UIButton *)qrBtn{
     if (_qrBtn == nil) {
         _qrBtn = [[UIButton alloc] init];
         [_qrBtn setImage:[UIImage imageNamed:@"scanning_icon"] forState:UIControlStateNormal];
+        [_qrBtn setTag:2];
+        [_qrBtn addTarget:self action:@selector(customButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _qrBtn;
 }
@@ -183,6 +182,7 @@
         [_moreBtn setImage:[UIImage imageNamed:@"find_openMore"] forState:UIControlStateNormal];
         [_moreBtn setSelected:NO];
         [_moreBtn addTarget:self action:@selector(moreButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+        [_moreBtn setTag:1];
     }
     return _moreBtn;
 }
