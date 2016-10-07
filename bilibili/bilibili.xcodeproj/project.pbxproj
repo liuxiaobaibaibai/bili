@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0123727F1D9AA01600BA32EA /* lwOperaHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0123727E1D9AA01600BA32EA /* lwOperaHeaderView.m */; };
+		014A03361DA7E933005314AF /* lwHomeLiveHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 014A03351DA7E933005314AF /* lwHomeLiveHeaderView.m */; };
 		01EBBE2C1D9D6510003B5611 /* lwHomeOperaCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EBBE2B1D9D6510003B5611 /* lwHomeOperaCustomCell.m */; };
 		01EBBE2F1D9D6543003B5611 /* lwHomeOperaRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EBBE2E1D9D6543003B5611 /* lwHomeOperaRecommendCell.m */; };
 		0B92825FD94A6588BB584A8B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F31263CAD1E1062239DCE2F /* libPods.a */; };
@@ -116,6 +117,8 @@
 /* Begin PBXFileReference section */
 		0123727D1D9AA01600BA32EA /* lwOperaHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwOperaHeaderView.h; sourceTree = "<group>"; };
 		0123727E1D9AA01600BA32EA /* lwOperaHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwOperaHeaderView.m; sourceTree = "<group>"; };
+		014A03341DA7E933005314AF /* lwHomeLiveHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeLiveHeaderView.h; sourceTree = "<group>"; };
+		014A03351DA7E933005314AF /* lwHomeLiveHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwHomeLiveHeaderView.m; sourceTree = "<group>"; };
 		01EBBE2A1D9D6510003B5611 /* lwHomeOperaCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeOperaCustomCell.h; sourceTree = "<group>"; };
 		01EBBE2B1D9D6510003B5611 /* lwHomeOperaCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwHomeOperaCustomCell.m; sourceTree = "<group>"; };
 		01EBBE2D1D9D6543003B5611 /* lwHomeOperaRecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeOperaRecommendCell.h; sourceTree = "<group>"; };
@@ -834,6 +837,8 @@
 		C99F4B241D77BB530006D255 /* 直播 */ = {
 			isa = PBXGroup;
 			children = (
+				014A03341DA7E933005314AF /* lwHomeLiveHeaderView.h */,
+				014A03351DA7E933005314AF /* lwHomeLiveHeaderView.m */,
 				C99F4B281D77BBC90006D255 /* lwHomeLiveVideoHeaderView.h */,
 				C99F4B291D77BBC90006D255 /* lwHomeLiveVideoHeaderView.m */,
 				C980916F1D7827160015A985 /* lwHomeLiveVideoHeaderCell.h */,
@@ -1160,6 +1165,7 @@
 				C9810B6B1D701F17006A858E /* lwMineVC.m in Sources */,
 				C997C8761D740B5E005468D8 /* lwSoapOperaVC.m in Sources */,
 				C993DE001D751B420098D86A /* lwDynamicVC.m in Sources */,
+				014A03361DA7E933005314AF /* lwHomeLiveHeaderView.m in Sources */,
 				C984EF6D1D7577350050F805 /* lwBasePageVC.m in Sources */,
 				C9AE644E1D8E8F3C00188B3F /* lwPersonalMenuCell.m in Sources */,
 				C955D4851D8289BA00D4C9B5 /* lwTestPageVC.m in Sources */,

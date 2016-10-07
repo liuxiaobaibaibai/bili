@@ -12,15 +12,17 @@
 
 #import "lwLiveVideoModel.h"
 
-#import "lwHomeLiveVideoHeaderCell.h"
 #import "lwHomeLiveVideoCustomCell.h"
-#import "lwHomeLiveVideoHeaderView.h"
+#import "lwHomeLiveHeaderView.h"
 
-static NSString *lwHedaerCellID = @"cee";
+
 static NSString *lwCustomCellID = @"dee";
+
 static NSString *lwHeaderViewID = @"aee";
-static NSString *lwCustomViewID = @"fee";
 static NSString *lwFooterViewID = @"eee";
+
+static NSString *lwCustomHeaderViewID = @"fee";
+static NSString *lwCustomFooterViewID = @"asd";
 
 @interface lwLiveVideoVC ()
 <
@@ -74,6 +76,19 @@ UICollectionViewDelegateFlowLayout
     [self.myCollectionView reloadData];
 }
 
+- (void)registCell:(UICollectionView *)collectionView{
+    //cell
+    [collectionView registerClass:[lwHomeLiveVideoCustomCell class] forCellWithReuseIdentifier:lwCustomCellID];//普通cell
+}
+- (void)registReusableView:(UICollectionView *)collectionView{
+    // banner
+    [collectionView registerClass:[lwHomeLiveHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:lwHeaderViewID];
+    // 标题
+    [collectionView registerClass:[lwHomeLiveHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:lwCustomHeaderViewID];
+    // footer
+    [_myCollectionView registerClass:[lwHomeLiveHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:lwFooterViewID];
+}
+
 - (void)refreshPartDataSource:(UIButton *)btn{
 
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
@@ -99,11 +114,11 @@ UICollectionViewDelegateFlowLayout
         
         NSIndexPath *indexPath = [self.myCollectionView indexPathForCell:cell];
     
-        lwLiveVideoPartitionsModel *partitions = self.dataSource[indexPath.section - 1];
+        lwLiveVideoPartitionsModel *partitions = self.dataSource[indexPath.section];
         
         /// 如果第一个section  要保证官方推荐的位置不变，所以先取出来
         
-        if (indexPath.section == 1) {
+        if (indexPath.section == 0) {
             lwLiveModel *live = [[lwLiveModel alloc] init];
             // 取出第七条
             live = [partitions.lives objectAtIndex:6];
@@ -161,98 +176,90 @@ UICollectionViewDelegateFlowLayout
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
         if (indexPath.section == 0) {
-            UICollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:lwCustomViewID forIndexPath:indexPath];
+            lwHomeLiveHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:lwHeaderViewID forIndexPath:indexPath];
+            headerView.delegate = self;
+            [headerView configCell:self.liveVideoModel Style:lwHomeLiveHeaderViewStyleBannerWithMenu Completion:nil];
             return headerView;
         }else{
-            lwHomeLiveVideoHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:lwHeaderViewID forIndexPath:indexPath];
-            if (indexPath.section - 1 < [self.dataSource count]) {
-                lwLiveVideoPartitionsModel *partitions = self.dataSource[indexPath.section - 1];
-                [headerView setPartitionModel:partitions.partitionModel];
-            }
+            lwHomeLiveHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:lwCustomHeaderViewID forIndexPath:indexPath];
+            lwLiveVideoPartitionsModel *partitions = self.dataSource[indexPath.section];
+            [headerView configCell:partitions.partitionModel Style:lwHomeLiveHeaderViewStyleTitle Completion:nil];
             return headerView;
         }
         
     }else{
-        UICollectionReusableView *footerView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:lwFooterViewID forIndexPath:indexPath];
+        lwHomeLiveHeaderView *footerView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:lwFooterViewID forIndexPath:indexPath];
         return footerView;
     }
-    
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
-    return self.dataSource.count + 1;
+    return self.dataSource.count;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    lwLiveVideoPartitionsModel *partitons = self.dataSource[section];
     if (section == 0) {
-        return 1;
+        return [partitons.lives count];
     }else{
-        lwLiveVideoPartitionsModel *partitons = self.dataSource[section - 1];
-        if (section == 1) {
-            return [partitons.lives count];
-        }else{
-            return [partitons.lives count] > 4 ? 4 : [partitons.lives count];
-        }
+        return [partitons.lives count] > 4 ? 4 : [partitons.lives count];
     }
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     lwHomeLiveVideoCustomCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:lwCustomCellID forIndexPath:indexPath];
     cell.backgroundColor = [UIColor whiteColor];
-    
-    lwHomeLiveVideoHeaderCell *headerCell = [collectionView dequeueReusableCellWithReuseIdentifier:lwHedaerCellID forIndexPath:indexPath];
-    headerCell.delegate = self;
-    cell.backgroundColor = [UIColor whiteColor];
-    
+
     WS(ws);
     
-    if (indexPath.section == 0) {
+    lwLiveVideoPartitionsModel *partitions = self.dataSource[indexPath.section];
+    
+    if (indexPath.row < partitions.lives.count) {
         
-        [headerCell setLiveVideo:self.liveVideoModel];
+        BOOL last = NO;
         
-        return headerCell;
-    }else{
-        if (indexPath.section - 1 < [self.dataSource count]) {
-            
-            lwLiveVideoPartitionsModel *partitions = self.dataSource[indexPath.section - 1];
-            
-            if (indexPath.row < partitions.lives.count) {
-                
-                BOOL last = NO;
-                
-                if (indexPath.section == 1) {
-                    last = (indexPath.row == partitions.lives.count - 1) ? YES : NO;
-                }else{
-                    last = (indexPath.row == 3) ? YES : NO;
-                }
-                
-                [cell liveModel:partitions.lives[indexPath.row] Last:last Completion:^(id object) {
-                    // 刷新按钮
-                    [(UIButton *)object addTarget:ws action:@selector(refreshPartDataSource:) forControlEvents:UIControlEventTouchUpInside];
-                }];
-            }
+        if (indexPath.section == 0) {
+            last = (indexPath.row == partitions.lives.count - 1) ? YES : NO;
+        }else{
+            last = (indexPath.row == 3) ? YES : NO;
         }
         
-        return cell;
+        [cell liveModel:partitions.lives[indexPath.row] Last:last Completion:^(id object) {
+            // 刷新按钮
+            [(UIButton *)object addTarget:ws action:@selector(refreshPartDataSource:) forControlEvents:UIControlEventTouchUpInside];
+        }];
     }
+    return cell;
 }
 
 
 #pragma mark - UICollectionViewDelegateFlowLayout
 
+#define padding 10
+#define column  2
+
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.section == 0) {
-        return CGSizeMake(lW, 200);
-    } if (indexPath.section == 1 && indexPath.row == 6) {
-        return CGSizeMake(lW, 150);
+    if (indexPath.section == 0 && indexPath.row == 6) {
+        return CGSizeMake(lW - 20, 150);
     }else{
-        return CGSizeMake(lW / 2, 150);
+        CGFloat width = (lW - (padding * 2) - ((column - 1) * padding)) / column;
+        return CGSizeMake(width, 150);
     }
 }
 
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
-    return section == 0 ? CGSizeZero : CGSizeMake(lW, 50);
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
+    return UIEdgeInsetsMake(0, padding, padding, padding);
 }
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
+    return section == 0 ? CGSizeMake(lW, 260) : CGSizeMake(lW, 40);
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section
+{
+    return CGSizeZero;
+}
+
 
 #pragma mark - loadView
 - (void)setupView{
@@ -291,16 +298,8 @@ UICollectionViewDelegateFlowLayout
         _myCollectionView.showsHorizontalScrollIndicator = NO;
         _myCollectionView.showsVerticalScrollIndicator = NO;
         
-        //cell
-        [_myCollectionView registerClass:[lwHomeLiveVideoCustomCell class] forCellWithReuseIdentifier:lwCustomCellID];//普通cell
-        [_myCollectionView registerClass:[lwHomeLiveVideoHeaderCell class] forCellWithReuseIdentifier:lwHedaerCellID];//HeaderCell
-        
-        // header
-        [_myCollectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:lwCustomViewID];
-        [_myCollectionView registerClass:[lwHomeLiveVideoHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:lwHeaderViewID];
-        // footer
-        [_myCollectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:lwFooterViewID];
-        
+        [self registCell:_myCollectionView];
+        [self registReusableView:_myCollectionView];
     }
     return _myCollectionView;
 }
