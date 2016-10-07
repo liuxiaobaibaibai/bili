@@ -62,7 +62,8 @@
         }];
         
         [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.right.bottom.mas_equalTo(0);
+            make.left.right.equalTo(shadowView);
+            make.bottom.mas_equalTo(0);
             make.height.mas_equalTo(40);
             make.top.equalTo(shadowView.mas_bottom);
         }];

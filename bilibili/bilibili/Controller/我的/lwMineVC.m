@@ -57,6 +57,15 @@ UICollectionViewDelegateFlowLayout
 
 @implementation lwMineVC
 
+#pragma mark - user action
+- (void)buttonAction:(id)sender{
+    [self pushController:@"lwMineStettingVC" Completion:^(id controller) {
+        [(UIViewController *)controller setHidesBottomBarWhenPushed:YES];
+    }];
+}
+
+#pragma mark - life cycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupView];
@@ -84,6 +93,11 @@ UICollectionViewDelegateFlowLayout
         return tagValue;
     }
     return nil;
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -182,6 +196,7 @@ UICollectionViewDelegateFlowLayout
     if (_setBtn == nil) {
         _setBtn = [[UIButton alloc] init];
         [_setBtn setImage:[UIImage imageNamed:@"mine_settings"] forState:UIControlStateNormal];
+        [_setBtn addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _setBtn;
 }

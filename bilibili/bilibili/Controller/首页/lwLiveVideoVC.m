@@ -252,7 +252,7 @@ UICollectionViewDelegateFlowLayout
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
-    return section == 0 ? CGSizeMake(lW, 260) : CGSizeMake(lW, 40);
+    return section == 0 ? CGSizeMake(lW, 255) : CGSizeMake(lW, 40);
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section

@@ -131,8 +131,6 @@ UITableViewDataSource
 
 #pragma mark - setupView
 - (void)setupView{
-    
-    [self.view setBackgroundColor:[UIColor biliPinkColor]];
     [self.view addSubview:self.headerView];
     [self.view addSubview:self.myTableView];
     WS(ws);
@@ -171,7 +169,6 @@ UITableViewDataSource
     if (_searchVC == nil) {
         _searchVC = [[lwSerachResultVC alloc] init];
         [_searchVC.view setFrame:self.view.frame];
-        [_searchVC.view setBackgroundColor:[UIColor biliPinkColor]];
     }
     return _searchVC;
 }

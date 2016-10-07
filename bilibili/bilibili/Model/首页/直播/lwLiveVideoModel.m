@@ -95,6 +95,7 @@
         self.name = dict[@"name"];
         self.area = dict[@"area"];
         self.iconModel = [[lwLiveVideoEnterIconModel alloc] initWithDict:dict[@"sub_icon"]];
+        self.pCount = [dict[@"count"] intValue];
     }
     return self;
 }

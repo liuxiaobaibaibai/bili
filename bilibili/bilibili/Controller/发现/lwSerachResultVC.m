@@ -102,7 +102,7 @@ UITableViewDataSource
 }
 
 - (UIView *)tableFooterView{
-    UIView *footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, lW, lH)];
+    UIView *footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, lW, 0)];
     footerView.backgroundColor = RGB(240, 240, 240);
     return footerView;
 }
@@ -115,7 +115,7 @@ UITableViewDataSource
         [_myTableView hideKeyBoard:YES];
         [_myTableView setTableHeaderView:self.serachVC.searchBar];
         [_myTableView setTableFooterView:[self tableFooterView]];
-        [_myTableView setBackgroundColor:[UIColor biliPinkColor]];
+        _myTableView.backgroundColor = RGB(240, 240, 240);
     }
     return _myTableView;
 }

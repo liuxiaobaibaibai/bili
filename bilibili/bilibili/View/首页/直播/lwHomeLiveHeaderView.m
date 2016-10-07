@@ -173,7 +173,7 @@ lwScrollViewDelegate
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(5);
         make.top.equalTo(lastBtn.mas_bottom).offset(10);
-        make.bottom.mas_equalTo(-10);
+        make.bottom.mas_equalTo(-5);
         make.width.mas_equalTo(100);
     }];
     
@@ -189,7 +189,7 @@ lwScrollViewDelegate
         make.right.mas_equalTo(-5);
     }];
     
-    [self setPartitionStyleModel:[liveVideo.partitions firstObject].partitionModel];
+    [self setPartitionStyleModel:liveVideo.recommendData.partition];
     
     [self setLiveVideoStyleModel:liveVideo];
 }
