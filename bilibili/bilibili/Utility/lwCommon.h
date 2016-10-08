@@ -60,6 +60,16 @@
 #pragma mark - other
 
 /**
+ 获取链接中的参数
+
+ @param url   链接
+ @param param 参数key
+ 
+ @return 参数value
+ */
++ (NSString *)paramValueOfUrl:(NSString *)url withParam:(NSString *)param;
+
+/**
  *  倒计时操作
  *  @param  timeLine        倒计时时间
  *  @param  canOperation    倒计时结束回调操作

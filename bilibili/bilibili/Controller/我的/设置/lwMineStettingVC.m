@@ -52,6 +52,7 @@ UITableViewDataSource
 
 - (void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
+    self.navigationController.navigationBarHidden = YES;
 }
 
 // 常用代理

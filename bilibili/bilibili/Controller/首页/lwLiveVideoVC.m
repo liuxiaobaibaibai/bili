@@ -283,8 +283,8 @@ UICollectionViewDelegateFlowLayout
         _flowLayout = [[UICollectionViewFlowLayout alloc] init];
         _flowLayout.itemSize = CGSizeMake(lW / 2, 150);
         _flowLayout.headerReferenceSize = CGSizeMake(lW, 50);
-        _flowLayout.minimumLineSpacing = 0;
-        _flowLayout.minimumInteritemSpacing = 0;
+        _flowLayout.minimumLineSpacing = padding;
+        _flowLayout.minimumInteritemSpacing = padding;
     }
     return _flowLayout;
 }

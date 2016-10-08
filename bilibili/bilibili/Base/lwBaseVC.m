@@ -97,6 +97,7 @@ MBProgressHUDDelegate
     }
     
     UIViewController *targetController = (UIViewController *)[[class alloc] init];
+    targetController.hidesBottomBarWhenPushed = YES;
     if (completion) {
         completion(targetController);
     }
@@ -108,6 +109,7 @@ MBProgressHUDDelegate
 - (void)pushController:(NSString *)controllerName Completion:(void(^)(id controller))completion{
     [self pushController:controllerName Animated:YES Completion:completion];
 }
+
 
 
 #pragma mark - getter

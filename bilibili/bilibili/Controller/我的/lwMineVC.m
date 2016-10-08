@@ -19,6 +19,7 @@ static NSString *commonFooterID = @"footer";
 @interface lwMineVC ()
 
 <
+UIViewControllerTransitioningDelegate,
 UICollectionViewDelegate,
 UICollectionViewDataSource,
 UICollectionViewDelegateFlowLayout
@@ -70,34 +71,11 @@ UICollectionViewDelegateFlowLayout
     [super viewDidLoad];
     [self setupView];
     [self loadDataSource];
-    
-    
-    NSLog(@"%@",[lwMineVC paramValueOfUrl:@"http://www.juyingbao.cn/index.php?g=Wap&m=Login&a=personal&token=&wecha_id=&code=011kwzQM0f2IQh2oVkRM0OoxQM0kwzQb&state=" withParam:@"a"]);
-    
-}
-
-+ (NSString *) paramValueOfUrl:(NSString *) url withParam:(NSString *) param{
-    
-    NSError *error;
-    NSString *regTags=[[NSString alloc] initWithFormat:@"(^|&|\\?)+%@=+([^&]*)(&|$)",param];
-    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:regTags
-                                                                           options:NSRegularExpressionCaseInsensitive
-                                                                             error:&error];
-    
-    // 执行匹配的过程
-    NSArray *matches = [regex matchesInString:url
-                                      options:0
-                                        range:NSMakeRange(0, [url length])];
-    for (NSTextCheckingResult *match in matches) {
-        NSString *tagValue = [url substringWithRange:[match rangeAtIndex:2]];  // 分组2所对应的串
-        return tagValue;
-    }
-    return nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    self.navigationController.navigationBarHidden = YES;
+    [self.navigationController setNavigationBarHidden:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -112,6 +90,13 @@ UICollectionViewDelegateFlowLayout
 #pragma mark - private method
 - (void)loadDataSource{
     self.dataSource = [NSArray arrayWithArray:[lwCategoryModel personalMenu]];
+}
+
+#pragma mark - delegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    [self pushController:@"lwMineBaseSubVC" Completion:^(id controller) {
+        [controller setValue:[NSNumber numberWithBool:YES] forKeyPath:@"isCorr"];
+    }];
 }
 
 #pragma mark - UICollectionViewDataSource
