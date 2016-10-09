@@ -98,11 +98,10 @@ MBProgressHUDDelegate
     
     UIViewController *targetController = (UIViewController *)[[class alloc] init];
     targetController.hidesBottomBarWhenPushed = YES;
+    [targetController.view setBackgroundColor:[UIColor whiteColor]];
     if (completion) {
         completion(targetController);
     }
-    
-    [targetController.view setBackgroundColor:[UIColor whiteColor]];
     [self.navigationController pushViewController:targetController animated:animated];
 }
 

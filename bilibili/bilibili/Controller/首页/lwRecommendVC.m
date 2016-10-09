@@ -51,6 +51,20 @@ UICollectionViewDelegateFlowLayout
     [super viewDidLoad];
     [self setupView];
     [self loadDataSource];
+    [self.myCollectionView.backgroundView addObserver:self forKeyPath:@"frame" options:NSKeyValueObservingOptionNew context:nil];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
+    if ([keyPath isEqualToString:@"frame"]) {
+        if (self.myCollectionView.backgroundView.y < 0 ) {
+            self.myCollectionView.backgroundView.y = 0;
+        }
+    }
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self.view setBackgroundColor:[UIColor biliPinkColor]];
 }
 
 - (void)dealloc{
@@ -58,6 +72,8 @@ UICollectionViewDelegateFlowLayout
     self.myCollectionView.dataSource = nil;
     self.myCollectionView = nil;
 }
+
+#pragma mark - private method
 
 - (void)loadDataSource{
     self.dataSource = [NSMutableArray arrayWithArray:[lwRecommendBaseModel recommendSource]];
@@ -324,7 +340,7 @@ UICollectionViewDelegateFlowLayout
     [self.view setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:self.myCollectionView];
     [_myCollectionView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
+        make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, -5, 0));
     }];
 }
 
@@ -349,6 +365,11 @@ UICollectionViewDelegateFlowLayout
         _myCollectionView.backgroundColor = [UIColor whiteColor];
         _myCollectionView.showsHorizontalScrollIndicator = NO;
         _myCollectionView.showsVerticalScrollIndicator = NO;
+        
+        _myCollectionView.layer.cornerRadius = 6.0;
+        _myCollectionView.layer.masksToBounds = YES;
+        _myCollectionView.backgroundView.layer.cornerRadius = 6.0;
+        _myCollectionView.backgroundView.layer.masksToBounds = YES;
         
         //cell
         [self registCell:_myCollectionView];

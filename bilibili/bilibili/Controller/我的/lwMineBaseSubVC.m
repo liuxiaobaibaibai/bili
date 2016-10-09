@@ -8,6 +8,8 @@
 
 #import "lwMineBaseSubVC.h"
 
+#define kHEIGHT 200
+
 @interface lwMineBaseSubVC ()
 <
 UIScrollViewDelegate,
@@ -40,34 +42,34 @@ UITableViewDataSource
 
 - (void)viewDidLoad{
     [super viewDidLoad];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
     self.automaticallyAdjustsScrollViewInsets = NO;
-    
     [self setupView];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    self.navigationController.navigationBarHidden = NO;
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    [self.view setBackgroundColor:[UIColor biliPinkColor]];
+    
 }
 
 - (void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
-    self.navigationController.navigationBarHidden = YES;
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 
 // 常用代理
 #pragma mark - delegate
 #pragma mark - scrollView delegate
-#define kHEIGHT 200
+
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     CGPoint point = scrollView.contentOffset;
-    if (point.y < - kHEIGHT) {
+    if (point.y < - 1) {
         CGRect rect = self.headerView.frame;
         rect.origin.y = point.y;
         rect.size.height = -point.y;
@@ -102,9 +104,6 @@ UITableViewDataSource
 - (void)setupView{
     
     [self.view addSubview:self.myTableView];
-    [self.myTableView setContentInset:UIEdgeInsetsMake(kHEIGHT, 0, 0, 0)];
-    [self.myTableView addSubview:self.headerView];
-    
     
     [_myTableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(UIEdgeInsetsMake(lNavH, 0, 0, 0));
@@ -133,7 +132,7 @@ UITableViewDataSource
 
 - (UIView *)headerView{
     if (_headerView == nil) {
-        _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, lW, kHEIGHT)];
+        _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, lW, 1)];
         _headerView.layer.cornerRadius = 5.0;
         _headerView.layer.masksToBounds = YES;
         _headerView.backgroundColor = [UIColor JDColor];
@@ -147,6 +146,8 @@ UITableViewDataSource
         _myTableView.delegate = self.delegate;
         _myTableView.dataSource = self.dataSource;
         _myTableView.tableFooterView = [UIView new];
+//        [_myTableView setContentInset:UIEdgeInsetsMake(1, 0, 0, 0)];
+//        _myTableView.tableHeaderView = self.headerView;
     }
     return _myTableView;
 }

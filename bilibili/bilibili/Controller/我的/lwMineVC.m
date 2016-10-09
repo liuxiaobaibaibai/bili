@@ -50,8 +50,6 @@ UICollectionViewDelegateFlowLayout
 @property (copy, nonatomic) NSArray *dataSource;
 
 
-@property (strong, nonatomic) UICollectionReusableView *headerReusableView;
-
 @property (strong, nonatomic) UICollectionReusableView *footerReusableView;
 
 @end
@@ -71,17 +69,27 @@ UICollectionViewDelegateFlowLayout
     [super viewDidLoad];
     [self setupView];
     [self loadDataSource];
+    [self.myCollectionView.backgroundView addObserver:self forKeyPath:@"frame" options:NSKeyValueObservingOptionNew context:nil];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
+    if ([keyPath isEqualToString:@"frame"]) {
+        if (self.myCollectionView.backgroundView.y < 0 ) {
+            self.myCollectionView.backgroundView.y = 0;
+        }
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     [self.view setBackgroundColor:[UIColor biliPinkColor]];
 }
+
 
 - (UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;
@@ -116,9 +124,13 @@ UICollectionViewDelegateFlowLayout
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
-        _headerReusableView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:commonHeaderID forIndexPath:indexPath];
+        UICollectionReusableView *headerReusableView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:commonHeaderID forIndexPath:indexPath];
         
-        _headerReusableView.backgroundColor = [UIColor whiteColor];
+        [[headerReusableView subviews] enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            [obj removeFromSuperview];
+        }];
+        
+        headerReusableView.backgroundColor = [UIColor whiteColor];
         
         UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 0, lW - 15, 40)];
         
@@ -131,14 +143,16 @@ UICollectionViewDelegateFlowLayout
         UILabel *line = [[UILabel alloc] initWithFrame:CGRectMake(0, 39, lW, 1)];
         line.backgroundColor = RGB(235, 235, 235);
         
-        [_headerReusableView addSubview:titleLabel];
-        [_headerReusableView addSubview:line];
+        [headerReusableView addSubview:titleLabel];
+        [headerReusableView addSubview:line];
         
-        return _headerReusableView;
+        [headerReusableView setCorner:UIRectCornerTopLeft | UIRectCornerTopRight Radius:5.0];
+        
+        return headerReusableView;
     }else{
-        _footerReusableView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:commonFooterID forIndexPath:indexPath];
-        _footerReusableView.backgroundColor = [UIColor clearColor];
-        return _footerReusableView;
+        UICollectionReusableView *footerReusableView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:commonFooterID forIndexPath:indexPath];
+        footerReusableView.backgroundColor = RGB(235, 235, 235);
+        return footerReusableView;
     }
 }
 
@@ -147,24 +161,19 @@ UICollectionViewDelegateFlowLayout
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     
     [self.view addSubview:self.headerView];
-    
-    UIScrollView *myScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 140, lW, lH - lTabbarH - 135)];
-    myScrollView.backgroundColor = [UIColor biliPinkColor];
-    [myScrollView setContentSize:CGSizeMake(lW, lH - 140)];
-    myScrollView.scrollEnabled = YES;
-    myScrollView.layer.cornerRadius = 5.0;
-    myScrollView.layer.masksToBounds = YES;
-    myScrollView.showsVerticalScrollIndicator = NO;
-    [self.view addSubview:myScrollView];
-
-    self.myCollectionView.frame = CGRectMake(0, 0, lW, lH * 2);
-    [myScrollView addSubview:self.myCollectionView];
+    [self.view addSubview:self.myCollectionView];
     
     WS(ws);
     
     [_headerView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.top.right.equalTo(ws.view);
         make.height.mas_equalTo(140);
+    }];
+    
+    [_myCollectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(ws.headerView.mas_bottom);
+        make.left.right.equalTo(ws.view);
+        make.bottom.mas_equalTo(-lTabbarH + 5);
     }];
 }
 
@@ -335,11 +344,13 @@ UICollectionViewDelegateFlowLayout
         _myCollectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:self.flowLayout];
         _myCollectionView.delegate = self;
         _myCollectionView.dataSource = self;
-        _myCollectionView.backgroundColor = RGB(235, 235, 235);
+        _myCollectionView.backgroundColor = [UIColor biliPinkColor];
         _myCollectionView.scrollEnabled = YES;
         _myCollectionView.layer.cornerRadius = 5.0;
         _myCollectionView.layer.masksToBounds = YES;
-        _myCollectionView.backgroundView.layer.cornerRadius = 10.0;
+        _myCollectionView.backgroundView = [UIView new];
+        _myCollectionView.backgroundView.backgroundColor = RGB(235, 235, 235);
+        _myCollectionView.backgroundView.layer.cornerRadius = 6.0;
         _myCollectionView.backgroundView.layer.masksToBounds = YES;
         _myCollectionView.alwaysBounceVertical = YES;
         

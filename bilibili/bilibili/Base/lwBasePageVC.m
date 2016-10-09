@@ -189,6 +189,9 @@
         _pageView.contentSize = [self contentSize:_pageCount];
         _pageView.showsVerticalScrollIndicator = NO;
         _pageView.showsHorizontalScrollIndicator = NO;
+    
+        _pageView.layer.cornerRadius = 6.0;
+        _pageView.layer.masksToBounds = YES;
     }
     return _pageView;
 }
