@@ -10,11 +10,14 @@
 
 @interface lwMineBaseSubVC ()
 <
+UIScrollViewDelegate,
 UITableViewDelegate,
 UITableViewDataSource
 >
 
 @property (strong, nonatomic) UIScrollView *myScrollView;
+
+@property (strong, nonatomic) UIView *headerView;
 
 @end
 
@@ -37,12 +40,19 @@ UITableViewDataSource
 
 - (void)viewDidLoad{
     [super viewDidLoad];
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     [self setupView];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = NO;
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self.view setBackgroundColor:[UIColor biliPinkColor]];
 }
 
 - (void)viewDidDisappear:(BOOL)animated{
@@ -52,6 +62,18 @@ UITableViewDataSource
 
 // 常用代理
 #pragma mark - delegate
+#pragma mark - scrollView delegate
+#define kHEIGHT 200
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGPoint point = scrollView.contentOffset;
+    if (point.y < - kHEIGHT) {
+        CGRect rect = self.headerView.frame;
+        rect.origin.y = point.y;
+        rect.size.height = -point.y;
+        self.headerView.frame = rect;
+    }
+}
 
 // 常用数据源
 #pragma mark - dataSource
@@ -79,28 +101,14 @@ UITableViewDataSource
 #pragma mark - loadView
 - (void)setupView{
     
-    WS(ws);
+    [self.view addSubview:self.myTableView];
+    [self.myTableView setContentInset:UIEdgeInsetsMake(kHEIGHT, 0, 0, 0)];
+    [self.myTableView addSubview:self.headerView];
     
-    if (self.isCorr) {
-        [self.view addSubview:self.myScrollView];
-        [self.myScrollView addSubview:self.myTableView];
-        
-        [_myScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.top.right.equalTo(ws.view);
-            make.bottom.mas_equalTo(5);
-        }];
-        [_myTableView mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.top.left.right.equalTo(ws.myScrollView);
-            make.top.mas_equalTo(lNavH);
-            make.width.mas_equalTo(lW);
-            make.height.mas_equalTo(lH - lNavH );
-        }];
-    }else{
-        [self.view addSubview:self.myTableView];
-        [_myTableView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.mas_equalTo(UIEdgeInsetsZero);
-        }];
-    }
+    
+    [_myTableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(UIEdgeInsetsMake(lNavH, 0, 0, 0));
+    }];
     
 }
 
@@ -123,25 +131,24 @@ UITableViewDataSource
     return _dataSource;
 }
 
+- (UIView *)headerView{
+    if (_headerView == nil) {
+        _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, lW, kHEIGHT)];
+        _headerView.layer.cornerRadius = 5.0;
+        _headerView.layer.masksToBounds = YES;
+        _headerView.backgroundColor = [UIColor JDColor];
+    }
+    return _headerView;
+}
+
 - (UITableView *)myTableView{
     if (_myTableView == nil) {
         _myTableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
         _myTableView.delegate = self.delegate;
         _myTableView.dataSource = self.dataSource;
-        _myTableView.layer.cornerRadius = 5.0;
-        _myTableView.layer.masksToBounds = YES;
         _myTableView.tableFooterView = [UIView new];
-        _myTableView.contentSize = CGSizeMake(lW, 2 * lH);
     }
     return _myTableView;
-}
-
-- (UIScrollView *)myScrollView{
-    if (_myScrollView == nil) {
-        _myScrollView = [[UIScrollView alloc] init];
-        _myScrollView.backgroundColor = [UIColor biliPinkColor];
-    }
-    return _myScrollView;
 }
 
 @end
