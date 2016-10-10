@@ -32,7 +32,7 @@
     NSLog(@"磁盘总空间大小：%.2f",[lwCommon diskOfAllSizeMBytes]);
     NSLog(@"磁盘可用空间大小：%.2f",[lwCommon diskOfFreeSizeMBytes]);
     
-    [self setupVC];
+//    [self setupVC];
     
     return YES;
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		011789A21DABD68A00D92909 /* lwNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 011789A11DABD68A00D92909 /* lwNavigationBar.m */; };
+		011789A41DABD92200D92909 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011789A31DABD92200D92909 /* Main.storyboard */; };
+		011789A71DABDB5900D92909 /* lwTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 011789A61DABDB5900D92909 /* lwTestVC.m */; };
 		0123727F1D9AA01600BA32EA /* lwOperaHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0123727E1D9AA01600BA32EA /* lwOperaHeaderView.m */; };
 		014A03361DA7E933005314AF /* lwHomeLiveHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 014A03351DA7E933005314AF /* lwHomeLiveHeaderView.m */; };
 		014A033A1DA7FC75005314AF /* lwMineStettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 014A03391DA7FC75005314AF /* lwMineStettingVC.m */; };
@@ -118,6 +121,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		011789A01DABD68A00D92909 /* lwNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwNavigationBar.h; sourceTree = "<group>"; };
+		011789A11DABD68A00D92909 /* lwNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwNavigationBar.m; sourceTree = "<group>"; };
+		011789A31DABD92200D92909 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		011789A51DABDB5900D92909 /* lwTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwTestVC.h; sourceTree = "<group>"; };
+		011789A61DABDB5900D92909 /* lwTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwTestVC.m; sourceTree = "<group>"; };
 		0123727D1D9AA01600BA32EA /* lwOperaHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwOperaHeaderView.h; sourceTree = "<group>"; };
 		0123727E1D9AA01600BA32EA /* lwOperaHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwOperaHeaderView.m; sourceTree = "<group>"; };
 		014A03341DA7E933005314AF /* lwHomeLiveHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeLiveHeaderView.h; sourceTree = "<group>"; };
@@ -425,6 +433,7 @@
 			isa = PBXGroup;
 			children = (
 				C95F042D1D6EE62A00168F5A /* Assets.xcassets */,
+				011789A31DABD92200D92909 /* Main.storyboard */,
 				C95F042F1D6EE62A00168F5A /* LaunchScreen.storyboard */,
 				C95F04321D6EE62A00168F5A /* Info.plist */,
 				C95F042A1D6EE62A00168F5A /* bilibili.xcdatamodeld */,
@@ -691,6 +700,10 @@
 				C955D4841D8289BA00D4C9B5 /* lwTestPageVC.m */,
 				C955D4861D828AEA00D4C9B5 /* lwSlideTagView.h */,
 				C955D4871D828AEA00D4C9B5 /* lwSlideTagView.m */,
+				011789A01DABD68A00D92909 /* lwNavigationBar.h */,
+				011789A11DABD68A00D92909 /* lwNavigationBar.m */,
+				011789A51DABDB5900D92909 /* lwTestVC.h */,
+				011789A61DABDB5900D92909 /* lwTestVC.m */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -1118,6 +1131,7 @@
 				C95F04311D6EE62A00168F5A /* LaunchScreen.storyboard in Resources */,
 				C9AE644A1D8E8B2D00188B3F /* lwPersonalMenuList.plist in Resources */,
 				C984EF7F1D75812A0050F805 /* lwHomeRecommend in Resources */,
+				011789A41DABD92200D92909 /* Main.storyboard in Resources */,
 				C98F0DC71D7D1AEC00E85355 /* lwAttentionTagsSource in Resources */,
 				014A033D1DA7FCBE005314AF /* lwMineSetting.plist in Resources */,
 				C98F0DCF1D7D1C3E00E85355 /* lwAttentionSopaOperaSource in Resources */,
@@ -1213,6 +1227,7 @@
 				C95F046A1D6EEF5800168F5A /* lwCoreDataManager.m in Sources */,
 				C99E38CC1D8F80590008AB15 /* lwSrarchHeaderView.m in Sources */,
 				C97E1B091D7EB18800DF88FF /* lwAllCategoryCell.m in Sources */,
+				011789A71DABDB5900D92909 /* lwTestVC.m in Sources */,
 				C9810B451D6FE2BA006A858E /* UIColor+lwColor.m in Sources */,
 				C9E690481D93B63700D811C3 /* lwRecommendBaseModel.m in Sources */,
 				C95F042C1D6EE62A00168F5A /* bilibili.xcdatamodeld in Sources */,
@@ -1255,6 +1270,7 @@
 				C9AE644E1D8E8F3C00188B3F /* lwPersonalMenuCell.m in Sources */,
 				C955D4851D8289BA00D4C9B5 /* lwTestPageVC.m in Sources */,
 				C997C8831D7434DC005468D8 /* lwChaseSopaOperaVC.m in Sources */,
+				011789A21DABD68A00D92909 /* lwNavigationBar.m in Sources */,
 				C95F04571D6EEC1900168F5A /* AppDelegate.m in Sources */,
 				C9810B421D6FE2BA006A858E /* NSDate+lwDate.m in Sources */,
 				014A03421DA7FF08005314AF /* lwMineSettingModel.m in Sources */,
