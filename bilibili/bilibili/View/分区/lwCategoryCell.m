@@ -38,6 +38,7 @@
 - (void)loadView{
     
     WS(ws);
+    self.backgroundColor = RGB(245, 245, 245);
     
     [self.contentView addSubview:self.titleLabel];
     [self.contentView addSubview:self.coverImageView];

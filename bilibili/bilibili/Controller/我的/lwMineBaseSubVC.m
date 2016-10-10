@@ -42,24 +42,33 @@ UITableViewDataSource
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self setupView];
 }
 
+
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
+
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
-}
-
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
     
-}
+    self.view.backgroundColor = [UIColor biliPinkColor];
+    
+    [self.navigationController.navigationBar setBackIndicatorImage:[UIImage imageNamed:@"category_back_button"]];
+    [self.navigationController.navigationBar setBackIndicatorTransitionMaskImage:[UIImage imageNamed:@"category_back_button"]];
 
-- (void)viewDidDisappear:(BOOL)animated{
-    [super viewDidDisappear:animated];
-    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    UIView *navView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, lW, lNavH)];
+    navView.backgroundColor = [UIColor biliPinkColor];
+    
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 64-35, 41, 30)];
+    [btn setImage:[UIImage imageNamed:@"category_back_button"] forState:UIControlStateNormal];
+    [btn setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+    [navView addSubview:btn];
+
+    [self.view addSubview:navView];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 // 常用代理
@@ -74,6 +83,8 @@ UITableViewDataSource
         rect.origin.y = point.y;
         rect.size.height = -point.y;
         self.headerView.frame = rect;
+        
+        [_headerView setCorner:UIRectCornerTopLeft | UIRectCornerTopRight Radius:5.0];
     }
 }
 
@@ -92,6 +103,7 @@ UITableViewDataSource
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellID];
+        cell.backgroundColor = [UIColor whiteColor];
     }
     
     cell.textLabel.text = @"测试诗句";
@@ -105,8 +117,10 @@ UITableViewDataSource
     
     [self.view addSubview:self.myTableView];
     
+    [self.myTableView addSubview:self.headerView];
+    
     [_myTableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(UIEdgeInsetsMake(lNavH, 0, 0, 0));
+        make.edges.mas_equalTo(UIEdgeInsetsMake(lNavH, 0, -5, 0));
     }];
     
 }
@@ -133,9 +147,9 @@ UITableViewDataSource
 - (UIView *)headerView{
     if (_headerView == nil) {
         _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, lW, 1)];
-        _headerView.layer.cornerRadius = 5.0;
-        _headerView.layer.masksToBounds = YES;
-        _headerView.backgroundColor = [UIColor JDColor];
+        [_headerView setCorner:UIRectCornerTopLeft | UIRectCornerTopRight Radius:5.0];
+        _headerView.backgroundColor = [UIColor biliPinkColor];
+        
     }
     return _headerView;
 }
@@ -146,8 +160,14 @@ UITableViewDataSource
         _myTableView.delegate = self.delegate;
         _myTableView.dataSource = self.dataSource;
         _myTableView.tableFooterView = [UIView new];
-//        [_myTableView setContentInset:UIEdgeInsetsMake(1, 0, 0, 0)];
-//        _myTableView.tableHeaderView = self.headerView;
+        
+        _myTableView.backgroundColor = [UIColor whiteColor];
+        _myTableView.backgroundView.backgroundColor = [UIColor whiteColor];
+        
+        _myTableView.backgroundView.layer.cornerRadius = 6.0;
+        _myTableView.backgroundView.layer.masksToBounds = YES;
+        _myTableView.layer.cornerRadius = 6.0;
+        _myTableView.layer.masksToBounds = YES;
     }
     return _myTableView;
 }

@@ -119,7 +119,15 @@ UICollectionViewDelegateFlowLayout
         _myCollectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:self.flowLayout];
         [_myCollectionView setDelegate:self];
         [_myCollectionView setDataSource:self];
-        _myCollectionView.backgroundColor = RGB(242, 242, 242);
+        [_myCollectionView setBackgroundColor:[UIColor biliPinkColor]];
+        [_myCollectionView.backgroundView setBackgroundColor:RGB(242, 242, 242)];
+        
+        [_myCollectionView.layer setCornerRadius:6.0];
+        [_myCollectionView.layer setMasksToBounds:YES];
+        [_myCollectionView.backgroundView.layer setCornerRadius:6.0];
+        [_myCollectionView.backgroundView.layer setMasksToBounds:YES];
+        
+        
         [_myCollectionView registerClass:[lwCategoryCell class] forCellWithReuseIdentifier:lwCategoryUsuallyCellID];
     }
     return _myCollectionView;

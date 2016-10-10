@@ -69,6 +69,7 @@ UICollectionViewDelegateFlowLayout
     [super viewDidLoad];
     [self setupView];
     [self loadDataSource];
+    self.title = @"";
     [self.myCollectionView.backgroundView addObserver:self forKeyPath:@"frame" options:NSKeyValueObservingOptionNew context:nil];
 }
 
