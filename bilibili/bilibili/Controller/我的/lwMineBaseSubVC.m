@@ -8,6 +8,11 @@
 
 #import "lwMineBaseSubVC.h"
 
+/***/
+#import "lwNavigationBar.h"
+/***/
+
+
 #define kHEIGHT 200
 
 @interface lwMineBaseSubVC ()
@@ -20,6 +25,8 @@ UITableViewDataSource
 @property (strong, nonatomic) UIScrollView *myScrollView;
 
 @property (strong, nonatomic) UIView *headerView;
+
+@property (strong, nonatomic) lwNavigationBar *navBar;
 
 @end
 
@@ -44,6 +51,8 @@ UITableViewDataSource
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self setupView];
+    
+    [_navBar setTitle:self.title];
 }
 
 
@@ -56,18 +65,24 @@ UITableViewDataSource
     
     self.view.backgroundColor = [UIColor biliPinkColor];
     
-    [self.navigationController.navigationBar setBackIndicatorImage:[UIImage imageNamed:@"category_back_button"]];
-    [self.navigationController.navigationBar setBackIndicatorTransitionMaskImage:[UIImage imageNamed:@"category_back_button"]];
-
-    UIView *navView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, lW, lNavH)];
-    navView.backgroundColor = [UIColor biliPinkColor];
+//    [self.navigationController.navigationBar setBackIndicatorImage:[UIImage imageNamed:@"category_back_button"]];
+//    [self.navigationController.navigationBar setBackIndicatorTransitionMaskImage:[UIImage imageNamed:@"category_back_button"]];
+//
+//    UIView *navView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, lW, lNavH)];
+//    navView.backgroundColor = [UIColor biliPinkColor];
+//    
+//    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 64-35, 41, 30)];
+//    [btn setImage:[UIImage imageNamed:@"category_back_button"] forState:UIControlStateNormal];
+//    [btn setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+//    [navView addSubview:btn];
+//
+//    [self.view addSubview:navView];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarPosition:UIBarPositionTop barMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setBackIndicatorTransitionMaskImage:[UIImage new]];
     
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 64-35, 41, 30)];
-    [btn setImage:[UIImage imageNamed:@"category_back_button"] forState:UIControlStateNormal];
-    [btn setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
-    [navView addSubview:btn];
-
-    [self.view addSubview:navView];
+    
+    [self.view addSubview:self.navBar];
+    
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
@@ -129,6 +144,13 @@ UITableViewDataSource
 #pragma mark - setter
 
 #pragma mark - getter
+
+- (lwNavigationBar *)navBar{
+    if (_navBar == nil) {
+        _navBar = [[lwNavigationBar alloc] initWithFrame:CGRectMake(0, 0, lW, lNavH)];
+    }
+    return _navBar;
+}
 
 - (id)delegate{
     if (_delegate == nil) {

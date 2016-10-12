@@ -10,4 +10,6 @@
 
 @interface lwNavigationBar : UINavigationBar
 
+@property (copy, nonatomic) NSString *title;
+
 @end

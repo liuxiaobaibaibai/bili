@@ -13,10 +13,19 @@
 @property (strong, nonatomic) UIButton *backBtn;
 @property (strong, nonatomic) UILabel *titleLabel;
 
+@property (strong, nonatomic) UIBarButtonItem *rightItem;
+
 
 @end
 
 @implementation lwNavigationBar
+
+#pragma mark - private method
+- (void)rightItemClick:(UIBarButtonItem *)item{
+    NSLog(@"开始了");
+}
+
+#pragma mark - init
 
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
@@ -65,6 +74,12 @@
     }];
 }
 
+#pragma mark - setter
+- (void)setTitle:(NSString *)title{
+    _title = title;
+    [self.titleLabel setText:title];
+}
+
 #pragma mark -
 - (UIButton *)backBtn{
     if (_backBtn == nil) {
@@ -83,6 +98,13 @@
         _titleLabel.textColor = [UIColor whiteColor];
     }
     return _titleLabel;
+}
+
+- (UIBarButtonItem *)rightItem{
+    if (_rightItem == nil) {
+        _rightItem = [[UIBarButtonItem alloc] initWithTitle:@"更多" style:UIBarButtonItemStylePlain target:self action:@selector(rightItemClick:)];
+    }
+    return _rightItem;
 }
 
 @end
