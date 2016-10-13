@@ -10,6 +10,7 @@
 #import "lwMineSettingCell.h"
 #import "lwMineSettingModel.h"
 
+#import "lwNavigationBar.h"
 
 @interface lwMineStettingVC ()
 
@@ -20,6 +21,8 @@ UITableViewDataSource
 
 @property (strong, nonatomic) UITableView *myTableView;
 @property (copy, nonatomic) NSArray *mineSetting;
+
+@property (strong, nonatomic) lwNavigationBar *navBar;
 
 @end
 
@@ -47,13 +50,11 @@ UITableViewDataSource
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    self.navigationController.navigationBarHidden = NO;
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarPosition:UIBarPositionTop barMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setBackIndicatorTransitionMaskImage:[UIImage new]];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
-- (void)viewDidDisappear:(BOOL)animated{
-    [super viewDidDisappear:animated];
-    self.navigationController.navigationBarHidden = YES;
-}
 
 // 常用代理
 #pragma mark - delegate
@@ -92,9 +93,11 @@ UITableViewDataSource
 // 加载视图
 #pragma mark - loadView
 - (void)setupView{
+    [self.view addSubview:self.navBar];
+    
     [self.view addSubview:self.myTableView];
     [_myTableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(UIEdgeInsetsZero);
+        make.edges.mas_equalTo(UIEdgeInsetsMake(lNavH, 0, 0, 0));
     }];
 }
 
@@ -102,6 +105,14 @@ UITableViewDataSource
 #pragma mark - setter
 
 #pragma mark - getter
+- (lwNavigationBar *)navBar{
+    if (_navBar == nil) {
+        _navBar = [[lwNavigationBar alloc] initWithFrame:CGRectMake(0, 0, lW, lNavH)];
+        [_navBar setTitle:@"设置"];
+    }
+    return _navBar;
+}
+
 - (UITableView *)myTableView{
     if (_myTableView == nil) {
         _myTableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];

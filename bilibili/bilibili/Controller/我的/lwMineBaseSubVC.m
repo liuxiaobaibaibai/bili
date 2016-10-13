@@ -64,19 +64,6 @@ UITableViewDataSource
     [super viewWillAppear:animated];
     
     self.view.backgroundColor = [UIColor biliPinkColor];
-    
-//    [self.navigationController.navigationBar setBackIndicatorImage:[UIImage imageNamed:@"category_back_button"]];
-//    [self.navigationController.navigationBar setBackIndicatorTransitionMaskImage:[UIImage imageNamed:@"category_back_button"]];
-//
-//    UIView *navView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, lW, lNavH)];
-//    navView.backgroundColor = [UIColor biliPinkColor];
-//    
-//    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 64-35, 41, 30)];
-//    [btn setImage:[UIImage imageNamed:@"category_back_button"] forState:UIControlStateNormal];
-//    [btn setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
-//    [navView addSubview:btn];
-//
-//    [self.view addSubview:navView];
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarPosition:UIBarPositionTop barMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setBackIndicatorTransitionMaskImage:[UIImage new]];
     
