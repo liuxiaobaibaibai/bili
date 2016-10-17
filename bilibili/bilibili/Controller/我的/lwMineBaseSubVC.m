@@ -172,7 +172,7 @@ UITableViewDataSource
 
 - (UITableView *)myTableView{
     if (_myTableView == nil) {
-        _myTableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+        _myTableView = [[UITableView alloc] initWithFrame:CGRectZero style:self.isGroup];
         _myTableView.delegate = self.delegate;
         _myTableView.dataSource = self.dataSource;
         _myTableView.tableFooterView = [UIView new];

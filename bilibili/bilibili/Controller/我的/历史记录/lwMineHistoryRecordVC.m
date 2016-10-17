@@ -1,20 +1,19 @@
 //
-//  lwMineOffLineManagerVC.m
+//  lwMineHistoryRecordVC.m
 //  bilibili
 //
-//  Created by 刘威 on 16/10/16.
+//  Created by 刘威 on 16/10/17.
 //  Copyright © 2016年 lw. All rights reserved.
 //
 
-#import "lwMineOffLineManagerVC.h"
+#import "lwMineHistoryRecordVC.h"
 
 #import "lwMineBaseSubVC.h"
 #import "lwNavigationBar.h"
 
-#import "lwMineOffLineCell.h"
+#import "lwMineHistoryRecordCell.h"
 
-@interface lwMineOffLineManagerVC ()
-
+@interface lwMineHistoryRecordVC ()
 <
 UITableViewDelegate,
 UITableViewDataSource
@@ -24,23 +23,20 @@ UITableViewDataSource
 
 @end
 
-@implementation lwMineOffLineManagerVC
+@implementation lwMineHistoryRecordVC
 
 // 数据加载
 #pragma mark - loadDataSource
 - (void)loadDataSource{
-    self.source = [NSMutableArray arrayWithArray:@[@"",@"",@"",@""]];
+    self.source = [NSMutableArray arrayWithArray:@[@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@""]];
     [self.myTableView reloadData];
 }
 
 // 动作事件
 #pragma mark - userAction
 - (void)barButtonItemClick:(UIBarButtonItem *)item{
-    if (!self.myTableView.isEditing) {
-        [self.myTableView setEditing:YES];
-    }else{
-        [self.myTableView setEditing:NO];
-    }
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"清空播放历史" message:@"喵，想掩盖些什么呢？" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"清空", nil];
+    [alert show];
 }
 
 // 初始化
@@ -67,25 +63,6 @@ UITableViewDataSource
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
-    return YES;
-}
-
-- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return UITableViewCellEditingStyleDelete;
-}
-
-- (nullable NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath{
-    WS(ws);
-    
-    UITableViewRowAction *deleteAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"删除" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
-        [ws.source removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
-    }];
-    
-    return @[deleteAction];
-}
-
 // 常用数据源
 #pragma mark - dataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -98,9 +75,9 @@ UITableViewDataSource
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *cellID = @"cell";
-    lwMineOffLineCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    lwMineHistoryRecordCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     if (!cell) {
-        cell = [[lwMineOffLineCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellID];
+        cell = [[lwMineHistoryRecordCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellID];
     }
     
     return cell;
@@ -112,10 +89,11 @@ UITableViewDataSource
 - (void)setupView{
     [super setupView];
     
-    self.myTableView.rowHeight = 70;
+    self.myTableView.rowHeight = 90;
     self.myTableView.delegate = self;
     self.myTableView.dataSource = self;
-    self.myTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    self.myTableView.separatorInset = UIEdgeInsetsMake(0, 15, 0, 15);
     
     self.navigationItem.rightBarButtonItem = self.rightItem;
 }
@@ -126,10 +104,9 @@ UITableViewDataSource
 #pragma mark - getter
 - (UIBarButtonItem *)rightItem{
     if (_rightItem == nil) {
-        _rightItem = [[UIBarButtonItem alloc] initWithTitle:@"编辑" style:UIBarButtonItemStylePlain target:self action:@selector(barButtonItemClick:)];
+        _rightItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemTrash target:self action:@selector(barButtonItemClick:)];
     }
     return _rightItem;
 }
-
 
 @end

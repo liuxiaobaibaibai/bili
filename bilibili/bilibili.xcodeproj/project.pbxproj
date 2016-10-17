@@ -17,6 +17,11 @@
 		014A033D1DA7FCBE005314AF /* lwMineSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 014A033C1DA7FCBE005314AF /* lwMineSetting.plist */; };
 		014A03421DA7FF08005314AF /* lwMineSettingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 014A03411DA7FF08005314AF /* lwMineSettingModel.m */; };
 		014A03461DA802D4005314AF /* lwMineSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 014A03451DA802D4005314AF /* lwMineSettingCell.m */; };
+		015302151DB4F88900AA75D9 /* lwMineOffLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 015302141DB4F88900AA75D9 /* lwMineOffLineCell.m */; };
+		0153021C1DB50BA300AA75D9 /* lwMineHistoryRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0153021B1DB50BA300AA75D9 /* lwMineHistoryRecordVC.m */; };
+		015302201DB50C0500AA75D9 /* lwMineHistoryRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0153021F1DB50C0500AA75D9 /* lwMineHistoryRecordCell.m */; };
+		015302241DB5168200AA75D9 /* lwMineGameCetnerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 015302231DB5168200AA75D9 /* lwMineGameCetnerVC.m */; };
+		015302281DB5187200AA75D9 /* lwMineGameCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 015302271DB5187200AA75D9 /* lwMineGameCenterCell.m */; };
 		01EBBE2C1D9D6510003B5611 /* lwHomeOperaCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EBBE2B1D9D6510003B5611 /* lwHomeOperaCustomCell.m */; };
 		01EBBE2F1D9D6543003B5611 /* lwHomeOperaRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EBBE2E1D9D6543003B5611 /* lwHomeOperaRecommendCell.m */; };
 		0B92825FD94A6588BB584A8B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F31263CAD1E1062239DCE2F /* libPods.a */; };
@@ -139,6 +144,16 @@
 		014A03411DA7FF08005314AF /* lwMineSettingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwMineSettingModel.m; sourceTree = "<group>"; };
 		014A03441DA802D4005314AF /* lwMineSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwMineSettingCell.h; sourceTree = "<group>"; };
 		014A03451DA802D4005314AF /* lwMineSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwMineSettingCell.m; sourceTree = "<group>"; };
+		015302131DB4F88900AA75D9 /* lwMineOffLineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwMineOffLineCell.h; sourceTree = "<group>"; };
+		015302141DB4F88900AA75D9 /* lwMineOffLineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwMineOffLineCell.m; sourceTree = "<group>"; };
+		0153021A1DB50BA300AA75D9 /* lwMineHistoryRecordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwMineHistoryRecordVC.h; sourceTree = "<group>"; };
+		0153021B1DB50BA300AA75D9 /* lwMineHistoryRecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwMineHistoryRecordVC.m; sourceTree = "<group>"; };
+		0153021E1DB50C0500AA75D9 /* lwMineHistoryRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwMineHistoryRecordCell.h; sourceTree = "<group>"; };
+		0153021F1DB50C0500AA75D9 /* lwMineHistoryRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwMineHistoryRecordCell.m; sourceTree = "<group>"; };
+		015302221DB5168200AA75D9 /* lwMineGameCetnerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwMineGameCetnerVC.h; sourceTree = "<group>"; };
+		015302231DB5168200AA75D9 /* lwMineGameCetnerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwMineGameCetnerVC.m; sourceTree = "<group>"; };
+		015302261DB5187200AA75D9 /* lwMineGameCenterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwMineGameCenterCell.h; sourceTree = "<group>"; };
+		015302271DB5187200AA75D9 /* lwMineGameCenterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwMineGameCenterCell.m; sourceTree = "<group>"; };
 		01EBBE2A1D9D6510003B5611 /* lwHomeOperaCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeOperaCustomCell.h; sourceTree = "<group>"; };
 		01EBBE2B1D9D6510003B5611 /* lwHomeOperaCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwHomeOperaCustomCell.m; sourceTree = "<group>"; };
 		01EBBE2D1D9D6543003B5611 /* lwHomeOperaRecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeOperaRecommendCell.h; sourceTree = "<group>"; };
@@ -390,6 +405,51 @@
 			path = "设置";
 			sourceTree = "<group>";
 		};
+		015302121DB4F83700AA75D9 /* 离线缓存 */ = {
+			isa = PBXGroup;
+			children = (
+				015302131DB4F88900AA75D9 /* lwMineOffLineCell.h */,
+				015302141DB4F88900AA75D9 /* lwMineOffLineCell.m */,
+			);
+			path = "离线缓存";
+			sourceTree = "<group>";
+		};
+		015302161DB50A8E00AA75D9 /* 历史记录 */ = {
+			isa = PBXGroup;
+			children = (
+				0153021A1DB50BA300AA75D9 /* lwMineHistoryRecordVC.h */,
+				0153021B1DB50BA300AA75D9 /* lwMineHistoryRecordVC.m */,
+			);
+			path = "历史记录";
+			sourceTree = "<group>";
+		};
+		0153021D1DB50C0500AA75D9 /* 历史记录 */ = {
+			isa = PBXGroup;
+			children = (
+				0153021E1DB50C0500AA75D9 /* lwMineHistoryRecordCell.h */,
+				0153021F1DB50C0500AA75D9 /* lwMineHistoryRecordCell.m */,
+			);
+			path = "历史记录";
+			sourceTree = "<group>";
+		};
+		015302211DB5165E00AA75D9 /* 游戏中心 */ = {
+			isa = PBXGroup;
+			children = (
+				015302221DB5168200AA75D9 /* lwMineGameCetnerVC.h */,
+				015302231DB5168200AA75D9 /* lwMineGameCetnerVC.m */,
+			);
+			path = "游戏中心";
+			sourceTree = "<group>";
+		};
+		015302251DB5181800AA75D9 /* 游戏中心 */ = {
+			isa = PBXGroup;
+			children = (
+				015302261DB5187200AA75D9 /* lwMineGameCenterCell.h */,
+				015302271DB5187200AA75D9 /* lwMineGameCenterCell.m */,
+			);
+			path = "游戏中心";
+			sourceTree = "<group>";
+		};
 		815DCD982C7DC271E0566012 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -639,6 +699,8 @@
 		C95F046F1D6EF0CE00168F5A /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
+				015302211DB5165E00AA75D9 /* 游戏中心 */,
+				015302161DB50A8E00AA75D9 /* 历史记录 */,
 				011410581DB2AE1100503C47 /* 离线缓存 */,
 				014A03371DA7FC50005314AF /* 设置 */,
 				C9810B691D701F17006A858E /* lwMineVC.h */,
@@ -935,6 +997,9 @@
 		C9AE644B1D8E8F1F00188B3F /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
+				015302251DB5181800AA75D9 /* 游戏中心 */,
+				0153021D1DB50C0500AA75D9 /* 历史记录 */,
+				015302121DB4F83700AA75D9 /* 离线缓存 */,
 				014A03431DA802BA005314AF /* 设置 */,
 				C9AE644C1D8E8F3C00188B3F /* lwPersonalMenuCell.h */,
 				C9AE644D1D8E8F3C00188B3F /* lwPersonalMenuCell.m */,
@@ -1226,6 +1291,7 @@
 				C9810B471D6FE2BA006A858E /* UIImageView+lwImageView.m in Sources */,
 				C9A9DEB01D94BD760075C5CC /* lwHomeRecommendHeaderView.m in Sources */,
 				C984EF7B1D757D610050F805 /* lwLiveVideoModel.m in Sources */,
+				0153021C1DB50BA300AA75D9 /* lwMineHistoryRecordVC.m in Sources */,
 				C95F04201D6EE62A00168F5A /* main.m in Sources */,
 				01EBBE2F1D9D6543003B5611 /* lwHomeOperaRecommendCell.m in Sources */,
 				0123727F1D9AA01600BA32EA /* lwOperaHeaderView.m in Sources */,
@@ -1246,7 +1312,10 @@
 				014A03361DA7E933005314AF /* lwHomeLiveHeaderView.m in Sources */,
 				C984EF6D1D7577350050F805 /* lwBasePageVC.m in Sources */,
 				C9AE644E1D8E8F3C00188B3F /* lwPersonalMenuCell.m in Sources */,
+				015302281DB5187200AA75D9 /* lwMineGameCenterCell.m in Sources */,
 				C955D4851D8289BA00D4C9B5 /* lwTestPageVC.m in Sources */,
+				015302241DB5168200AA75D9 /* lwMineGameCetnerVC.m in Sources */,
+				015302201DB50C0500AA75D9 /* lwMineHistoryRecordCell.m in Sources */,
 				C997C8831D7434DC005468D8 /* lwChaseSopaOperaVC.m in Sources */,
 				011789A21DABD68A00D92909 /* lwNavigationBar.m in Sources */,
 				C95F04571D6EEC1900168F5A /* AppDelegate.m in Sources */,
@@ -1264,6 +1333,7 @@
 				C95F04641D6EEECC00168F5A /* lwBaseTabBarVC.m in Sources */,
 				C9810B431D6FE2BA006A858E /* NSString+lwString.m in Sources */,
 				C997C8801D741F74005468D8 /* lwCategoryModel.m in Sources */,
+				015302151DB4F88900AA75D9 /* lwMineOffLineCell.m in Sources */,
 				014A033A1DA7FC75005314AF /* lwMineStettingVC.m in Sources */,
 				C9810B4C1D6FE2BA006A858E /* UITextField+lwTextField.m in Sources */,
 			);

@@ -14,13 +14,15 @@
 
 @property (strong, nonatomic) UITableView *myTableView;
 
-@property (copy, nonatomic) NSArray *source;
+@property (strong, nonatomic) NSMutableArray *source;
 
 @property (weak, nonatomic) id delegate;
 
 @property (weak, nonatomic) id dataSource;
 
 @property (assign, nonatomic) BOOL isCorr;
+
+@property (assign, nonatomic) BOOL isGroup;
 
 @property (strong, nonatomic) lwNavigationBar *navBar;
 
