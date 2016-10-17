@@ -26,7 +26,7 @@ UITableViewDataSource
 
 @property (strong, nonatomic) UIView *headerView;
 
-@property (strong, nonatomic) lwNavigationBar *navBar;
+
 
 @end
 
@@ -49,10 +49,7 @@ UITableViewDataSource
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    self.automaticallyAdjustsScrollViewInsets = NO;
     [self setupView];
-    
-    [_navBar setTitle:self.title];
 }
 
 
@@ -62,15 +59,7 @@ UITableViewDataSource
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    
-    self.view.backgroundColor = [UIColor biliPinkColor];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarPosition:UIBarPositionTop barMetrics:UIBarMetricsDefault];
-    [self.navigationController.navigationBar setBackIndicatorTransitionMaskImage:[UIImage new]];
-    
-    
-    [self.view addSubview:self.navBar];
-    
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    [self preView];
 }
 
 // 常用代理
@@ -115,7 +104,21 @@ UITableViewDataSource
 
 // 加载视图
 #pragma mark - loadView
+
+- (void)preView{
+    self.view.backgroundColor = [UIColor biliPinkColor];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarPosition:UIBarPositionTop barMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setBackIndicatorTransitionMaskImage:[UIImage new]];
+    
+    
+    [self.view addSubview:self.navBar];
+    
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+
 - (void)setupView{
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
     [self.view addSubview:self.myTableView];
     
@@ -129,6 +132,10 @@ UITableViewDataSource
 
 // getter or setter
 #pragma mark - setter
+- (void)setVcTitle:(NSString *)vcTitle{
+    _vcTitle = vcTitle;
+    [self.navBar setTitle:vcTitle];
+}
 
 #pragma mark - getter
 

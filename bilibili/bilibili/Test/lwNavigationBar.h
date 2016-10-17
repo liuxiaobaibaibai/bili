@@ -12,4 +12,6 @@
 
 @property (copy, nonatomic) NSString *title;
 
+@property (strong, nonatomic) UIBarButtonItem *rightItem;
+
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0114105B1DB2AE1100503C47 /* lwMineOffLineManagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0114105A1DB2AE1100503C47 /* lwMineOffLineManagerVC.m */; };
 		011789A21DABD68A00D92909 /* lwNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 011789A11DABD68A00D92909 /* lwNavigationBar.m */; };
 		011789A41DABD92200D92909 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011789A31DABD92200D92909 /* Main.storyboard */; };
 		011789A71DABDB5900D92909 /* lwTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 011789A61DABDB5900D92909 /* lwTestVC.m */; };
@@ -24,7 +25,6 @@
 		C95F04201D6EE62A00168F5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C95F041F1D6EE62A00168F5A /* main.m */; };
 		C95F042C1D6EE62A00168F5A /* bilibili.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C95F042A1D6EE62A00168F5A /* bilibili.xcdatamodeld */; };
 		C95F042E1D6EE62A00168F5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C95F042D1D6EE62A00168F5A /* Assets.xcassets */; };
-		C95F04311D6EE62A00168F5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95F042F1D6EE62A00168F5A /* LaunchScreen.storyboard */; };
 		C95F043C1D6EE62A00168F5A /* bilibiliTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C95F043B1D6EE62A00168F5A /* bilibiliTests.m */; };
 		C95F04471D6EE62B00168F5A /* bilibiliUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C95F04461D6EE62B00168F5A /* bilibiliUITests.m */; };
 		C95F04571D6EEC1900168F5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C95F04561D6EEC1900168F5A /* AppDelegate.m */; };
@@ -121,6 +121,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		011410591DB2AE1100503C47 /* lwMineOffLineManagerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwMineOffLineManagerVC.h; sourceTree = "<group>"; };
+		0114105A1DB2AE1100503C47 /* lwMineOffLineManagerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwMineOffLineManagerVC.m; sourceTree = "<group>"; };
 		011789A01DABD68A00D92909 /* lwNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwNavigationBar.h; sourceTree = "<group>"; };
 		011789A11DABD68A00D92909 /* lwNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwNavigationBar.m; sourceTree = "<group>"; };
 		011789A31DABD92200D92909 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -152,7 +154,6 @@
 		C95F041F1D6EE62A00168F5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C95F042B1D6EE62A00168F5A /* bilibili.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = bilibili.xcdatamodel; sourceTree = "<group>"; };
 		C95F042D1D6EE62A00168F5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C95F04301D6EE62A00168F5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C95F04321D6EE62A00168F5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C95F04371D6EE62A00168F5A /* bilibiliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bilibiliTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95F043B1D6EE62A00168F5A /* bilibiliTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bilibiliTests.m; sourceTree = "<group>"; };
@@ -324,6 +325,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		011410581DB2AE1100503C47 /* 离线缓存 */ = {
+			isa = PBXGroup;
+			children = (
+				011410591DB2AE1100503C47 /* lwMineOffLineManagerVC.h */,
+				0114105A1DB2AE1100503C47 /* lwMineOffLineManagerVC.m */,
+			);
+			path = "离线缓存";
+			sourceTree = "<group>";
+		};
 		0123727C1D9A9DF500BA32EA /* 番剧 */ = {
 			isa = PBXGroup;
 			children = (
@@ -434,7 +444,6 @@
 			children = (
 				C95F042D1D6EE62A00168F5A /* Assets.xcassets */,
 				011789A31DABD92200D92909 /* Main.storyboard */,
-				C95F042F1D6EE62A00168F5A /* LaunchScreen.storyboard */,
 				C95F04321D6EE62A00168F5A /* Info.plist */,
 				C95F042A1D6EE62A00168F5A /* bilibili.xcdatamodeld */,
 				C95F041F1D6EE62A00168F5A /* main.m */,
@@ -630,11 +639,8 @@
 		C95F046F1D6EF0CE00168F5A /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
+				011410581DB2AE1100503C47 /* 离线缓存 */,
 				014A03371DA7FC50005314AF /* 设置 */,
-				C9E9AD931DA8CA5300673C41 /* 离线缓存 */,
-				C9E9AD921DA8CA5300673C41 /* 历史记录 */,
-				C9E9AD951DA8CA5300673C41 /* 我的收藏 */,
-				C9E9AD941DA8CA5300673C41 /* 我的关注 */,
 				C9810B691D701F17006A858E /* lwMineVC.h */,
 				C9810B6A1D701F17006A858E /* lwMineVC.m */,
 				C9E9AD961DA8CAB900673C41 /* lwMineBaseSubVC.h */,
@@ -973,34 +979,6 @@
 			path = "推荐";
 			sourceTree = "<group>";
 		};
-		C9E9AD921DA8CA5300673C41 /* 历史记录 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "历史记录";
-			sourceTree = "<group>";
-		};
-		C9E9AD931DA8CA5300673C41 /* 离线缓存 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "离线缓存";
-			sourceTree = "<group>";
-		};
-		C9E9AD941DA8CA5300673C41 /* 我的关注 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "我的关注";
-			sourceTree = "<group>";
-		};
-		C9E9AD951DA8CA5300673C41 /* 我的收藏 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "我的收藏";
-			sourceTree = "<group>";
-		};
 		D70AAE3C12929BFE7E884BD1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1128,7 +1106,6 @@
 				C984EF811D75813D0050F805 /* lwSoapOpera in Resources */,
 				C98F0DC91D7D1B4200E85355 /* lwAttentionTags in Resources */,
 				C997C8781D7416E8005468D8 /* lwCategorySource.plist in Resources */,
-				C95F04311D6EE62A00168F5A /* LaunchScreen.storyboard in Resources */,
 				C9AE644A1D8E8B2D00188B3F /* lwPersonalMenuList.plist in Resources */,
 				C984EF7F1D75812A0050F805 /* lwHomeRecommend in Resources */,
 				011789A41DABD92200D92909 /* Main.storyboard in Resources */,
@@ -1226,6 +1203,7 @@
 				C993DE031D751B5A0098D86A /* lwLabelVC.m in Sources */,
 				C95F046A1D6EEF5800168F5A /* lwCoreDataManager.m in Sources */,
 				C99E38CC1D8F80590008AB15 /* lwSrarchHeaderView.m in Sources */,
+				0114105B1DB2AE1100503C47 /* lwMineOffLineManagerVC.m in Sources */,
 				C97E1B091D7EB18800DF88FF /* lwAllCategoryCell.m in Sources */,
 				011789A71DABDB5900D92909 /* lwTestVC.m in Sources */,
 				C9810B451D6FE2BA006A858E /* UIColor+lwColor.m in Sources */,
@@ -1321,17 +1299,6 @@
 			targetProxy = C95F04431D6EE62B00168F5A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		C95F042F1D6EE62A00168F5A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C95F04301D6EE62A00168F5A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C95F04491D6EE62B00168F5A /* Debug */ = {

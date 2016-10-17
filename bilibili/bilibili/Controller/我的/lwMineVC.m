@@ -104,8 +104,8 @@ UICollectionViewDelegateFlowLayout
 #pragma mark - delegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     lwPersonalMenuCell *cell = (lwPersonalMenuCell *)[collectionView cellForItemAtIndexPath:indexPath];
-    [self pushController:@"lwMineBaseSubVC" Completion:^(id controller) {
-        [(UIViewController *)controller setTitle:cell.categoryModel.title];
+    [self pushController:@"lwMineOffLineManagerVC" Completion:^(id controller) {
+        [controller setValue:cell.categoryModel.title forKeyPath:@"vcTitle"];
         [controller setValue:[NSNumber numberWithBool:YES] forKeyPath:@"isCorr"];
     }];
 }

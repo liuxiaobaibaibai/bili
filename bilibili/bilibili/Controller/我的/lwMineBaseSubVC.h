@@ -8,6 +8,8 @@
 
 #import "lwBaseVC.h"
 
+@class lwNavigationBar;
+
 @interface lwMineBaseSubVC : lwBaseVC
 
 @property (strong, nonatomic) UITableView *myTableView;
@@ -19,5 +21,11 @@
 @property (weak, nonatomic) id dataSource;
 
 @property (assign, nonatomic) BOOL isCorr;
+
+@property (strong, nonatomic) lwNavigationBar *navBar;
+
+@property (copy, nonatomic) NSString *vcTitle;
+
+- (void)setupView;
 
 @end
