@@ -1,23 +1,26 @@
 //
-//  lwMineGameCetnerVC.m
+//  lwMineSystemNotificationVC.m
 //  bilibili
 //
-//  Created by 刘威 on 16/10/17.
+//  Created by lw on 2016/10/18.
 //  Copyright © 2016年 lw. All rights reserved.
 //
 
-#import "lwMineGameCetnerVC.h"
+#import "lwMineSystemNotificationVC.h"
 
-#import "lwMineGameCenterCell.h"
+#import "lwMineSystemNotificationCell.h"
 
-@interface lwMineGameCetnerVC ()
+@interface lwMineSystemNotificationVC ()
+
 <
 UITableViewDelegate,
 UITableViewDataSource
 >
+
+
 @end
 
-@implementation lwMineGameCetnerVC
+@implementation lwMineSystemNotificationVC
 
 // 数据加载
 #pragma mark - loadDataSource
@@ -43,8 +46,6 @@ UITableViewDataSource
     [super viewDidLoad];
     
     [self setupView];
-    self.myTableView.delegate = self;
-    self.myTableView.dataSource = self;
     
     [self loadDataSource];
 }
@@ -58,11 +59,6 @@ UITableViewDataSource
 
 // 常用数据源
 #pragma mark - dataSource
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 250;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.source.count;
 }
@@ -73,13 +69,11 @@ UITableViewDataSource
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *cellID = @"cell";
-    lwMineGameCenterCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    lwMineSystemNotificationCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     if (!cell) {
-        cell = [[lwMineGameCenterCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellID];
+        cell = [[lwMineSystemNotificationCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellID];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
-    
-    cell.isLast = indexPath.row == (self.source.count - 1) ? YES : NO;
     
     return cell;
 }
@@ -89,7 +83,13 @@ UITableViewDataSource
 
 - (void)setupView{
     [super setupView];
-
+    
+    self.myTableView.estimatedRowHeight = 44;
+    self.myTableView.rowHeight = UITableViewAutomaticDimension;
+    
+    
+    self.myTableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, -15);
+    
     self.myTableView.delegate = self;
     self.myTableView.dataSource = self;
 }
@@ -98,6 +98,5 @@ UITableViewDataSource
 #pragma mark - setter
 
 #pragma mark - getter
-
 
 @end

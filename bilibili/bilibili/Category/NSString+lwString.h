@@ -75,6 +75,16 @@ NSString * gen_guid();
 - (NSMutableAttributedString *)lineSpace:(CGFloat)space;
 
 /**
+ 设置行间距，字间距
+
+ @param space     字间距
+ @param lineSpace 行间距
+
+ @return 富文本
+ */
+- (NSMutableAttributedString *)kernSpace:(CGFloat)space LineSpace:(CGFloat)lineSpace;
+
+/**
  *  修改部分字体颜色
  *  @param  str 要修改的字符串
  *  @return 返回修改后的字符串

@@ -298,6 +298,19 @@ NSString * gen_uuid()
     return att;
 }
 
+
+- (NSMutableAttributedString *)kernSpace:(CGFloat)space LineSpace:(CGFloat)lineSpace{
+    
+    NSNumber *spaceNumber = [NSNumber numberWithFloat:space];
+    
+    NSMutableAttributedString *att = [[NSMutableAttributedString alloc] initWithString:self attributes:@{NSKernAttributeName:spaceNumber}];
+    
+    NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
+    [style setLineSpacing:lineSpace];
+    [att addAttribute:NSParagraphStyleAttributeName value:style range:NSMakeRange(0, self.length)];
+    return att;
+}
+
 - (NSString *)jsonStringForUrlPath{
     
     NSURL *url = [NSURL URLWithString:self];

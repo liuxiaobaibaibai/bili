@@ -106,22 +106,20 @@ UICollectionViewDelegateFlowLayout
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     lwPersonalMenuCell *cell = (lwPersonalMenuCell *)[collectionView cellForItemAtIndexPath:indexPath];
     NSString *title = cell.categoryModel.title;
+    NSString *controllerName = @"";
     if ([title isEqualToString:@"历史记录"]) {
-        [self pushController:@"lwMineHistoryRecordVC" Completion:^(id controller) {
-            [controller setValue:title forKeyPath:@"vcTitle"];
-            [controller setValue:[NSNumber numberWithBool:YES] forKeyPath:@"isCorr"];
-        }];
+        controllerName = @"lwMineHistoryRecordVC";
     }else if ([title isEqualToString:@"离线缓存"]){
-        [self pushController:@"lwMineOffLineManagerVC" Completion:^(id controller) {
-            [controller setValue:title forKeyPath:@"vcTitle"];
-            [controller setValue:[NSNumber numberWithBool:YES] forKeyPath:@"isCorr"];
-        }];
+        controllerName = @"lwMineOffLineManagerVC";
     }else if ([title isEqualToString:@"游戏中心"]){
-        [self pushController:@"lwMineGameCetnerVC" Completion:^(id controller) {
-            [controller setValue:title forKeyPath:@"vcTitle"];
-            [controller setValue:[NSNumber numberWithBool:YES] forKeyPath:@"isCorr"];
-        }];
+        controllerName = @"lwMineGameCetnerVC";
+    }else if ([title isEqualToString:@"系统通知"]){
+        controllerName = @"lwMineSystemNotificationVC";
     }
+    [self pushController:controllerName Completion:^(id controller) {
+        [controller setValue:title forKeyPath:@"vcTitle"];
+        [controller setValue:[NSNumber numberWithBool:YES] forKeyPath:@"isCorr"];
+    }];
 }
 
 #pragma mark - UICollectionViewDataSource

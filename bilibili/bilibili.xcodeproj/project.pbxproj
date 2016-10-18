@@ -94,6 +94,8 @@
 		C99E38CF1D8FA00F0008AB15 /* lwFindConfigList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C99E38CE1D8FA00F0008AB15 /* lwFindConfigList.plist */; };
 		C99E38D31D8FA7720008AB15 /* lwFindBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C99E38D21D8FA7720008AB15 /* lwFindBaseModel.m */; };
 		C99F4B271D77BB770006D255 /* lwHomeLiveVideoCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C99F4B261D77BB770006D255 /* lwHomeLiveVideoCustomCell.m */; };
+		C9A40A421DB5EFE40079C0B9 /* lwMineSystemNotificationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A40A411DB5EFE40079C0B9 /* lwMineSystemNotificationVC.m */; };
+		C9A40A491DB5F0E10079C0B9 /* lwMineSystemNotificationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A40A481DB5F0E10079C0B9 /* lwMineSystemNotificationCell.m */; };
 		C9A9DEB01D94BD760075C5CC /* lwHomeRecommendHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A9DEAF1D94BD760075C5CC /* lwHomeRecommendHeaderView.m */; };
 		C9AE644A1D8E8B2D00188B3F /* lwPersonalMenuList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9AE64491D8E8B2C00188B3F /* lwPersonalMenuList.plist */; };
 		C9AE644E1D8E8F3C00188B3F /* lwPersonalMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AE644D1D8E8F3C00188B3F /* lwPersonalMenuCell.m */; };
@@ -289,6 +291,10 @@
 		C99E38D21D8FA7720008AB15 /* lwFindBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwFindBaseModel.m; sourceTree = "<group>"; };
 		C99F4B251D77BB770006D255 /* lwHomeLiveVideoCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeLiveVideoCustomCell.h; sourceTree = "<group>"; };
 		C99F4B261D77BB770006D255 /* lwHomeLiveVideoCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwHomeLiveVideoCustomCell.m; sourceTree = "<group>"; };
+		C9A40A401DB5EFE40079C0B9 /* lwMineSystemNotificationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwMineSystemNotificationVC.h; sourceTree = "<group>"; };
+		C9A40A411DB5EFE40079C0B9 /* lwMineSystemNotificationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwMineSystemNotificationVC.m; sourceTree = "<group>"; };
+		C9A40A471DB5F0E10079C0B9 /* lwMineSystemNotificationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwMineSystemNotificationCell.h; sourceTree = "<group>"; };
+		C9A40A481DB5F0E10079C0B9 /* lwMineSystemNotificationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwMineSystemNotificationCell.m; sourceTree = "<group>"; };
 		C9A9DEAE1D94BD760075C5CC /* lwHomeRecommendHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lwHomeRecommendHeaderView.h; sourceTree = "<group>"; };
 		C9A9DEAF1D94BD760075C5CC /* lwHomeRecommendHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lwHomeRecommendHeaderView.m; sourceTree = "<group>"; };
 		C9AE64491D8E8B2C00188B3F /* lwPersonalMenuList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lwPersonalMenuList.plist; sourceTree = "<group>"; };
@@ -699,6 +705,7 @@
 		C95F046F1D6EF0CE00168F5A /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
+				C9A40A3F1DB5EFB40079C0B9 /* 系统通知 */,
 				015302211DB5165E00AA75D9 /* 游戏中心 */,
 				015302161DB50A8E00AA75D9 /* 历史记录 */,
 				011410581DB2AE1100503C47 /* 离线缓存 */,
@@ -985,6 +992,24 @@
 			path = "直播";
 			sourceTree = "<group>";
 		};
+		C9A40A3F1DB5EFB40079C0B9 /* 系统通知 */ = {
+			isa = PBXGroup;
+			children = (
+				C9A40A401DB5EFE40079C0B9 /* lwMineSystemNotificationVC.h */,
+				C9A40A411DB5EFE40079C0B9 /* lwMineSystemNotificationVC.m */,
+			);
+			path = "系统通知";
+			sourceTree = "<group>";
+		};
+		C9A40A431DB5F0B00079C0B9 /* 系统通知 */ = {
+			isa = PBXGroup;
+			children = (
+				C9A40A471DB5F0E10079C0B9 /* lwMineSystemNotificationCell.h */,
+				C9A40A481DB5F0E10079C0B9 /* lwMineSystemNotificationCell.m */,
+			);
+			path = "系统通知";
+			sourceTree = "<group>";
+		};
 		C9AE64481D8E8B0700188B3F /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
@@ -997,6 +1022,7 @@
 		C9AE644B1D8E8F1F00188B3F /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
+				C9A40A431DB5F0B00079C0B9 /* 系统通知 */,
 				015302251DB5181800AA75D9 /* 游戏中心 */,
 				0153021D1DB50C0500AA75D9 /* 历史记录 */,
 				015302121DB4F83700AA75D9 /* 离线缓存 */,
@@ -1256,10 +1282,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A40A421DB5EFE40079C0B9 /* lwMineSystemNotificationVC.m in Sources */,
 				C9810B481D6FE2BA006A858E /* UILabel+lwLabel.m in Sources */,
 				C9810B4A1D6FE2BA006A858E /* UISegmentedControl+lwSegmentedControl.m in Sources */,
 				C9810B5A1D700739006A858E /* lwHomeVC.m in Sources */,
 				C9810B621D701EE0006A858E /* lwCategoryVC.m in Sources */,
+				C9A40A491DB5F0E10079C0B9 /* lwMineSystemNotificationCell.m in Sources */,
 				C95F04611D6EEE8100168F5A /* lwBaseVC.m in Sources */,
 				C9C5DA531D95125A00DC6624 /* lwHomeRecommendFooterView.m in Sources */,
 				C997C8701D740B09005468D8 /* lwLiveVideoVC.m in Sources */,
