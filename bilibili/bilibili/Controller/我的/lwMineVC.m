@@ -99,15 +99,29 @@ UICollectionViewDelegateFlowLayout
 #pragma mark - private method
 - (void)loadDataSource{
     self.dataSource = [NSArray arrayWithArray:[lwCategoryModel personalMenu]];
+    [self.myCollectionView reloadData];
 }
 
 #pragma mark - delegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     lwPersonalMenuCell *cell = (lwPersonalMenuCell *)[collectionView cellForItemAtIndexPath:indexPath];
-    [self pushController:@"lwMineBaseSubVC" Completion:^(id controller) {
-        [(UIViewController *)controller setTitle:cell.categoryModel.title];
-        [controller setValue:[NSNumber numberWithBool:YES] forKeyPath:@"isCorr"];
-    }];
+    NSString *title = cell.categoryModel.title;
+    if ([title isEqualToString:@"历史记录"]) {
+        [self pushController:@"lwMineHistoryRecordVC" Completion:^(id controller) {
+            [controller setValue:title forKeyPath:@"vcTitle"];
+            [controller setValue:[NSNumber numberWithBool:YES] forKeyPath:@"isCorr"];
+        }];
+    }else if ([title isEqualToString:@"离线缓存"]){
+        [self pushController:@"lwMineOffLineManagerVC" Completion:^(id controller) {
+            [controller setValue:title forKeyPath:@"vcTitle"];
+            [controller setValue:[NSNumber numberWithBool:YES] forKeyPath:@"isCorr"];
+        }];
+    }else if ([title isEqualToString:@"游戏中心"]){
+        [self pushController:@"lwMineGameCetnerVC" Completion:^(id controller) {
+            [controller setValue:title forKeyPath:@"vcTitle"];
+            [controller setValue:[NSNumber numberWithBool:YES] forKeyPath:@"isCorr"];
+        }];
+    }
 }
 
 #pragma mark - UICollectionViewDataSource

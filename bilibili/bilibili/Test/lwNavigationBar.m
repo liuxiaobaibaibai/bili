@@ -13,7 +13,7 @@
 @property (strong, nonatomic) UIButton *backBtn;
 @property (strong, nonatomic) UILabel *titleLabel;
 
-@property (strong, nonatomic) UIBarButtonItem *rightItem;
+//@property (strong, nonatomic) UIBarButtonItem *rightItem;
 
 
 @end
@@ -58,6 +58,7 @@
     
     [bgView addSubview:self.backBtn];
     [bgView addSubview:self.titleLabel];
+
     
     [bgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(UIEdgeInsetsMake(20, 0, 0, 0));

@@ -40,6 +40,8 @@
 }
 
 - (void)setCategoryModel:(lwCategoryModel *)categoryModel{
+    
+    _categoryModel = categoryModel;
     [self.titleLabel setText:categoryModel.title];
     [self.iconView setImage:[UIImage imageNamed:categoryModel.imgPath]];
 }
