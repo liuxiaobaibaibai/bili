@@ -60,6 +60,7 @@ UICollectionViewDelegateFlowLayout
 - (void)buttonAction:(id)sender{
     [self pushController:@"lwMineStettingVC" Completion:^(id controller) {
         [(UIViewController *)controller setHidesBottomBarWhenPushed:YES];
+        [controller setValue:@"设置" forKeyPath:@"vcTitle"];
     }];
 }
 

@@ -6,8 +6,8 @@
 //  Copyright © 2016年 lw. All rights reserved.
 //
 
-#import "lwBaseVC.h"
+#import "lwMineBaseSubVC.h"
 
-@interface lwMineStettingVC : lwBaseVC
+@interface lwMineStettingVC : lwMineBaseSubVC
 
 @end

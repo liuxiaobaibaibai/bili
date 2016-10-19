@@ -19,10 +19,8 @@ UITableViewDelegate,
 UITableViewDataSource
 >
 
-@property (strong, nonatomic) UITableView *myTableView;
 @property (copy, nonatomic) NSArray *mineSetting;
 
-@property (strong, nonatomic) lwNavigationBar *navBar;
 
 @end
 
@@ -50,9 +48,7 @@ UITableViewDataSource
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarPosition:UIBarPositionTop barMetrics:UIBarMetricsDefault];
-    [self.navigationController.navigationBar setBackIndicatorTransitionMaskImage:[UIImage new]];
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    self.isGroup = YES;
 }
 
 
@@ -63,7 +59,7 @@ UITableViewDataSource
 #pragma mark - dataSource
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return section == 0 ? 10 : 1;
+    return section == 0 ? 0 : 1;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
@@ -93,34 +89,16 @@ UITableViewDataSource
 // 加载视图
 #pragma mark - loadView
 - (void)setupView{
-    [self.view addSubview:self.navBar];
+    [super setupView];
     
-    [self.view addSubview:self.myTableView];
-    [_myTableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(UIEdgeInsetsMake(lNavH, 0, 0, 0));
-    }];
+    self.myTableView.delegate = self;
+    self.myTableView.dataSource = self;
 }
 
 // getter or setter
 #pragma mark - setter
 
 #pragma mark - getter
-- (lwNavigationBar *)navBar{
-    if (_navBar == nil) {
-        _navBar = [[lwNavigationBar alloc] initWithFrame:CGRectMake(0, 0, lW, lNavH)];
-        [_navBar setTitle:@"设置"];
-    }
-    return _navBar;
-}
-
-- (UITableView *)myTableView{
-    if (_myTableView == nil) {
-        _myTableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
-        _myTableView.delegate = self;
-        _myTableView.dataSource = self;
-    }
-    return _myTableView;
-}
 
 - (NSArray *)mineSetting{
     if (_mineSetting == nil) {

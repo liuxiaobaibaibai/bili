@@ -51,6 +51,11 @@ UITableViewDataSource
     [self loadDataSource];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
+
 - (UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;
 }
@@ -93,6 +98,18 @@ UITableViewDataSource
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+    NSString *title = cell.textLabel.text;
+    
+    if ([title isEqualToString:@"游戏中心"]) {
+        [self pushController:@"lwMineGameCetnerVC" Completion:^(id controller) {
+            [controller setValue:title forKeyPath:@"vcTitle"];
+            [controller setValue:[NSNumber numberWithBool:YES] forKeyPath:@"isCorr"];
+        }];
+    }
+    
 }
 
 #pragma mark - UITableViewDataSource
@@ -131,6 +148,11 @@ UITableViewDataSource
 
 #pragma mark - setupView
 - (void)setupView{
+    
+    
+    self.title = @"";
+    
+    
     [self.view addSubview:self.headerView];
     [self.view addSubview:self.myTableView];
     WS(ws);

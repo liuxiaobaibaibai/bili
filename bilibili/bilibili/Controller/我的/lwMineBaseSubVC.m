@@ -109,7 +109,8 @@ UITableViewDataSource
     self.view.backgroundColor = [UIColor biliPinkColor];
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarPosition:UIBarPositionTop barMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setBackIndicatorTransitionMaskImage:[UIImage new]];
-    
+    [self.navigationController.navigationBar setBackIndicatorImage:[UIImage new]];
+    [self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
     
     [self.view addSubview:self.navBar];
     
@@ -121,8 +122,6 @@ UITableViewDataSource
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     [self.view addSubview:self.myTableView];
-    
-    [self.myTableView addSubview:self.headerView];
     
     [_myTableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(UIEdgeInsetsMake(lNavH, 0, -5, 0));
