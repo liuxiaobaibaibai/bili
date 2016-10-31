@@ -103,7 +103,36 @@
  */
 + (UIImage *)generateQrCode:(NSString *)content;
 
+
+/**
+ 生成二维码
+
+ @param content 内容
+ @param size    尺寸
+
+ @return 二维码
+ */
 + (UIImage *)generateQrCode:(NSString *)content Size:(CGFloat)size;
+
+
+/**
+ 扫描图片
+
+ @param img 需要扫描的图片
+
+ @return 返回扫描结果
+ */
++ (NSArray *)qrCode:(NSString *)imgPath;
+
+
+/**
+ 扫描二维码
+
+ @param imgPath    图片路径
+ @param local      是否是本地资源
+ @param completion 回调操作
+ */
++ (void)qrCode:(NSString *)imgPath Local:(BOOL)local Completion:(void(^)(NSArray *results))completion;
 
 /**
  *  保存图片到本地

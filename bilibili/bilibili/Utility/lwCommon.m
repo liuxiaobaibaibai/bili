@@ -332,6 +332,34 @@
     }
 }
 
+
++ (NSArray *)qrCode:(NSString *)imgPath{
+    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:imgPath]]];
+    
+    //1.初始化扫描仪，设置设别类型和识别质量
+    CIDetector*detector = [CIDetector detectorOfType:CIDetectorTypeQRCode context:nil options:@{CIDetectorAccuracy:CIDetectorAccuracyHigh}];
+    //2.扫描获取的特征组
+    NSArray*features = [detector featuresInImage:[CIImage imageWithCGImage:image.CGImage]];
+    return features;
+}
+
++ (void)qrCode:(NSString *)imgPath Local:(BOOL)local Completion:(void(^)(NSArray *results))completion{
+    UIImage *image = [UIImage new];
+    
+    if (local) {
+        image = [UIImage imageNamed:imgPath];
+    }else{
+        image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:imgPath]]];
+    }
+    
+    //1.初始化扫描仪，设置设别类型和识别质量
+    CIDetector*detector = [CIDetector detectorOfType:CIDetectorTypeQRCode context:nil options:@{CIDetectorAccuracy:CIDetectorAccuracyHigh}];
+    //2.扫描获取的特征组
+    NSArray*features = [NSArray arrayWithArray:[detector featuresInImage:[CIImage imageWithCGImage:image.CGImage]]];
+    
+    completion(features);
+}
+
 + (NSString *)saveImage:(UIImage *)img Name:(NSString *)name Type:(NSString *)type{
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
     NSString *filePath = [[paths firstObject] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.%@",name,type]];   // 保存文件的名称
